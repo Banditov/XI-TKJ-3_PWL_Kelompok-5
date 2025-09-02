@@ -1,5 +1,5 @@
 PWL Kelompok 5
-### ATK SKI
+# ATK SKI
 
 ## Table of Contents
 - [License](#license)
