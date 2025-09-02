@@ -9,5 +9,3 @@
 Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 
 ### Kontributor
-!{{Kuinlin}}
-!{{nikoe-ee}}
