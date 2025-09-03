@@ -1,5 +1,6 @@
 ### PWL Kelompok 5
 # ATK SKI
+![Logo]{resources/images/Logo.png}
 
 ## Table of Contents
 - [License](#license)
