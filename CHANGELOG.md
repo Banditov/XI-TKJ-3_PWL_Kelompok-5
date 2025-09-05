@@ -2,7 +2,6 @@
 
 ## 04/09/2025
 
-- Update README.md
 - Mengubah logo
 
 
