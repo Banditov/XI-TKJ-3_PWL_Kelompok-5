@@ -1,5 +1,10 @@
 # Changelog
 
+## 05/09/2025
+
+- Membuat workflow
+
+  
 ## 04/09/2025
 
 - Mengubah logo
