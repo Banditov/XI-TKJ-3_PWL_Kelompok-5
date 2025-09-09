@@ -34,6 +34,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-      - name: Auto-add contributors
-        uses: BobAnkh/add-contributors@v0.2.2
