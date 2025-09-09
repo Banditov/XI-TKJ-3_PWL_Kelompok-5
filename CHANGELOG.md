@@ -2,6 +2,11 @@
 
 ## 05/09/2025
 
+- Memulai membuat Home Page
+
+
+## 05/09/2025
+
 - Membuat workflow
 
   
