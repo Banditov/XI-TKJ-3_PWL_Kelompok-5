@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>ATK-Go</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -69,6 +70,7 @@
       margin-bottom: 10px;
     }
   </style>
+  
 </head>
 <body>
 
