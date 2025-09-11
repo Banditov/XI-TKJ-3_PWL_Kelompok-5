@@ -1,4 +1,5 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+[![Changelog](https://img.shields.io/badge/changelog-md-blue)](./CHANGELOG.md)
 
 ### PWL Kelompok 5
 # ATK SKI
@@ -54,9 +55,9 @@ UI/UX Designer <br>
 See `CHANGELOG.md` for the information.
 
 ## Kontributor
-- <img href="https://avatars.githubusercontent.com/Banditov" width="30" style="border-radius:50%"> [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.
-- <img href="https://avatars.githubusercontent.com/nikoe-ee" width="30" style="border-radius:50%"> [Nicholas J.G - "nikoe-ee"](https://github.com/nikoe-ee), sebagai front-end developer.
-- <img href="https://avatars.githubusercontent.com/Kuinlin" width="30" style="border-radius:50%"> [Quinlen M. - "Kuin"](https://github.com/Kuinlin), sebagai UI/UX designer.
+- [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.
+- [Nicholas J.G - "nikoe-ee"](https://github.com/nikoe-ee), sebagai front-end developer.
+- [Quinlen M. - "Kuin"](https://github.com/Kuinlin), sebagai UI/UX designer.
 
 ## License
 Distributed under the Unlicense License. See `LICENSE.txt` for more information.
