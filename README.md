@@ -1,13 +1,12 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
-[![Changelog](https://img.shields.io/badge/changelog-md-blue)](./CHANGELOG.md)
 
 
 ### PWL Kelompok 5
 # ATK SKI
 
-<img src="resources/images/Logo.png">
-
 Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
+
+<img src="resources/images/Logo.png">
 
 
 ## Table of Contents
@@ -17,7 +16,7 @@ Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
 - [Kontributor](#kontributor)
 - [License](#license)
 - [Change Logs](#changelog)
-- [Useful Links](#link)
+- [Useful Links](#links)
 
 
 ## Installasi
@@ -65,7 +64,7 @@ UI/UX Designer <br>
 
 
 ## License
-Distributed under the Unlicense License. See [`LICENSE.txt`](https://github.com/Banditov/PWL-Kelompok-5/blob/main/LICENSE.txt) for more information.
+Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for more information.
 
 
 ## Changelog
@@ -97,6 +96,6 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](https://github.com/
 - Tambahkan license
 
 
-## Link Terkait Website Ini
+## Links
 - [Figma - Mock-up](https://www.figma.com/design/LLrqwRu8kVeNYoYhqZ2jOe/PWL?node-id=0-1&t=mJ8mLZNfG32KhL0a-1)
 - [Figma - Flowchart](https://www.figma.com/board/VeHNnlabuOyT3nS0Fraw8t/Flowchart?node-id=0-1&t=5i79boHm57RZayuk-1)
