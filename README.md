@@ -1,6 +1,7 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 [![Changelog](https://img.shields.io/badge/changelog-md-blue)](./CHANGELOG.md)
 
+
 ### PWL Kelompok 5
 # ATK SKI
 
@@ -8,13 +9,16 @@
 
 Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
 
+
 ## Table of Contents
 - [Installasi](#installasi)
 - [Penggunaan](#penggunaan)
 - [Arsitektur](#arsitektur)
-- [Change Logs](#changelog)
 - [Kontributor](#kontributor)
 - [License](#license)
+- [Change Logs](#changelog)
+- [Useful Links](#link)
+
 
 ## Installasi
 ### Step 1
@@ -35,8 +39,10 @@ Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
 4. Tekan install & tunggu sampai selesai.
 5. Setelah sudah selesai, restart Visual Studio Code & ikuti step 2.1.
 
+
 ## Penggunaan
-  Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara lebih praktis. Guru, siswa, maupun pihak sekolah dapat melihat daftar barang yang tersedia, lengkap dengan informasi harga dan kategori. Dengan adanya fitur keranjang (cart), pengguna bisa memilih beberapa barang sekaligus sebelum melakukan pemesanan. Website ini membantu sekolah mengatur kebutuhan ATK secara lebih cepat, transparan, dan terorganisir tanpa harus melakukan pembelian manual.
+Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara lebih praktis. Guru, siswa, maupun pihak sekolah dapat melihat daftar barang yang tersedia, lengkap dengan informasi harga dan kategori. Dengan adanya fitur keranjang (cart), pengguna bisa memilih beberapa barang sekaligus sebelum melakukan pemesanan. Website ini membantu sekolah mengatur kebutuhan ATK secara lebih cepat, transparan, dan terorganisir tanpa harus melakukan pembelian manual.
+
 
 ## Arsitektur
 Front-end Developer <br>
@@ -51,16 +57,45 @@ Back-end Developer <br>
 UI/UX Designer <br>
 ![Made with Figma](https://img.shields.io/badge/design-Figma-F24E1E?logo=figma&logoColor=white)
 
-## Changelog
-See `CHANGELOG.md` for the information.
 
 ## Kontributor
 - [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.
 - [Nicholas J.G - "nikoe-ee"](https://github.com/nikoe-ee), sebagai front-end developer.
 - [Quinlen M. - "Kuin"](https://github.com/Kuinlin), sebagai UI/UX designer.
 
+
 ## License
-Distributed under the Unlicense License. See `LICENSE.txt` for more information.
+Distributed under the Unlicense License. See [`LICENSE.txt`](https://github.com/Banditov/PWL-Kelompok-5/blob/main/LICENSE.txt) for more information.
+
+
+## Changelog
+### 11/09/2025
+
+- Update README.md
+
+### 05/09/2025
+
+- Memulai membuat Home Page
+
+### 05/09/2025
+
+- Membuat workflow
+
+### 04/09/2025
+
+- Mengubah logo
+
+### 03/09/2025
+
+- Update README.md
+- Tambahkan issue
+- Menambahkan logo 
+
+### 02/09/2025
+
+- Update README.md
+- Tambahkan license
+
 
 ## Link Terkait Website Ini
 - [Figma - Mock-up](https://www.figma.com/design/LLrqwRu8kVeNYoYhqZ2jOe/PWL?node-id=0-1&t=mJ8mLZNfG32KhL0a-1)
