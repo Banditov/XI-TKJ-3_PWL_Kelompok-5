@@ -1,6 +1,5 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
-
 ### PWL Kelompok 5
 # ATK SKI
 
@@ -45,16 +44,17 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
 
 ## Arsitektur
 Front-end Developer <br>
-![Made with HTML](https://img.shields.io/badge/code-HTML-orange?logo=html5)
-![CSS](https://img.shields.io/badge/code-CSS-1572B6?logo=css3&logoColor=white)
-![Made with JavaScript](https://img.shields.io/badge/code-JavaScript-yellow?logo=javascript)
+![Made with HTML](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css&logoColor=white)
+![Made with JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white)
 
 Back-end Developer <br>
-![Made with PHP](https://img.shields.io/badge/code-PHP-777bb4?logo=php)
-![MySQL](https://img.shields.io/badge/code-MySQL-4479A1?logo=mysql&logoColor=white)
+![Made with PHP](https://img.shields.io/badge/PHP-777bb4?logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
 
 UI/UX Designer <br>
-![Made with Figma](https://img.shields.io/badge/design-Figma-F24E1E?logo=figma&logoColor=white)
+![Made with Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 
 
 ## Kontributor
