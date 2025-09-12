@@ -22,30 +22,30 @@ Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
 ### Step 1
 <details>
 1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").<br>
-   <img src="resources/tutorial/1-1.png">
+   <img src="resources/tutorial/1-1.png"><br>
 2. Unzip file tersebut dalam sebuah folder.<br>
-   <img src="resources/tutorial/1-2.png">
+   <img src="resources/tutorial/1-2.png"><br>
 3. Buka Visual Studio Code.<br>
-   <img src="resources/tutorial/1-3.png">
+   <img src="resources/tutorial/1-3.png"><br>
 </details>
   
 ### Step 2.1 (Apabila sudah memiliki plugin Live Server, apabila belum ikut step 2.2)
 <details>
 1. Open folder dimana anda mengekstrak file zip tersebut.<br>
    <img src="resources/tutorial/2-1-1.png">
-   <img src="resources/tutorial/2-1-2.png">
+   <img src="resources/tutorial/2-1-2.png"><br>
 2. Buka folder "Home" dan buka "homepage.html".<br>
-   <img src="resources/tutorial/2-2.png">
+   <img src="resources/tutorial/2-2.png"><br>
 3. Tekan "Go Live" pada kanan bawah.<br>
-   <img src="resources/tutorial/2-3.png">
+   <img src="resources/tutorial/2-3.png"><br>
 </details>
 
 ### Step 2.2
 <details>
 1. Buka tab extension.<br>
-   <img src="resources/tutorial/3-1.png">
+   <img src="resources/tutorial/3-1.png"><br>
 2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.<br>
-   <img src="resources/tutorial/3-2.png">
+   <img src="resources/tutorial/3-2.png"><br>
 </details>
 
 
