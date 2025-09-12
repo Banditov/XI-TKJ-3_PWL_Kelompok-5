@@ -5,7 +5,7 @@
 
 Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
 
-<img src="resources/images/Logo.png">
+<img src="resources/ui/image/logo.png">
 
 
 ## Table of Contents
