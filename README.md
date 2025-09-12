@@ -1,8 +1,21 @@
 
 <h1 align="center">ATK SKI</h1>
 
-<img src="resources/ui/image/github_banner.png">
 <p align="center">Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel.</p>
+
+<img src="resources/ui/image/github_banner.png">
+
+<div align="center">
+   <a href="http://unlicense.org/">
+      <img src="https://img.shields.io/badge/license-Unlicense-blue.svg">
+   </a>
+   <a href="">
+      <img src="https://img.shields.io/badge/version-0.0.1-yellow">
+   </a>
+   <a href="">
+      <img src="https://img.shields.io/badge/contributor-3-green">
+   </a>
+</div>
 
 ## Table of Contents
 - [Installasi](#installasi)
@@ -67,19 +80,22 @@ UI/UX Designer <br>
 
 
 ## Kontributor
-- [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.
-- [Nicholas J.G - "nikoe-ee"](https://github.com/nikoe-ee), sebagai front-end developer.
-- [Quinlen M. - "Kuin"](https://github.com/Kuinlin), sebagai UI/UX designer.
+<img src="https://avatars.githubusercontent.com/u/199484083?v=4" width=20> [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.<br>
+<img src="https://avatars.githubusercontent.com/u/226641704?v=4" width=20> [Nicholas J.G - "nikoe-ee"](https://github.com/nikoe-ee), sebagai front-end developer.<br>
+<img src="https://avatars.githubusercontent.com/u/226274994?v=4" width=20> [Quinlen M. - "Kuin"](https://github.com/Kuinlin), sebagai UI/UX designer.
 
 
 ## Lisensi
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)<br>
 Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for more information.
 
 
 ## Changelog
 <details>
-  
+
+### 13/09/2025 - 0.0.1
+
+- Update README.md
+
 ### 12/09/2025
 
 - Update README.md
