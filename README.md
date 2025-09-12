@@ -9,10 +9,10 @@
    <a href="http://unlicense.org/">
       <img src="https://img.shields.io/badge/license-Unlicense-blue.svg">
    </a>
-   <a href="https://github.com/Banditov/PWL-Kelompok-5/edit/main/README.md#changelog">
+   <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#changelog">
       <img src="https://img.shields.io/badge/version-0.0.1-yellow">
    </a>
-   <a href="https://github.com/Banditov/PWL-Kelompok-5/edit/main/README.md#kontributor">
+   <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#kontributor">
       <img src="https://img.shields.io/badge/contributor-3-green">
    </a>
 </div>
