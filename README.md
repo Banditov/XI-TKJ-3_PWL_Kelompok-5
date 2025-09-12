@@ -20,22 +20,33 @@ Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
 
 ## Installasi
 ### Step 1
-1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").
-2. Unzip file tersebut dalam sebuah folder.
-3. Buka Visual Studio Code.
-
+<details>
+1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").<br>
+   <img src="resources/tutorial/1-1.png">
+2. Unzip file tersebut dalam sebuah folder.<br>
+   <img src="resources/tutorial/1-2.png">
+3. Buka Visual Studio Code.<br>
+   <img src="resources/tutorial/1-3.png">
+</details>
+  
 ### Step 2.1 (Apabila sudah memiliki plugin Live Server, apabila belum ikut step 2.2)
-1. Open folder dimana anda mengekstrak file zip tersebut.
-2. Buka folder "Home" dan buka "homepage.html".
-3. Right-click isi dari source codenya.
-4. Tekan "Open with Live Server".
+<details>
+1. Open folder dimana anda mengekstrak file zip tersebut.<br>
+   <img src="resources/tutorial/2-1-1.png">
+   <img src="resources/tutorial/2-1-2.png">
+2. Buka folder "Home" dan buka "homepage.html".<br>
+   <img src="resources/tutorial/2-2.png">
+3. Tekan "Go Live" pada kanan bawah.<br>
+   <img src="resources/tutorial/2-3.png">
+</details>
 
 ### Step 2.2
-1. Buka Visual Studio Code.
-2. Buka tab extension.
-3. Cari extension "Live Server".
-4. Tekan install & tunggu sampai selesai.
-5. Setelah sudah selesai, restart Visual Studio Code & ikuti step 2.1.
+<details>
+1. Buka tab extension.<br>
+   <img src="resources/tutorial/3-1.png">
+2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.<br>
+   <img src="resources/tutorial/3-2.png">
+</details>
 
 
 ## Penggunaan
@@ -68,6 +79,8 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 
 
 ## Changelog
+<details>
+  
 ### 12/09/2025
 
 - Update README.md
@@ -99,7 +112,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 
 - Update README.md
 - Tambahkan license
-
+</details>
 
 ## Links
 - [Figma - Mock-up](https://www.figma.com/design/LLrqwRu8kVeNYoYhqZ2jOe/PWL?node-id=0-1&t=mJ8mLZNfG32KhL0a-1)
