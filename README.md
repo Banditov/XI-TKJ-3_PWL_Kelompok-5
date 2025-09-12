@@ -23,10 +23,10 @@ Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
 1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").
 2. Unzip file tersebut dalam sebuah folder.
 
-### Step 2.1 (Apabila sudah memiliki plugin Live Preview, apabila belum ikut step 2.2)
+### Step 2.1 (Apabila sudah memiliki plugin Live Server, apabila belum ikut step 2.2)
 1. Buka Visual Studio Code.
 2. Open folder dimana anda mengekstrak file zip tersebut.
-3. Buka file "homepage.php".
+3. Buka file "homepage.html".
 4. Right-click isi dari source codenya.
 5. Tekan "Open with Live Server".
 
@@ -39,7 +39,7 @@ Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
 
 
 ## Penggunaan
-Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara lebih praktis. Guru, siswa, maupun pihak sekolah dapat melihat daftar barang yang tersedia, lengkap dengan informasi harga dan kategori. Dengan adanya fitur keranjang (cart), pengguna bisa memilih beberapa barang sekaligus sebelum melakukan pemesanan. Website ini membantu sekolah mengatur kebutuhan ATK secara lebih cepat, transparan, dan terorganisir tanpa harus melakukan pembelian manual.
+Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara lebih praktis. Guru, siswa, maupun pihak sekolah dapat melihat daftar barang yang tersedia, lengkap dengan informasi harga dan kategori. Dengan adanya fitur keranjang, pengguna bisa memilih beberapa barang sekaligus sebelum melakukan pemesanan. Website ini membantu sekolah mengatur kebutuhan ATK secara lebih cepat, transparan, dan terorganisir tanpa harus melakukan pembelian manual.
 
 
 ## Arsitektur
