@@ -1,24 +1,22 @@
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
-### PWL Kelompok 5
-# ATK SKI
+<h1 align="center">ATK SKI</h1>
 
-Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
-
-<img src="resources/ui/image/logo.png">
-
+<img src="resources/ui/image/github_banner.png">
+<p align="center">Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel.</p>
 
 ## Table of Contents
 - [Installasi](#installasi)
 - [Penggunaan](#penggunaan)
 - [Arsitektur](#arsitektur)
 - [Kontributor](#kontributor)
-- [License](#license)
+- [Lisensi](#lisensi)
 - [Change Logs](#changelog)
 - [Useful Links](#links)
 
 
 ## Installasi
+<details>
+   
 ### Step 1
 <details>
 1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").<br>
@@ -47,7 +45,7 @@ Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
 2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.<br>
    <img src="resources/tutorial/3-2.png"><br>
 </details>
-
+</details>
 
 ## Penggunaan
 Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara lebih praktis. Guru, siswa, maupun pihak sekolah dapat melihat daftar barang yang tersedia, lengkap dengan informasi harga dan kategori. Dengan adanya fitur keranjang, pengguna bisa memilih beberapa barang sekaligus sebelum melakukan pemesanan. Website ini membantu sekolah mengatur kebutuhan ATK secara lebih cepat, transparan, dan terorganisir tanpa harus melakukan pembelian manual.
@@ -74,7 +72,8 @@ UI/UX Designer <br>
 - [Quinlen M. - "Kuin"](https://github.com/Kuinlin), sebagai UI/UX designer.
 
 
-## License
+## Lisensi
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)<br>
 Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for more information.
 
 
