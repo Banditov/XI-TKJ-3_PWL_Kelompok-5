@@ -22,13 +22,13 @@ Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel
 ### Step 1
 1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").
 2. Unzip file tersebut dalam sebuah folder.
+3. Buka Visual Studio Code.
 
 ### Step 2.1 (Apabila sudah memiliki plugin Live Server, apabila belum ikut step 2.2)
-1. Buka Visual Studio Code.
-2. Open folder dimana anda mengekstrak file zip tersebut.
-3. Buka file "homepage.html".
-4. Right-click isi dari source codenya.
-5. Tekan "Open with Live Server".
+1. Open folder dimana anda mengekstrak file zip tersebut.
+2. Buka folder "Home" dan buka "homepage.html".
+3. Right-click isi dari source codenya.
+4. Tekan "Open with Live Server".
 
 ### Step 2.2
 1. Buka Visual Studio Code.
@@ -68,6 +68,11 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 
 
 ## Changelog
+### 12/09/2025
+
+- Update README.md
+- Memasukin source code home page & login page ke dalam repository
+
 ### 11/09/2025
 
 - Update README.md
