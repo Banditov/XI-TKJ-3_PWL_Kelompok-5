@@ -29,34 +29,54 @@
 
 ## Installasi
 <details>
+
+### Step 1 (Gunakan step A apabila ingin menginstal versi unstable, gunakan step B untuk versi stable.)
+<details>
    
-### Step 1
+### Step 1A
 <details>
 1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").<br>
-   <img src="resources/tutorial/1-1.png"><br>
-2. Unzip file tersebut dalam sebuah folder.<br>
-   <img src="resources/tutorial/1-2.png"><br>
+   <img src="resources/tutorial/1A-1.png"><br>
+2. Unzip file tersebut.<br>
+   <img src="resources/tutorial/1A-2.png"><br>
 3. Buka Visual Studio Code.<br>
-   <img src="resources/tutorial/1-3.png"><br>
-</details>
-  
-### Step 2.1 (Apabila sudah memiliki plugin Live Server, apabila belum ikut step 2.2)
-<details>
-1. Open folder dimana anda mengekstrak file zip tersebut.<br>
-   <img src="resources/tutorial/2-1-1.png">
-   <img src="resources/tutorial/2-1-2.png"><br>
-2. Buka folder "Home" dan buka "homepage.html".<br>
-   <img src="resources/tutorial/2-2.png"><br>
-3. Tekan "Go Live" pada kanan bawah.<br>
-   <img src="resources/tutorial/2-3.png"><br>
+   <img src="resources/tutorial/1A-3.png"><br>
+4. Lanjut ke Step 2.
 </details>
 
-### Step 2.2
+### Step 1B
+<details>
+1. Buka page <a href="https://github.com/Banditov/PWL-Kelompok-5/releases">Releases</a> dari repository ini.<br>
+   <img src="resources/tutorial/1B-1.png"><br>
+2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".<br>
+   <img src="resources/tutorial/1B-2.png"><br>
+3. Unzip file tersebut.<br>
+   <img src="resources/tutorial/1B-3.png"><br>
+4. Buka Visual Studio Code.<br>
+   <img src="resources/tutorial/1B-4.png"><br>
+5. Lanjut ke Step 2.
+</details>
+</details>
+
+### Step 2 (Ikuti apabila belum memiliki extension Live Server dalam Visual Studio Code)
 <details>
 1. Buka tab extension.<br>
-   <img src="resources/tutorial/3-1.png"><br>
+   <img src="resources/tutorial/2-1.png"><br>
 2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.<br>
+   <img src="resources/tutorial/2-2.png"><br>
+3. Lanjut ke Step 3.
+</details>
+
+### Step 3
+<details>
+1. Open folder dimana anda mengekstrak file zip tersebut.<br>
+   <img src="resources/tutorial/3-1-1.png">
+   <img src="resources/tutorial/3-1-2.png"><br>
+2. Buka folder "Home" dan buka "homepage.html".<br>
    <img src="resources/tutorial/3-2.png"><br>
+3. Tekan "Go Live" pada kanan bawah.<br>
+   <img src="resources/tutorial/3-3.png"><br>
+<h3 align="center">Selesai!</h3>
 </details>
 </details>
 
