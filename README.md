@@ -142,7 +142,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ### 05/09/2025
 
 - Membuat workflow
-- Memulai membuat Home Page
+- Memulai pembuat Home Page
 
 ### 04/09/2025
 
