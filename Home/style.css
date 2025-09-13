@@ -183,11 +183,21 @@
     align-items: center;
 }
 
-#footerAbout {
-    max-width: 700px;
+#footer > img {
+    margin-right: 100px;
 }
 
-#footer > div > h4 {
+#footerAbout {
+    max-width: 600px;
+}
+
+#footerContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#footerContent > div > h4 {
     margin-bottom: 10px;
 }
 
@@ -229,7 +239,7 @@
     position: absolute;
     bottom: 20px;
     right: 20px;
-    z-index: 5;
+    z-index: 1;
     font-size: 20px;
 }
 
