@@ -18,6 +18,9 @@
 </div>
 
 ## Table of Contents
+<details>
+   <summary>Click to Expand</summary>
+   
 - [Installasi](#installasi)
 - [Penggunaan](#penggunaan)
 - [Arsitektur](#arsitektur)
@@ -25,16 +28,19 @@
 - [Lisensi](#lisensi)
 - [Change Logs](#changelog)
 - [Useful Links](#links)
+</details>
 
 
 ## Installasi
 <details>
-
-### Step 1 (Gunakan step A apabila ingin menginstal versi unstable, gunakan step B untuk versi stable.)
-<details>
+   <summary>Click to Expand</summary>
    
-### Step 1A
+### Step 1
 <details>
+   <summary>Pick a Version!</summary><br>
+   
+<details>
+   <summary>Unstable Version</summary>
 1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").<br>
    <img src="resources/tutorial/1A-1.png"><br>
 2. Unzip file tersebut.<br>
@@ -44,8 +50,8 @@
 4. Lanjut ke Step 2.
 </details>
 
-### Step 1B
 <details>
+   <summary>Stable Version</summary>
 1. Buka page <a href="https://github.com/Banditov/PWL-Kelompok-5/releases">Releases</a> dari repository ini.<br>
    <img src="resources/tutorial/1B-1.png"><br>
 2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".<br>
@@ -100,9 +106,9 @@ UI/UX Designer <br>
 
 
 ## Kontributor
-<img src="https://avatars.githubusercontent.com/u/199484083?v=4" width=20> [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.<br>
-<img src="https://avatars.githubusercontent.com/u/226641704?v=4" width=20> [Nicholas J.G - "nikoe-ee"](https://github.com/nikoe-ee), sebagai front-end developer.<br>
-<img src="https://avatars.githubusercontent.com/u/226274994?v=4" width=20> [Quinlen M. - "Kuin"](https://github.com/Kuinlin), sebagai UI/UX designer.
+<img src="https://avatars.githubusercontent.com/u/199484083" width="20"> [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.<br>
+<img src="https://avatars.githubusercontent.com/u/226641704" width="20"> [Nicholas J.G - "nikoe-ee"](https://github.com/nikoe-ee), sebagai front-end developer.<br>
+<img src="https://avatars.githubusercontent.com/u/226274994" width="20"> [Quinlen M. - "Kuin"](https://github.com/Kuinlin), sebagai UI/UX designer.
 
 
 ## Lisensi
@@ -111,10 +117,18 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 
 ## Changelog
 <details>
+   <summary>Click to Expand</summary>
+
+### 14/09/2025 - 0.0.1
+
+- Perubahan isi dalam README.md
 
 ### 13/09/2025 - 0.0.1
 
-- Update README.md
+- Perubahan README.md
+- Halaman home sudah responsive
+- Halaman home mendapatkan penambahan isi
+- Background halaman login diganti
 
 ### 12/09/2025
 
@@ -123,7 +137,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 
 ### 11/09/2025
 
-- Update README.md
+- Mengintegrasi CHANGELOG.md dengan README.md
 
 ### 05/09/2025
 
