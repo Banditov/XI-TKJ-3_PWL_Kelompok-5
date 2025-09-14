@@ -121,6 +121,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 
 ### 14/09/2025 - 0.0.1
 
+- Masalah halaman home tidak responsive dengan display Android sudah diperbaiki
 - Perubahan isi dalam README.md
 
 ### 13/09/2025 - 0.0.1
