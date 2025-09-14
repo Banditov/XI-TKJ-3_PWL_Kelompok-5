@@ -24,13 +24,31 @@ jobs:
     steps:
       - name: Install linters
         run: |
-          npm install -g stylelint eslint htmlhint
-
-      - name: Lint HTML files
-        run: htmlhint "**/*.html"
-
-      - name: Lint CSS files
-        run: stylelint "**/*.css" || true
-
-      - name: Lint JS files
-        run: eslint "**/*.js" || true
+          npm install -g htmlhint stylelint eslint
+          
+      - name: Lint HTML
+        run: |
+          FILES=$(find . -name "*.html")
+          if [ -n "$FILES" ]; then
+            htmlhint $FILES
+          else
+            echo "No HTML files found, skipping."
+          fi
+          
+      - name: Lint CSS
+        run: |
+          FILES=$(find . -name "*.css")
+          if [ -n "$FILES" ]; then
+            stylelint $FILES
+          else
+            echo "No CSS files found, skipping."
+          fi
+          
+      - name: Lint JS
+        run: |
+          FILES=$(find . -name "*.js")
+          if [ -n "$FILES" ]; then
+            eslint $FILES || true
+          else
+            echo "No JS files found, skipping."
+          fi
