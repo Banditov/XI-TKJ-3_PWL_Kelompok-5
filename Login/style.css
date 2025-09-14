@@ -8,8 +8,10 @@ body, html {
 }
 
 #background-container {
-    width: fit-content;
-    height: 100%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: unset;
 }
 
 .login-card {
