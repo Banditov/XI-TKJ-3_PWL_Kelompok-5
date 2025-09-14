@@ -122,6 +122,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ### 14/09/2025 - 0.0.1
 
 - Perubahan nama repository dari "PWL-Kelompok-5" menjadi "XI-TKJ-3_PWL_Kelompok-5"
+- Masalah halaman login tidak responsive dengan display Android sudah diperbaiki
 - Masalah halaman home tidak responsive dengan display Android sudah diperbaiki
 - Perubahan isi dalam README.md
 
