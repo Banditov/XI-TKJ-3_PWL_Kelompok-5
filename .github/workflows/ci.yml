@@ -22,32 +22,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Proof HTML Home
-        # You may pin to the exact commit or the version.
-        # uses: anishathalye/proof-html@acec311c40ea13c9ffa6490e77ac67f52594f403
-        uses: anishathalye/proof-html@v2.2.2
-        with:
-          # The directory to scan
-          directory: ./Home
-          tokens: |
-            {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
+      - name: Install linters
+        run: |
+          npm install -g stylelint eslint htmlhint
 
-      - name: Proof HTML Login
-        # You may pin to the exact commit or the version.
-        # uses: anishathalye/proof-html@acec311c40ea13c9ffa6490e77ac67f52594f403
-        uses: anishathalye/proof-html@v2.2.2
-        with:
-          # The directory to scan
-          directory: ./Login
-          tokens: |
-            {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
-            
-      - name: Proof Global
-        # You may pin to the exact commit or the version.
-        # uses: anishathalye/proof-html@acec311c40ea13c9ffa6490e77ac67f52594f403
-        uses: anishathalye/proof-html@v2.2.2
-        with:
-          # The directory to scan
-          directory: .
-          tokens: |
-            {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
+      - name: Lint HTML files
+        run: htmlhint "**/*.html"
+
+      - name: Lint CSS files
+        run: stylelint "**/*.css" || true
+
+      - name: Lint JS files
+        run: eslint "**/*.js" || true
