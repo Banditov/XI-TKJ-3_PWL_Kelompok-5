@@ -10,9 +10,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -22,33 +19,5 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Install linters
-        run: |
-          npm install -g htmlhint stylelint eslint
-          
-      - name: Lint HTML
-        run: |
-          FILES=$(find . -name "*.html")
-          if [ -n "$FILES" ]; then
-            htmlhint $FILES
-          else
-            echo "No HTML files found, skipping."
-          fi
-          
-      - name: Lint CSS
-        run: |
-          FILES=$(find . -name "*.css")
-          if [ -n "$FILES" ]; then
-            stylelint $FILES
-          else
-            echo "No CSS files found, skipping."
-          fi
-          
-      - name: Lint JS
-        run: |
-          FILES=$(find . -name "*.js")
-          if [ -n "$FILES" ]; then
-            eslint $FILES || true
-          else
-            echo "No JS files found, skipping."
-          fi
+    - name: Send greeting
+      run: echo "Hello ${{ inputs.name }}"
