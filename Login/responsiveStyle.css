@@ -1,0 +1,26 @@
+/* max dilakukan saat kurang */
+/* min dilakukan saat lebih */
+
+@media screen and (max-width: 1170px) {
+    .login-card {
+        zoom: 0.9;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .login-card {
+        zoom: 0.8;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .login-card {
+        zoom: 0.7;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login-card {
+        zoom: 0.6;
+    }
+}
