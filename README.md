@@ -3,7 +3,7 @@
 
 <p align="center">Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel.</p>
 
-<img src=".github/images/banner/github_banner.png">
+<img src="resources/ui/image/github_banner.png">
 
 <div align="center">
    <a href="http://unlicense.org/">
@@ -19,7 +19,7 @@
 
 ## Table of Contents
 <details>
-   <summary>Click to Expand</summary><br>
+   <summary>Click to Expand</summary>
    
 - [Installasi](#installasi)
 - [Penggunaan](#penggunaan)
@@ -41,83 +41,47 @@
    
 <details>
    <summary>Unstable Version</summary>
-1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/1A-1.png">
-   </details>
-2. Unzip file tersebut.
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/1A-2.png">
-   </details>
-3. Buka Visual Studio Code.
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/1A-3.png">
-   </details>
+1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").<br>
+   <img src="resources/tutorial/1A-1.png"><br>
+2. Unzip file tersebut.<br>
+   <img src="resources/tutorial/1A-2.png"><br>
+3. Buka Visual Studio Code.<br>
+   <img src="resources/tutorial/1A-3.png"><br>
 4. Lanjut ke Step 2.
 </details>
-<br>
+
 <details>
    <summary>Stable Version</summary>
-1. Buka page <a href="https://github.com/Banditov/PWL-Kelompok-5/releases">Releases</a> dari repository ini.
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/1B-1.png">
-   </details>
-2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/1B-2.png">
-   </details>
-3. Unzip file tersebut.
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/1B-3.png">
-   </details>
-4. Buka Visual Studio Code.
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/1B-4.png">
-   </details>
+1. Buka page <a href="https://github.com/Banditov/PWL-Kelompok-5/releases">Releases</a> dari repository ini.<br>
+   <img src="resources/tutorial/1B-1.png"><br>
+2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".<br>
+   <img src="resources/tutorial/1B-2.png"><br>
+3. Unzip file tersebut.<br>
+   <img src="resources/tutorial/1B-3.png"><br>
+4. Buka Visual Studio Code.<br>
+   <img src="resources/tutorial/1B-4.png"><br>
 5. Lanjut ke Step 2.
 </details>
 </details>
 
 ### Step 2 (Ikuti apabila belum memiliki extension Live Server dalam Visual Studio Code)
 <details>
-1. Buka tab extension.
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/2-1.png">
-   </details>
-2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/2-2.png">
-   </details>
+1. Buka tab extension.<br>
+   <img src="resources/tutorial/2-1.png"><br>
+2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.<br>
+   <img src="resources/tutorial/2-2.png"><br>
 3. Lanjut ke Step 3.
 </details>
 
 ### Step 3
 <details>
-1. Open folder dimana anda mengekstrak file zip tersebut.
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/3-1-1.png">
-      <img src=".github/images/tutorial/3-1-2.png">
-   </details>
-2. Buka folder "Home" dan buka "homepage.html".
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/3-2.png">
-   </details>
-3. Tekan "Go Live" pada kanan bawah.
-   <details>
-      <summary>Step</summary>
-      <img src=".github/images/tutorial/3-3.png">
-   </details>
+1. Open folder dimana anda mengekstrak file zip tersebut.<br>
+   <img src="resources/tutorial/3-1-1.png">
+   <img src="resources/tutorial/3-1-2.png"><br>
+2. Buka folder "Home" dan buka "homepage.html".<br>
+   <img src="resources/tutorial/3-2.png"><br>
+3. Tekan "Go Live" pada kanan bawah.<br>
+   <img src="resources/tutorial/3-3.png"><br>
 <h3 align="center">Selesai!</h3>
 </details>
 </details>
@@ -154,13 +118,6 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
-
-### 16/09/2025 - 0.2.0
-
-- Perubahan struktur
-- Penambahan file starter
-- Penambahan drop-down pada gambar tutorial dalam README.md
-- Penambahan database
 
 ### 14/09/2025 - 0.1.0
 
