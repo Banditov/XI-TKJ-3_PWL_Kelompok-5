@@ -108,7 +108,7 @@
       <img src=".github/images/tutorial/3-1-1.png">
       <img src=".github/images/tutorial/3-1-2.png">
    </details>
-2. Buka folder "Home" dan buka "homepage.html".
+2. Buka file "start.html".
    <details>
       <summary>Step</summary>
       <img src=".github/images/tutorial/3-2.png">
@@ -155,14 +155,25 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 <details>
    <summary>Click to Expand</summary>
 
-### 14/09/2025 - 0.0.1
+### 17/09/2025 - 0.2.0 ( Release )
+
+- Pembaruan instruksi instalasi
+
+### 16/09/2025 - 0.2.0 ( WIP )
+
+- Perubahan struktur
+- Penambahan file starter
+- Penambahan drop-down pada gambar tutorial dalam README.md
+- Penambahan database
+
+### 14/09/2025 - 0.1.0 ( Release )
 
 - Perubahan nama repository dari "PWL-Kelompok-5" menjadi "XI-TKJ-3_PWL_Kelompok-5"
 - Masalah halaman login tidak responsive dengan display Android sudah diperbaiki
 - Masalah halaman home tidak responsive dengan display Android sudah diperbaiki
 - Perubahan isi dalam README.md
 
-### 13/09/2025 - 0.0.1
+### 13/09/2025 - 0.0.1 ( Release )
 
 - Perubahan README.md
 - Halaman home sudah responsive
