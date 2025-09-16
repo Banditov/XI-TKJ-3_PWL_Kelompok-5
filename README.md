@@ -19,7 +19,7 @@
 
 ## Table of Contents
 <details>
-   <summary>Click to Expand</summary>
+   <summary>Click to Expand</summary><br>
    
 - [Installasi](#installasi)
 - [Penggunaan](#penggunaan)
