@@ -119,6 +119,12 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 <details>
    <summary>Click to Expand</summary>
 
+### 16/09/2025 - 0.2.0
+
+- Perubahan struktur
+- Penambahan file starter
+- Penambahan drop-down pada gambar tutorial dalam README.md
+
 ### 14/09/2025 - 0.1.0
 
 - Perubahan nama repository dari "PWL-Kelompok-5" menjadi "XI-TKJ-3_PWL_Kelompok-5"
