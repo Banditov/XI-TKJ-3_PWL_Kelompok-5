@@ -238,3 +238,35 @@
         zoom: 1.3;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .stationeryProducts {
+        zoom: 1.4;
+    }
+
+    #nav {
+        padding: 10px 40px 10px 20px;
+        zoom: 0.7;
+    }
+
+    #header {
+        padding: 20px 40px 20px 40px;
+        zoom: 0.8;
+    }
+
+    #homeTitle {
+        zoom: 0.9;
+    }
+
+    #footer {
+        zoom: 1.2;
+    }
+
+    #homeSection {
+        padding: 30px 20px 0px 20px;
+    }
+
+    .bookProducts {
+        justify-content: center;
+    }
+}
