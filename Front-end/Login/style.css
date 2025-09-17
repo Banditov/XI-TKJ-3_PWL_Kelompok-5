@@ -10,8 +10,8 @@ body, html {
 #background-container {
     position: absolute;
     display: block;
-    width: 100%;
-    height: unset;
+    width: unset;
+    height: 100%;
 }
 
 .login-card {
