@@ -155,6 +155,10 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 <details>
    <summary>Click to Expand</summary>
 
+### 17/09/2025 - 0.2.1 ( WIP )
+
+- Perbaiki masalah responsivity halaman home apabila zoom keluar
+
 ### 17/09/2025 - 0.2.0 ( Release )
 
 - Pembaruan instruksi instalasi
