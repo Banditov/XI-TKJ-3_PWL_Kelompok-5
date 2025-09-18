@@ -9,7 +9,7 @@ import './Header.css'
 function Header() {
 
     return (
-    <>
+    <header>
         <div id="header">
             <img src={logo} id="logo" />
             <a href="/Front-end/Login/login.html">
@@ -46,7 +46,7 @@ function Header() {
                 </a>
             </div>
         </div>
-    </>
+    </header>
     )
 }
 
