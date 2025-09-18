@@ -13,11 +13,11 @@ function Header() {
         <div id="header">
             <img src={logo} id="logo" />
             <a href="/Front-end/Login/login.html">
-                <img src={account} class="accountIcon" />
+                <img src={account} className="accountIcon" />
             </a>
         </div>
         <div id="nav">
-            <div class="navSection">
+            <div className="navSection">
                 <a href="home.html">
                     <div className="navTab">
                         <img src={home} />
