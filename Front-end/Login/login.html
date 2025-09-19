@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="/Front-end/Login/style.css">
-    <link rel="stylesheet" type="text/css" href="/Front-end/globalStyle.css">
-    <link rel="stylesheet" type="text/css" href="/Front-end/Login/responsiveStyle.css">
-    <title>ATK SKI - Login</title>
-</head>
-<body>
-    <img src="/Front-end/resources/image/login_background.png" id="background-container">
-    <div class="login-card">
-        <h1>Yuk, masuk untuk melanjutkan!</h1>
-        <form id="loginForm">
-            <div class="input-group">
-                <input type="email" id="email" class="input-field" placeholder="Email Sekolah" required>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>ATK SKI - Login</title>
+        <link rel="stylesheet" type="text/css" href="/Front-end/Login/style.css">
+        <link rel="stylesheet" type="text/css" href="/Front-end/globalStyle.css">
+        <link rel="stylesheet" type="text/css" href="/Front-end/Login/responsiveStyle.css">
+    </head>
+    <body>
+        <div id="loginBackground">
+            <img src="/Front-end/resources/image/login_background.png">
+        </div>
+        <div id="centerForm">
+            <div class="loginForm">
+                <b>Yuk, masuk untuk melanjutkan!</b>
+                <form id="loginForm" action="/Front-end/Home/home.html">
+                    <div class="inputForm">
+                        <input type="email" id="email" class="inputField" placeholder="Email Sekolah" required>
+                    </div>
+                    <div class="inputForm">
+                        <input type="password" id="password" class="inputField" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="submitButton">Lanjut</button>
+                </form>
             </div>
-            <div class="input-group">
-                <input type="password" id="password" class="input-field" placeholder="Password" required>
-            </div>
-            <button type="submit" class="submit-btn">Lanjut</button>
-        </form>
-    </div>
-    <script src="/Front-end/Login/script.js"></script>
-</body>
+        </div>
+    </body>
 </html>
