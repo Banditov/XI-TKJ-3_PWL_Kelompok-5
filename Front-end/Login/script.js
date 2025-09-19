@@ -6,6 +6,6 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 
     // Only redirect if both fields have values
     if (email && password) {
-    window.location.href = "/Home/home.html"; 
+    window.location.href = "/Front-end/Home/home.html"; 
     }
 });
