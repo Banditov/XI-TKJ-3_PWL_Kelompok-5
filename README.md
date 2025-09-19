@@ -37,9 +37,11 @@
 </details>
 
 
-## Installasi
+## Instalasi
 <details>
-   <summary>Click to Expand</summary>
+   <summary>Pilih antara instalasi secara lokal atau online</summary>
+<details>
+   <summary>Lokal</summary>
    
 ### Step 1
 <details>
@@ -125,6 +127,12 @@
       <img src=".github/images/tutorial/3-3.png">
    </details>
 <h3 align="center">Selesai!</h3>
+</details>
+</details>
+
+<details>
+   <summary>Online</summary>
+   
 </details>
 </details>
 
