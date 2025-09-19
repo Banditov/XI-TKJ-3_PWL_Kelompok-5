@@ -91,6 +91,13 @@
     .bookProducts {
         zoom: 1;
     }
+
+
+    #footer,
+    #nav,
+    #header {
+        zoom: 1;
+    }
 }
 
 @media screen and (max-width: 1700px) {
