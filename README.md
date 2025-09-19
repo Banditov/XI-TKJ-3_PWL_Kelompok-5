@@ -176,6 +176,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ### 18/09/2025 - 0.2.1 ( Release )
 
 - Beberapa masalah kecil diperbaiki
+- Penambahan instruksi penggunaan secara online & mobile
 
 ### 18/09/2025 - 0.2.1 ( WIP )
 
