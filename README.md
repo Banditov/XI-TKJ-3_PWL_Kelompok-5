@@ -7,13 +7,19 @@
 
 <div align="center">
    <a href="http://unlicense.org/">
-      <img src="https://img.shields.io/badge/license-Unlicense-blue.svg">
+      <img src="https://img.shields.io/badge/License-Unlicense-blue.svg">
    </a>
    <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/version-0.2.0-yellow">
+      <img src="https://img.shields.io/badge/Version-0.2.1-yellow">
    </a>
    <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#kontributor">
-      <img src="https://img.shields.io/badge/contributor-3-green">
+      <img src="https://img.shields.io/badge/Contributor-3-green">
+   </a>
+   <a href="https://app.netlify.com/projects/atkski/deploys">
+      <img src="https://img.shields.io/badge/Netlify-0.2.1-2E51ED?style=flat&logo=Netlify&logoColor=white">
+   </a><br>
+   <a href="https://app.netlify.com/projects/atkski/deploys">
+      <img src="https://api.netlify.com/api/v1/badges/11368017-fe23-41df-b99b-f94ff06ccccc/deploy-status">
    </a>
 </div>
 
@@ -155,6 +161,15 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 <details>
    <summary>Click to Expand</summary>
 
+### 18/09/2025 - 0.2.1 ( Release )
+
+- Beberapa masalah kecil diperbaiki
+
+### 18/09/2025 - 0.2.1 ( WIP )
+
+- Branch baru untuk belajar React.JS dibuat
+- Deploy website menggunakan Netlify
+
 ### 17/09/2025 - 0.2.1 ( WIP )
 
 - Perbaiki masalah responsivity halaman home apabila zoom keluar
@@ -217,3 +232,4 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Links
 - [Figma - Mock-up](https://www.figma.com/design/LLrqwRu8kVeNYoYhqZ2jOe/PWL?node-id=0-1&t=mJ8mLZNfG32KhL0a-1)
 - [Figma - Flowchart](https://www.figma.com/board/VeHNnlabuOyT3nS0Fraw8t/Flowchart?node-id=0-1&t=5i79boHm57RZayuk-1)
+- [Netlify](https://atkski.netlify.app)
