@@ -206,7 +206,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 
 - Penambahan instruksi penggunaan secara online & mobile
 
-### 18/09/2025 - 0.2.1 ( Release )
+### 18/09/2025 - 0.2.1 ( WIP )
 
 - Beberapa masalah kecil diperbaiki
 
