@@ -201,6 +201,10 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
+   
+### 21/09/2025 - 0.3.0 ( WIP )
+
+- Tambahan ikon pada tab browser
 
 ### 21/09/2025 - 0.2.1 ( Release )
 
