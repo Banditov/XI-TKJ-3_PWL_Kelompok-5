@@ -27,7 +27,7 @@
 <details>
    <summary>Click to Expand</summary>
    
-- [Installasi](#installasi)
+- [Instalasi](#instalasi)
 - [Penggunaan](#penggunaan)
 - [Arsitektur](#arsitektur)
 - [Kontributor](#kontributor)
@@ -51,17 +51,17 @@
    <summary>Unstable Version</summary>
 1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").
    <details>
-      <summary>Step</summary>
+      <summary>Step 1A-1</summary>
       <img src=".github/images/tutorial/1A-1.png">
    </details>
 2. Unzip file tersebut.
    <details>
-      <summary>Step</summary>
+      <summary>Step 1A-2</summary>
       <img src=".github/images/tutorial/1A-2.png">
    </details>
 3. Buka Visual Studio Code.
    <details>
-      <summary>Step</summary>
+      <summary>Step 1A-3</summary>
       <img src=".github/images/tutorial/1A-3.png">
    </details>
 4. Lanjut ke Step 2.
@@ -71,22 +71,22 @@
    <summary>Stable Version</summary>
 1. Buka page <a href="https://github.com/Banditov/PWL-Kelompok-5/releases">Releases</a> dari repository ini.
    <details>
-      <summary>Step</summary>
+      <summary>Step 1B-1</summary>
       <img src=".github/images/tutorial/1B-1.png">
    </details>
 2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".
    <details>
-      <summary>Step</summary>
+      <summary>Step 1B-2</summary>
       <img src=".github/images/tutorial/1B-2.png">
    </details>
 3. Unzip file tersebut.
    <details>
-      <summary>Step</summary>
+      <summary>Step 1B-3</summary>
       <img src=".github/images/tutorial/1B-3.png">
    </details>
 4. Buka Visual Studio Code.
    <details>
-      <summary>Step</summary>
+      <summary>Step 1B-4</summary>
       <img src=".github/images/tutorial/1B-4.png">
    </details>
 5. Lanjut ke Step 2.
@@ -95,14 +95,15 @@
 
 ### Step 2 (Ikuti apabila belum memiliki extension Live Server dalam Visual Studio Code)
 <details>
+   <summary>Step 2</summary>
 1. Buka tab extension.
    <details>
-      <summary>Step</summary>
+      <summary>Step 2-1</summary>
       <img src=".github/images/tutorial/2-1.png">
    </details>
 2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.
    <details>
-      <summary>Step</summary>
+      <summary>Step 2-2</summary>
       <img src=".github/images/tutorial/2-2.png">
    </details>
 3. Lanjut ke Step 3.
@@ -110,20 +111,21 @@
 
 ### Step 3
 <details>
+   <summary>Step 3</summary>
 1. Open folder dimana kamu mengekstrak file zip tersebut.
    <details>
-      <summary>Step</summary>
+      <summary>Step 3-1</summary>
       <img src=".github/images/tutorial/3-1-1.png">
       <img src=".github/images/tutorial/3-1-2.png">
    </details>
 2. Buka file "start.html".
    <details>
-      <summary>Step</summary>
+      <summary>Step 3-2</summary>
       <img src=".github/images/tutorial/3-2.png">
    </details>
 3. Tekan "Go Live" pada kanan bawah.
    <details>
-      <summary>Step</summary>
+      <summary>Step 3-3</summary>
       <img src=".github/images/tutorial/3-3.png">
    </details>
 <h3 align="center">Selesai!</h3>
@@ -131,15 +133,16 @@
 
 ### Step 4 (Apabila ingin membuka website ini di HP)
 <details>
+   <summary>Step 4</summary>
 1. Cari private IPv4 komputer kamu (Dapat dicari di properties wifi)
    <details>
-      <summary>Step</summary>
+      <summary>Step 4-1</summary>
       <img src=".github/images/tutorial/4-1-1.png">
       <img src=".github/images/tutorial/4-1-2.png">
    </details>
 2. Cari port dari server
    <details>
-      <summary>Step</summary>
+      <summary>Step 4-2</summary>
       <img src=".github/images/tutorial/4-2.png">
    </details>
 3. Buka browser di HP kamu dan masukin informasi yang sudah didapati dengan format<br>
@@ -199,7 +202,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 <details>
    <summary>Click to Expand</summary>
 
-### 18/09/2025 - 0.2.2 ( WIP )
+### 21/09/2025 - 0.2.1 ( Release )
 
 - Penambahan instruksi penggunaan secara online & mobile
 
