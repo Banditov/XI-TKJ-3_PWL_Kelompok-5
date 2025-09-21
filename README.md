@@ -110,7 +110,7 @@
 
 ### Step 3
 <details>
-1. Open folder dimana anda mengekstrak file zip tersebut.
+1. Open folder dimana kamu mengekstrak file zip tersebut.
    <details>
       <summary>Step</summary>
       <img src=".github/images/tutorial/3-1-1.png">
@@ -128,10 +128,36 @@
    </details>
 <h3 align="center">Selesai!</h3>
 </details>
-</details>
 
+### Step 4 (Apabila ingin membuka website ini di HP)
 <details>
-   <summary>Online</summary>
+1. Cari private IPv4 komputer kamu (Dapat dicari di properties wifi)
+   <details>
+      <summary>Step</summary>
+      <img src=".github/images/tutorial/4-1-1.png">
+      <img src=".github/images/tutorial/4-1-2.png">
+   </details>
+2. Cari port dari server
+   <details>
+      <summary>Step</summary>
+      <img src=".github/images/tutorial/4-2.png">
+   </details>
+3. Buka browser di HP kamu dan masukin informasi yang sudah didapati dengan format<br>
+   
+   `(IP Komputer):(Port Server)/start.html`
+   <details>
+      <summary>Contoh</summary>
+      <img src=".github/images/tutorial/4-3.jpg">
+   </details>
+<h3 align="center">Selesai!</h3>
+</details>
+</details>
+<br>
+<details>
+   <summary>Online (Tidak perlu install)</summary>
+<a href="https://atkski.netlify.app">Tekan aku!</a><br>
+Note tambahan:<br>
+Website lewat link ini mungkin tidak up-to-date dengan versi rilis dalam GitHub (Dapat cek badge versi Netlify pada bagian atas) dan juga ada kemungkinan website ini tidak online.
    
 </details>
 </details>
@@ -173,10 +199,13 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 <details>
    <summary>Click to Expand</summary>
 
+### 18/09/2025 - 0.2.2 ( WIP )
+
+- Penambahan instruksi penggunaan secara online & mobile
+
 ### 18/09/2025 - 0.2.1 ( Release )
 
 - Beberapa masalah kecil diperbaiki
-- Penambahan instruksi penggunaan secara online & mobile
 
 ### 18/09/2025 - 0.2.1 ( WIP )
 
