@@ -178,7 +178,6 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
 <b>-- Back-end Development --</b> <br>
 ![PHP](https://img.shields.io/badge/PHP-777bb4?logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)
 
 <b>-- UI/UX Design --</b> <br>
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
@@ -202,6 +201,11 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 <details>
    <summary>Click to Expand</summary>
    
+### 21/09/2025 - 0.3.0 ( WIP )
+
+- Penghapusan Laravel dari arsitektur
+- Struktur telah direorganisir
+
 ### 21/09/2025 - 0.3.0 ( WIP )
 
 - Tambahan ikon pada tab browser
