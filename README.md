@@ -203,6 +203,11 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
    
 ### 21/09/2025 - 0.3.0 ( WIP )
 
+- Penghapusan Laravel dari arsitektur
+- Struktur telah direorganisir
+
+### 21/09/2025 - 0.3.0 ( WIP )
+
 - Tambahan ikon pada tab browser
 
 ### 21/09/2025 - 0.2.1 ( Release )
