@@ -3,17 +3,23 @@
 
 <p align="center">Sebuah website untuk ATK sekolah khusus SMK Kristen Immanuel.</p>
 
-<img src="resources/ui/image/github_banner.png">
+<img src=".github/images/banner/github_banner.png">
 
 <div align="center">
    <a href="http://unlicense.org/">
-      <img src="https://img.shields.io/badge/license-Unlicense-blue.svg">
+      <img src="https://img.shields.io/badge/License-Unlicense-c53535.svg">
    </a>
    <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/version-0.0.1-yellow">
+      <img src="https://img.shields.io/badge/Version-0.2.1-yellow">
    </a>
    <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#kontributor">
-      <img src="https://img.shields.io/badge/contributor-3-green">
+      <img src="https://img.shields.io/badge/Contributor-3-green">
+   </a>
+   <a href="https://app.netlify.com/projects/atkski/deploys">
+      <img src="https://img.shields.io/badge/Netlify-0.2.1-00C7B7?style=flat&logo=Netlify&logoColor=white">
+   </a><br>
+   <a href="https://app.netlify.com/projects/atkski/deploys">
+      <img src="https://api.netlify.com/api/v1/badges/11368017-fe23-41df-b99b-f94ff06ccccc/deploy-status">
    </a>
 </div>
 
@@ -21,7 +27,7 @@
 <details>
    <summary>Click to Expand</summary>
    
-- [Installasi](#installasi)
+- [Instalasi](#instalasi)
 - [Penggunaan](#penggunaan)
 - [Arsitektur](#arsitektur)
 - [Kontributor](#kontributor)
@@ -31,9 +37,11 @@
 </details>
 
 
-## Installasi
+## Instalasi
 <details>
-   <summary>Click to Expand</summary>
+   <summary>Pilih antara instalasi secara lokal atau online</summary>
+<details>
+   <summary>Lokal</summary>
    
 ### Step 1
 <details>
@@ -41,48 +49,119 @@
    
 <details>
    <summary>Unstable Version</summary>
-1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").<br>
-   <img src="resources/tutorial/1A-1.png"><br>
-2. Unzip file tersebut.<br>
-   <img src="resources/tutorial/1A-2.png"><br>
-3. Buka Visual Studio Code.<br>
-   <img src="resources/tutorial/1A-3.png"><br>
+1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").
+   <details>
+      <summary>Step 1A-1</summary>
+      <img src=".github/images/tutorial/1A-1.png">
+   </details>
+2. Unzip file tersebut.
+   <details>
+      <summary>Step 1A-2</summary>
+      <img src=".github/images/tutorial/1A-2.png">
+   </details>
+3. Buka Visual Studio Code.
+   <details>
+      <summary>Step 1A-3</summary>
+      <img src=".github/images/tutorial/1A-3.png">
+   </details>
 4. Lanjut ke Step 2.
 </details>
-
+<br>
 <details>
    <summary>Stable Version</summary>
-1. Buka page <a href="https://github.com/Banditov/PWL-Kelompok-5/releases">Releases</a> dari repository ini.<br>
-   <img src="resources/tutorial/1B-1.png"><br>
-2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".<br>
-   <img src="resources/tutorial/1B-2.png"><br>
-3. Unzip file tersebut.<br>
-   <img src="resources/tutorial/1B-3.png"><br>
-4. Buka Visual Studio Code.<br>
-   <img src="resources/tutorial/1B-4.png"><br>
+1. Buka page <a href="https://github.com/Banditov/PWL-Kelompok-5/releases">Releases</a> dari repository ini.
+   <details>
+      <summary>Step 1B-1</summary>
+      <img src=".github/images/tutorial/1B-1.png">
+   </details>
+2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".
+   <details>
+      <summary>Step 1B-2</summary>
+      <img src=".github/images/tutorial/1B-2.png">
+   </details>
+3. Unzip file tersebut.
+   <details>
+      <summary>Step 1B-3</summary>
+      <img src=".github/images/tutorial/1B-3.png">
+   </details>
+4. Buka Visual Studio Code.
+   <details>
+      <summary>Step 1B-4</summary>
+      <img src=".github/images/tutorial/1B-4.png">
+   </details>
 5. Lanjut ke Step 2.
 </details>
 </details>
 
 ### Step 2 (Ikuti apabila belum memiliki extension Live Server dalam Visual Studio Code)
 <details>
-1. Buka tab extension.<br>
-   <img src="resources/tutorial/2-1.png"><br>
-2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.<br>
-   <img src="resources/tutorial/2-2.png"><br>
+   <summary>Step 2</summary>
+1. Buka tab extension.
+   <details>
+      <summary>Step 2-1</summary>
+      <img src=".github/images/tutorial/2-1.png">
+   </details>
+2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.
+   <details>
+      <summary>Step 2-2</summary>
+      <img src=".github/images/tutorial/2-2.png">
+   </details>
 3. Lanjut ke Step 3.
 </details>
 
 ### Step 3
 <details>
-1. Open folder dimana anda mengekstrak file zip tersebut.<br>
-   <img src="resources/tutorial/3-1-1.png">
-   <img src="resources/tutorial/3-1-2.png"><br>
-2. Buka folder "Home" dan buka "homepage.html".<br>
-   <img src="resources/tutorial/3-2.png"><br>
-3. Tekan "Go Live" pada kanan bawah.<br>
-   <img src="resources/tutorial/3-3.png"><br>
+   <summary>Step 3</summary>
+1. Open folder dimana kamu mengekstrak file zip tersebut.
+   <details>
+      <summary>Step 3-1</summary>
+      <img src=".github/images/tutorial/3-1-1.png">
+      <img src=".github/images/tutorial/3-1-2.png">
+   </details>
+2. Buka file "start.html".
+   <details>
+      <summary>Step 3-2</summary>
+      <img src=".github/images/tutorial/3-2.png">
+   </details>
+3. Tekan "Go Live" pada kanan bawah.
+   <details>
+      <summary>Step 3-3</summary>
+      <img src=".github/images/tutorial/3-3.png">
+   </details>
 <h3 align="center">Selesai!</h3>
+</details>
+
+### Step 4 (Apabila ingin membuka website ini di HP)
+<details>
+   <summary>Step 4</summary>
+1. Cari private IPv4 komputer kamu (Dapat dicari di properties wifi)
+   <details>
+      <summary>Step 4-1</summary>
+      <img src=".github/images/tutorial/4-1-1.png">
+      <img src=".github/images/tutorial/4-1-2.png">
+   </details>
+2. Cari port dari server
+   <details>
+      <summary>Step 4-2</summary>
+      <img src=".github/images/tutorial/4-2.png">
+   </details>
+3. Buka browser di HP kamu dan masukin informasi yang sudah didapati dengan format<br>
+   
+   `(IP Komputer):(Port Server)/start.html`
+   <details>
+      <summary>Contoh</summary>
+      <img src=".github/images/tutorial/4-3.jpg">
+   </details>
+<h3 align="center">Selesai!</h3>
+</details>
+</details>
+<br>
+<details>
+   <summary>Online (Tidak perlu install)</summary>
+<a href="https://atkski.netlify.app">Tekan aku!</a><br>
+Note tambahan:<br>
+Website lewat link ini mungkin tidak up-to-date dengan versi rilis dalam GitHub (Dapat cek badge versi Netlify pada bagian atas) dan juga ada kemungkinan website ini tidak online.
+   
 </details>
 </details>
 
@@ -91,18 +170,21 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
 
 
 ## Arsitektur
-Front-end Developer <br>
+<b>-- Front-end Development --</b> <br>
 ![HTML](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white)
 
-Back-end Developer <br>
+<b>-- Back-end Development --</b> <br>
 ![PHP](https://img.shields.io/badge/PHP-777bb4?logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)
 
-UI/UX Designer <br>
+<b>-- UI/UX Design --</b> <br>
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
+
+<b>! -- Proyek Terpisah -- !</b> <br>
+![React.JS](https://img.shields.io/badge/React.JS-087EA4?logo=react&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
 
 
 ## Kontributor
@@ -118,15 +200,52 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
+   
+### 21/09/2025 - 0.3.0 ( WIP )
 
-### 14/09/2025 - 0.1.0
+- Penghapusan Laravel dari arsitektur
+- Struktur telah direorganisir
+
+### 21/09/2025 - 0.3.0 ( WIP )
+
+- Tambahan ikon pada tab browser
+
+### 21/09/2025 - 0.2.1 ( Release )
+
+- Penambahan instruksi penggunaan secara online & mobile
+
+### 18/09/2025 - 0.2.1 ( WIP )
+
+- Beberapa masalah kecil diperbaiki
+
+### 18/09/2025 - 0.2.1 ( WIP )
+
+- Branch baru untuk belajar React.JS dibuat
+- Deploy website menggunakan Netlify
+
+### 17/09/2025 - 0.2.1 ( WIP )
+
+- Perbaiki masalah responsivity halaman home apabila zoom keluar
+
+### 17/09/2025 - 0.2.0 ( Release )
+
+- Pembaruan instruksi instalasi
+
+### 16/09/2025 - 0.2.0 ( WIP )
+
+- Perubahan struktur
+- Penambahan file starter
+- Penambahan drop-down pada gambar tutorial dalam README.md
+- Penambahan database
+
+### 14/09/2025 - 0.1.0 ( Release )
 
 - Perubahan nama repository dari "PWL-Kelompok-5" menjadi "XI-TKJ-3_PWL_Kelompok-5"
 - Masalah halaman login tidak responsive dengan display Android sudah diperbaiki
 - Masalah halaman home tidak responsive dengan display Android sudah diperbaiki
 - Perubahan isi dalam README.md
 
-### 13/09/2025 - 0.0.1
+### 13/09/2025 - 0.0.1 ( Release )
 
 - Perubahan README.md
 - Halaman home sudah responsive
@@ -166,3 +285,4 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Links
 - [Figma - Mock-up](https://www.figma.com/design/LLrqwRu8kVeNYoYhqZ2jOe/PWL?node-id=0-1&t=mJ8mLZNfG32KhL0a-1)
 - [Figma - Flowchart](https://www.figma.com/board/VeHNnlabuOyT3nS0Fraw8t/Flowchart?node-id=0-1&t=5i79boHm57RZayuk-1)
+- [Netlify](https://atkski.netlify.app)
