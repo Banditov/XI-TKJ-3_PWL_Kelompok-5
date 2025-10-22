@@ -200,7 +200,12 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
-   
+
+### 22/10/2025 - 0.3.0 ( WIP )
+
+- Database terintegrasi dengan halaman home
+- Halaman home dibagi menjadi beberapa komponen
+
 ### 21/09/2025 - 0.3.0 ( WIP )
 
 - Penghapusan Laravel dari arsitektur
