@@ -20,44 +20,7 @@
 
 <!-- Header -->
 
-        <header>
-            <div id="header">
-                <img src="/front-end/global/resources/image/logo.png" id="logo">
-                <a href="/front-end/pages/login/login.html">
-                    <img src="/front-end/global/resources/image/account.png" class="accountIcon">
-                </a>
-            </div>
-            <div id="nav">
-                <div class="navSection">
-                    <a href="home.html">
-                        <div class="navTab">
-                            <img src="/front-end/global/resources/image/home.png">
-                            <p id="selectedTab">HOME</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="navTab">
-                            <img src="/front-end/global/resources/image/category.png">
-                            <p>SHOP BY <b>CATEGORY</b></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="navSection">
-                    <a href="">
-                        <div class="navTab">
-                            <img src="/front-end/global/resources/image/history.png">
-                            <p>HISTORY</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="navTab">
-                            <img src="/front-end/global/resources/image/wishlist.png">
-                            <p>WISHLIST</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </header>
+        <?php include '../../components/header/header.php'; ?>
 
 <!-- Banner -->
 
@@ -161,34 +124,6 @@
 
 <!-- Footer -->
 
-        <footer>
-            <div id="footer">
-                <img src="/front-end/global/resources/image/logo.png" id="logo">
-                <div id="footerContent">
-                    <div id="footerAbout">
-                        <h4><b>About This Website</b></h4>
-                        <h5>Website ini memudahkan pemesanan alat tulis sekolah secara online. Pengguna dapat mengecek stok, mengurangi antrean, dan melakukan pembayaran langsung dengan cepat dan praktis.</h5>
-                    </div>
-                    <div>
-                        <h4><b>Helpful Link</b></h4>
-                        <p>FAQs</p>
-                    </div>
-                    <div>
-                        <h4><b>Contact Us</b></h4>
-                        <div class="contact">
-                            <img src="/front-end/global/resources/image/email.png">
-                            <h5>ATKski@ski.sch.id</h5>
-                        </div>
-                        <div class="contact">
-                            <img src="/front-end/global/resources/image/phone.png">
-                            <h5>+62896-1224-0668</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include '../../components/footer/footer.php'; ?>
     </body>
-
 </html>
-
-

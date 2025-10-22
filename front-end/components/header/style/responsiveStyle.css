@@ -1,0 +1,124 @@
+/* max dilakukan saat kurang */
+/* min dilakukan saat lebih */
+
+@media screen and (min-width: 5500px) {
+    #nav,
+    #header {
+        zoom: 5;
+    }
+}
+
+@media screen and (max-width: 5500px) {
+    #nav,
+    #header {
+        zoom: 4;
+    }
+}
+
+@media screen and (max-width: 3500px) {
+    #nav,
+    #header {
+        zoom: 2.5;
+    }
+}
+
+@media screen and (max-width: 2600px) {
+    #nav,
+    #header {
+        zoom: 1.8;
+    }
+}
+
+@media screen and (max-width: 2300px) {
+    #nav,
+    #header {
+        zoom: 1.8;
+    }
+}
+
+@media screen and (max-width: 2200px) {
+    #nav,
+    #header {
+        zoom: 1.7;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    #nav,
+    #header {
+        zoom: 1.4;
+    }
+}
+
+@media screen and (max-width: 1850px) {
+    #nav,
+    #header {
+        zoom: 1;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    header {
+        zoom: 0.9;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    header {
+        zoom: 0.8;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    #nav,
+    #header {
+        zoom: 1.5;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #nav,
+    #header {
+        zoom: 1.4;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #nav,
+    #header {
+        zoom: 1.2;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    #nav,
+    #header {
+        zoom: 1.1;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    #nav,
+    #header {
+        zoom: 1.1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #nav,
+    #header {
+        zoom: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav {
+        padding: 10px 40px 10px 20px;
+        zoom: 0.7;
+    }
+
+    #header {
+        padding: 20px 40px 20px 40px;
+        zoom: 0.8;
+    }
+}
