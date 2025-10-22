@@ -1,7 +1,7 @@
 <?php
-    require_once(__DIR__ . '/../../../back-end/actions/products/get-home-products.php');
-    require_once(__DIR__ . '/../../../back-end/actions/products/get-books.php');
-    require_once(__DIR__ . '/../../../back-end/actions/products/get-product-colours.php');
+    require_once __DIR__ . '/../../../back-end/actions/products/get-home-products.php';
+    require_once __DIR__ . '/../../../back-end/actions/products/get-books.php';
+    require_once __DIR__ . '/../../../back-end/actions/products/get-product-colours.php';
 ?>
 
 <!DOCTYPE html>
