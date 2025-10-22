@@ -2,7 +2,7 @@
     $host = "localhost";
     $username = "root";
     $password = "";
-    $database = "simple_crud";
+    $database = "atkski";
 
     $connection = mysqli_connect($host, $username,$password,$database);
 
