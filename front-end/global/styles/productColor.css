@@ -1,0 +1,115 @@
+.colorOption input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #ffffff00;
+    width: 18px;
+    height: 18px;
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    cursor: pointer;
+}
+
+.colorOption input[type=checkbox]:checked::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background-color: black;
+}
+
+.colorOption {
+    padding-right: 5px;
+}
+
+#Black {
+    input[type=checkbox] {
+        border: 2px solid black;
+    }
+
+    input[type=checkbox]:checked::before {
+        background-color: black;
+    }
+}
+
+#Pink {
+    input[type=checkbox] {
+        border: 2px solid #e62b98;
+    }
+
+    input[type=checkbox]:checked::before {
+        background-color: #e62b98;
+    }
+}
+
+#Blue {
+    input[type=checkbox] {
+        border: 2px solid #0f9edb;
+    }
+
+    input[type=checkbox]:checked::before {
+        background-color: #0f9edb;
+    }
+}
+
+#Orange {
+    input[type=checkbox] {
+        border: 2px solid #ea7a25;
+    }
+
+    input[type=checkbox]:checked::before {
+        background-color: #ea7a25;
+    }
+}
+
+#Red {
+    input[type=checkbox] {
+        border: 2px solid #df1515;
+    }
+
+    input[type=checkbox]:checked::before {
+        background-color: #df1515;
+    }
+}
+
+#Cyan {
+    input[type=checkbox] {
+        border: 2px solid #15d6c9;
+    }
+
+    input[type=checkbox]:checked::before {
+        background-color: #15d6c9;
+    }
+}
+
+#Yellow {
+    input[type=checkbox] {
+        border: 2px solid #dade00;
+    }
+
+    input[type=checkbox]:checked::before {
+        background-color: #dade00;
+    }
+}
+
+#Green {
+    input[type=checkbox] {
+        border: 2px solid #1bc520;
+    }
+
+    input[type=checkbox]:checked::before {
+        background-color: #1bc520;
+    }
+}
+
+#White {
+    input[type=checkbox] {
+        border: 2px solid #cfcfcf;
+    }
+
+    input[type=checkbox]:checked::before {
+        background-color: #cfcfcf;
+    }
+}
