@@ -73,19 +73,27 @@
     position: relative;
 }
 
-.bookProduct > img {
+.productImage > img {
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.productImage {
     box-shadow: 0px 2px 5px rgba(65, 62, 62, 0.151);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 230px;
-    height: fit-content;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wishlistBookProduct {
-    display: block;
     position: absolute;
     top: 5px;
     right: 5px;
+    display: block;
 }
 
 .wishlistBookProduct > img {
@@ -148,10 +156,20 @@
     margin: 10px;
 }
 
-.stationeryProduct > img {
+.productImageHorizon > img {
+    max-height: 180px;
+    max-width: 180px;
+    zoom: 0.8;
+}
+
+.productImageHorizon {
     box-shadow: 2px 0px 5px rgba(65, 62, 62, 0.151);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    min-width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wishlistProduct {
@@ -264,6 +282,7 @@
     padding: 5px 40px 5px 40px;
     bottom: 30px;
     right: 140px;
+    box-shadow: 0px 0px 5px 5px rgba(65, 62, 62, 0.151);
 }
 
 #stationerySection {
