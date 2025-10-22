@@ -41,3 +41,7 @@ footer {
 
 }
 
+#logo {
+    width: 125px;
+    height: fit-content;
+}
