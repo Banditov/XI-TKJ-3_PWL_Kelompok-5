@@ -18,6 +18,10 @@
     </head>
     <body>
 
+<!-- Loading Screen -->
+
+        <?php include '../../components/loading-screen/loading-screen.php'; ?>
+
 <!-- Header -->
 
         <?php include '../../components/header/header.php'; ?>
@@ -125,5 +129,9 @@
 <!-- Footer -->
 
         <?php include '../../components/footer/footer.php'; ?>
+
+<!-- Scripts -->
+
+        <script src="/front-end/global/scripts/loading-screen.js"></script>
     </body>
 </html>
