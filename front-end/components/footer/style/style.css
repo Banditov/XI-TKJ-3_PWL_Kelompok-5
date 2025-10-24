@@ -5,6 +5,7 @@
     color: white;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 5px 10px 5px rgba(65, 62, 62, 0.151);
 }
 
 #footer > img {
