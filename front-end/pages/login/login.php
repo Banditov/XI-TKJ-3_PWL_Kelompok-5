@@ -10,9 +10,19 @@
         <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/responsive.css">
     </head>
     <body>
+
+<!-- Loading Screen -->
+
+        <?php include '../../components/loading-screen/loading-screen.php'; ?>
+
+<!-- Background -->
+
         <div id="loginBackground">
             <img src="/front-end/global/resources/image/login_background.png">
         </div>
+
+<!-- Content -->
+
         <div id="centerForm">
             <div class="loginForm">
                 <b>Yuk, masuk untuk melanjutkan!</b>
@@ -27,5 +37,9 @@
                 </form>
             </div>
         </div>
+
+<!-- Scripts -->
+
+        <script src="/front-end/global/scripts/loading-screen.js"></script>
     </body>
 </html>
