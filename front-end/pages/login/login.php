@@ -16,7 +16,7 @@
         <div id="centerForm">
             <div class="loginForm">
                 <b>Yuk, masuk untuk melanjutkan!</b>
-                <form id="loginForm" action="/front-end/pages/home/home.html">
+                <form id="loginForm" action="/front-end/pages/home/home.php">
                     <div class="inputForm">
                         <input type="email" id="email" class="inputField" placeholder="Email Sekolah" required>
                     </div>
