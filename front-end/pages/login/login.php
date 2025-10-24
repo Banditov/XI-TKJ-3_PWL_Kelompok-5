@@ -6,8 +6,8 @@
         <title>ATK SKI - Login</title>
         <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/style.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/responsiveStyle.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/global-style.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/responsive.css">
     </head>
     <body>
         <div id="loginBackground">
