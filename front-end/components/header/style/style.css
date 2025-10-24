@@ -46,7 +46,7 @@
 
 header {
     box-shadow: 0px 5px 10px 5px rgba(65, 62, 62, 0.151);
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;

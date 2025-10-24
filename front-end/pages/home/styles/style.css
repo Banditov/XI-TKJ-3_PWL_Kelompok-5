@@ -142,10 +142,6 @@
     flex-wrap: wrap;
 }
 
-#banner {
-    padding-top: 130px;
-}
-
 #banner > img {
     width: 100%;
     height: fit-content;
