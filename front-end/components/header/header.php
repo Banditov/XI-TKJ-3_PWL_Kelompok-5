@@ -1,7 +1,6 @@
-<link rel="stylesheet" type="text/css" href="/front-end/components/header/style/responsiveStyle.css">
+<link rel="stylesheet" type="text/css" href="/front-end/components/header/style/responsive.css">
 <link rel="stylesheet" type="text/css" href="/front-end/components/header/style/style.css">
-<link rel="stylesheet" type="text/css" href="/front-end/global/styles/productColor.css">
-<link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
+<link rel="stylesheet" type="text/css" href="/front-end/global/styles/global-style.css">
 
 <header>
     <div id="header">

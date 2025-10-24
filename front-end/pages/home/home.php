@@ -12,9 +12,9 @@
         <title>ATK SKI - Home Page</title>
         <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/style.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productColor.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/responsiveStyle.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/product-color.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/global-style.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/responsive.css">
     </head>
     <body>
 
