@@ -1,10 +1,8 @@
 .colorOption input[type=checkbox] {
-    appearance: none;
     -webkit-appearance: none;
     background-color: #ffffff00;
     width: 18px;
     height: 18px;
-    border: 2px solid black;
     border-radius: 100px;
     display: flex;
     align-items: center;
