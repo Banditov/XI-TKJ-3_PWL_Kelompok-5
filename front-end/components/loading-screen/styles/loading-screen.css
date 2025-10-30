@@ -1,0 +1,12 @@
+#loadingScreen {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}

@@ -18,6 +18,10 @@
     </head>
     <body>
 
+<!-- Loading Screen -->
+
+        <?php include '../../components/loading-screen/loading-screen.php'; ?>
+
 <!-- Header -->
 
         <?php include '../../components/header/header.php'; ?>
@@ -129,5 +133,6 @@
 <!-- Scripts -->
 
         <script src="/front-end/pages/home/scripts/colourSelect.js"></script>
+        <script src="/front-end/global/scripts/loading-screen.js"></script>
     </body>
 </html>
