@@ -1,0 +1,135 @@
+.main-content {
+    min-height: calc(100vh - 400px);
+    background-color: white;
+}
+
+.faq-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 32px;
+}
+
+.faq-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 48px;
+}
+
+.faq-box {
+    background-color: #EFEFEF;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.faq-item {
+    border-bottom: 1px solid #999;
+    padding: 24px 0;
+}
+
+.faq-item:first-child {
+    padding-top: 0;
+}
+
+.faq-item:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s ease;
+}
+
+.faq-question:hover {
+    color: #4a4a4a;
+}
+
+.faq-question span {
+    flex: 1;
+    padding-right: 16px;
+    line-height: 1.6;
+}
+
+.icon-container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.icon-plus,
+.icon-minus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+.icon-plus {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.icon-minus {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+.faq-item.active .icon-plus {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+.faq-item.active .icon-minus {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 4px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 24px 4px 8px;
+}
+
+.faq-answer p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.faq-arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.faq-arrow:hover {
+    transform: scale(1.1);
+}
+
+.faq-arrow svg {
+    color: #999;
+}

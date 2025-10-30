@@ -1,6 +1,6 @@
-<link rel="stylesheet" type="text/css" href="/front-end/components/footer/style/responsive.css">
 <link rel="stylesheet" type="text/css" href="/front-end/components/footer/style/style.css">
 <link rel="stylesheet" type="text/css" href="/front-end/global/styles/global-style.css">
+<link rel="stylesheet" type="text/css" href="/front-end/components/footer/style/responsive.css">
 
 <footer>
     <div id="footer">
@@ -12,7 +12,7 @@
             </div>
             <div>
                 <h4><b>Helpful Link</b></h4>
-                <p>FAQs</p>
+                <a href="/front-end/pages/faq/faq.php">FAQs</a>
             </div>
             <div>
                 <h4><b>Contact Us</b></h4>
