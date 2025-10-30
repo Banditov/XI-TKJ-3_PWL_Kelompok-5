@@ -12,7 +12,7 @@
             </div>
             <div>
                 <h4><b>Helpful Link</b></h4>
-                <p>FAQs</p>
+                <a href="/front-end/pages/faq/faq.php">FAQs</a>
             </div>
             <div>
                 <h4><b>Contact Us</b></h4>
