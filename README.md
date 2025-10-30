@@ -200,6 +200,22 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
+   
+### 30/10/2025 - 0.3.0 ( WIP )
+
+- Fitur checkbox warna telah ditambahkan
+- Page FAQ sudah responsif
+- Halaman login sudah terintegrasi dengan database
+- Beberapa masalah telah diperbaiki
+
+### 24/10/2025 - 0.3.0 ( WIP )
+
+- Page FAQ telah dibuat
+
+### 23/10/2025 - 0.3.0 ( WIP )
+
+- Database telah terhubung dengan halaman home
+- Home telah dibagi menjadi berbagai komponen terpisah
 
 ### 22/10/2025 - 0.3.0 ( WIP )
 
