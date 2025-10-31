@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Oct 22, 2025 at 03:36 PM
+-- Generation Time: Oct 24, 2025 at 04:23 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -69,14 +69,14 @@ INSERT INTO `products` (`id`, `product_id`, `product_name`, `stock`, `price`, `i
 (3, 1, 'Buku Tulis Sekolah', 20, 4500, '0013', 'Orange', 0, 0),
 (4, 2, 'Buku Tulis Sekolah Besar', 40, 6000, '0021', 'None', 0, 1),
 (5, 3, 'Buku Tulis Folio', 30, 7500, '0031', 'None', 0, 1),
-(6, 4, 'Pulpen Joyko JK-100', 50, 2000, '0041', 'Blue', 1, 0),
+(6, 4, 'Pulpen Joyko JK-100', 100, 2000, '0043', 'Black', 1, 1),
 (7, 4, 'Pulpen Joyko JK-100', 40, 2000, '0042', 'Red', 1, 0),
-(8, 4, 'Pulpen Joyko JK-100', 100, 2000, '0043', 'Black', 1, 1),
-(9, 5, 'Pulpen Gel Joyko GP-265', 50, 2500, '0051', 'Blue', 1, 0),
+(8, 4, 'Pulpen Joyko JK-100', 50, 2000, '0041', 'Blue', 1, 0),
+(9, 5, 'Pulpen Gel Joyko GP-265', 80, 2500, '0053', 'Black', 1, 1),
 (10, 5, 'Pulpen Gel Joyko GP-265', 70, 2500, '0052', 'Red', 1, 0),
-(11, 5, 'Pulpen Gel Joyko GP-265', 80, 2500, '0053', 'Black', 1, 1),
-(12, 6, 'Tip-ex Joyko CT-522', 50, 5000, '0061', 'Red', 1, 0),
-(13, 6, 'Tip-ex Joyko CT-522', 40, 5000, '0062', 'Blue', 1, 1),
+(11, 5, 'Pulpen Gel Joyko GP-265', 50, 2500, '0051', 'Blue', 1, 0),
+(12, 6, 'Tip-ex Joyko CT-522', 50, 5000, '0062', 'Blue', 1, 1),
+(13, 6, 'Tip-ex Joyko CT-522', 40, 5000, '0061', 'Red', 1, 0),
 (14, 6, 'Tip-ex Joyko CT-522', 30, 5000, '0063', 'Yellow', 1, 0),
 (15, 7, 'Tip-ex Joyko CT-533', 40, 9000, '0071', 'Blue', 1, 1),
 (16, 7, 'Tip-ex Joyko CT-533', 20, 9000, '0072', 'Green', 1, 0),
@@ -105,15 +105,15 @@ INSERT INTO `products` (`id`, `product_id`, `product_name`, `stock`, `price`, `i
 (40, 20, 'Kalkulator Ilmiah Denix KK-82MS-D', 20, 23000, '0204', 'Blue', 0, 0),
 (41, 21, 'Spidol Warna-Warni Snowman', 10, 16000, '0211', 'None', 1, 1),
 (42, 22, 'Spidol Board Snowman', 60, 10000, '0221', 'None', 1, 1),
-(43, 23, 'Stabilo Joyko', 40, 6000, '0231', 'Red', 1, 0),
-(44, 23, 'Stabilo Joyko', 30, 6000, '0232', 'Blue', 1, 1),
+(43, 23, 'Stabilo Joyko', 30, 6000, '0232', 'Blue', 1, 1),
+(44, 23, 'Stabilo Joyko', 40, 6000, '0231', 'Red', 1, 0),
 (45, 23, 'Stabilo Joyko', 20, 6000, '0233', 'Green', 1, 0),
 (46, 23, 'Stabilo Joyko', 20, 6000, '0234', 'Yellow', 1, 0),
 (47, 24, 'Pembatas Buku Joyko IM-31', 30, 10000, '0241', 'None', 0, 1),
 (48, 25, 'Sticky Notes Joyko MMS-4', 30, 11000, '0251', 'None', 0, 1),
 (49, 26, 'Peraut Kenko SP-362', 40, 1000, '0261', 'Blue', 1, 1),
-(50, 26, 'Peraut Kenko SP-362', 20, 1000, '0262', 'Green', 1, 0),
-(51, 26, 'Peraut Kenko SP-362', 40, 1000, '0263', 'Red', 1, 0),
+(50, 26, 'Peraut Kenko SP-362', 40, 1000, '0263', 'Red', 1, 0),
+(51, 26, 'Peraut Kenko SP-362', 20, 1000, '0262', 'Green', 1, 0),
 (52, 26, 'Peraut Kenko SP-362', 30, 1000, '0264', 'Yellow', 1, 0),
 (53, 27, 'Cutter Joyko L-500', 30, 20000, '0271', 'None', 0, 1),
 (54, 28, 'Gunting Joyko SC-828', 20, 6000, '0281', 'None', 0, 1),
