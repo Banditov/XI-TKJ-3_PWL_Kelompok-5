@@ -200,7 +200,11 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
-   
+
+### 31/10/2025 - 0.3.0 ( WIP )
+
+- Loading screen sudah responsif
+
 ### 30/10/2025 - 0.3.0 ( WIP )
 
 - Fitur checkbox warna telah ditambahkan
