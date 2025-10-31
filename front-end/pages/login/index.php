@@ -20,6 +20,9 @@
         <div id="loginBackground">
             <img src="/front-end/global/resources/image/login_background.png">
         </div>
+
+<!-- Content -->
+
         <div id="centerForm">
             <div class="loginForm">
                 <b>Yuk, <a href="/front-end/pages/register-admin/index.php"><b>masuk</b></a> untuk melanjutkan!</b>

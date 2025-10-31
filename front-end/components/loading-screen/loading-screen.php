@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="/front-end/components/loading-screen/styles/loading-screen.css">
+<link rel="stylesheet" type="text/css" href="/front-end/components/loading-screen/styles/responsive.css">
 
 <div id="loadingScreen">
     <img src="/front-end/global/resources/animated/loading.gif">
