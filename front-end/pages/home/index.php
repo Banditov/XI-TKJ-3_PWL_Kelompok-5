@@ -42,9 +42,6 @@
             <div class="bookProducts">
         <?php foreach($books as $index => $product): ?>
                 <div class="bookProduct" data-id="<?= $product['product_id'] ?>">
-                    <div class="wishlistBookProduct">
-                        <img src="/front-end/global/resources/image/wishlistFeature.png">
-                    </div>
                     <div class="productImage">
                         <img src="/back-end/database/images/<?= $product['image']; ?>.png">
                     </div>
@@ -95,9 +92,6 @@
                 <div class="stationeryProducts">
             <?php foreach($homeProducts as $index => $product): ?>
                     <div class="stationeryProduct" data-id="<?= $product['product_id'] ?>">
-                        <div class="wishlistProduct">
-                            <img src="/front-end/global/resources/image/wishlistFeature.png">
-                        </div>
                         <div class="productImageHorizon">
                             <img src="/back-end/database/images/<?= $product['image']; ?>.png">
                         </div>
