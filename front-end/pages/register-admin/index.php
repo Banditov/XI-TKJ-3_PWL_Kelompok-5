@@ -36,9 +36,6 @@
                     <div class="inputForm">
                         <input type="password" id="password" name="password" class="inputField" placeholder="Password" required>
                     </div>
-                    <div class="inputForm">
-                        <input type="password" id="password" name="confirm" class="inputField" placeholder="Confirm Password" required>
-                    </div>
                     <button type="submit" name="register" class="submitButton">Lanjut</button>
                     <a href="/front-end/pages/login/index.php" class="submitButton">Skip</a>
                 </form>
