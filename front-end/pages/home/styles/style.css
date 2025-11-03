@@ -39,18 +39,6 @@
     align-items: center;
 }
 
-.wishlistBookProduct {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    display: block;
-}
-
-.wishlistBookProduct > img {
-    width: 60px;
-    height: fit-content;
-}
-
 .productDesc {
     padding: 20px;
 }
@@ -120,18 +108,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.wishlistProduct {
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 120px;
-}
-
-.wishlistProduct > img {
-    width: 60px;
-    height: fit-content;
 }
 
 .stationeryProducts {
