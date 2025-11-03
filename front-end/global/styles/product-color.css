@@ -1,5 +1,5 @@
 .colorOption input[type=checkbox] {
-    -webkit-appearance: none;
+    appearance: none;
     background-color: #ffffff00;
     width: 18px;
     height: 18px;
