@@ -9,11 +9,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>ATK SKI - Home Page</title>
+        <title>ATK SKI - Home</title>
         <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/style.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/product-color.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/global-style.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productColor.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/responsive.css">
     </head>
     <body>
@@ -41,10 +41,7 @@
             </div>
             <div class="bookProducts">
         <?php foreach($books as $index => $product): ?>
-                <div class="bookProduct">
-                    <div class="wishlistBookProduct">
-                        <img src="/front-end/global/resources/image/wishlistFeature.png">
-                    </div>
+                <div class="bookProduct" data-id="<?= $product['product_id'] ?>">
                     <div class="productImage">
                         <img src="/back-end/database/images/<?= $product['image']; ?>.png">
                     </div>
@@ -94,10 +91,7 @@
                 </div>
                 <div class="stationeryProducts">
             <?php foreach($homeProducts as $index => $product): ?>
-                    <div class="stationeryProduct">
-                        <div class="wishlistProduct">
-                            <img src="/front-end/global/resources/image/wishlistFeature.png">
-                        </div>
+                    <div class="stationeryProduct" data-id="<?= $product['product_id'] ?>">
                         <div class="productImageHorizon">
                             <img src="/back-end/database/images/<?= $product['image']; ?>.png">
                         </div>
@@ -132,6 +126,7 @@
 
 <!-- Scripts -->
 
+        <script src="/front-end/pages/home/scripts/colourSelect.js"></script>
         <script src="/front-end/global/scripts/loading-screen.js"></script>
     </body>
 </html>
