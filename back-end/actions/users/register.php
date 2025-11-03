@@ -7,17 +7,6 @@
         $email = htmlspecialchars(trim($_POST['email']));
         $class = htmlspecialchars(trim($_POST['class']));
         $password = $_POST['password'];
-        $passwordConfirmation = $_POST['confirm'];
-
-        if ($password != $passwordConfirmation) {
-            echo "
-                <script>
-                    alert('Password and Password Confirmation doesn\'t match');
-                    window.location.href = '/front-end/pages/register-admin/index.php';
-                </script>
-            ";
-            exit;
-        }
 
         $checkQuery = "SELECT id FROM accounts WHERE email = ?";
         $checkStmt = $connection->prepare($checkQuery);
