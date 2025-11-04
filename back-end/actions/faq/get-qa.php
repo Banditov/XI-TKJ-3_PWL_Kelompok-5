@@ -1,16 +1,16 @@
 <?php
     require_once __DIR__ . '/../../config/db-connection.php';
 
-    $products = [];
+    $qna = [];
 
-    $query = "SELECT * from products";
+    $query = "SELECT * from faq";
 
     $stmt = $connection->prepare($query);
     $stmt->execute();
 
     $result = $stmt->get_result();
 
-    while($product = $result->fetch_assoc()) {
-        $products[] = $product;
+    while($qa = $result->fetch_assoc()) {
+        $qna[] = $qa;
     }
 ?>
