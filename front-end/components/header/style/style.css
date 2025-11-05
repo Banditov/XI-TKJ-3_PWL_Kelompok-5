@@ -30,11 +30,6 @@
     margin-left: 10px;
 }
 
-#selectedTab {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-}
-
 .navSection {
     display: flex;
 }

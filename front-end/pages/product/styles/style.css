@@ -1,0 +1,46 @@
+.stationeryProduct {
+    zoom: 1.03;
+}
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#filter {
+    padding: 40px 20px 40px 20px;
+    background-color: #1D7BC5;
+    position: fixed;
+    width: fit-content;
+    border-radius: 0px 30px 30px 0px;
+    z-index: 99;
+    top: 180px;
+    left: 0;
+}
+
+#filter > p {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+#sortFilter {
+    zoom: 1.2;
+}
+
+.parentRow, .childRow {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.parentRow > img, .childRow > img {
+    width: 8px;
+    height: fit-content;
+    margin-right: 10px;
+}
+
+.childRow {
+    margin-left: 20px;
+}
