@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productColor.css">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/responsive.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/animation.css">
     </head>
     <body>
 

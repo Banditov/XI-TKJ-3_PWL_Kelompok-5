@@ -1,0 +1,21 @@
+.stationeryProduct:hover, .bookProduct:hover {
+    transform:scale(1.05);
+    transition: 0.2s;
+}
+
+.productImage img,
+.productImageHorizon img {
+    transition: opacity 0.35s ease;
+    opacity: 1;
+    will-change: opacity;
+    display: block;
+}
+
+.fade-card {
+    transition: opacity 0.35s ease;
+    opacity: 1;
+}
+
+.fade-card.out {
+    opacity: 0;
+}

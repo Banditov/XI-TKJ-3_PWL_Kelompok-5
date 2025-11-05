@@ -9,18 +9,18 @@ document.querySelectorAll(".productColor input[type='checkbox']").forEach(checkb
             return;
         }
 
-        const nameEl = card.querySelector(".productName");
-        const stockEl = card.querySelector(".productStock");
-        const priceEl = card.querySelector(".productPrice");
-        const imgEl =
+        const name = card.querySelector(".productName");
+        const stock = card.querySelector(".productStock");
+        const price = card.querySelector(".productPrice");
+        const img =
             card.querySelector(".productImage img") ||
             card.querySelector(".productImageHorizon img");
 
         if (!card.dataset.defaultSaved) {
-            card.dataset.defaultName = nameEl?.textContent || "";
-            card.dataset.defaultStock = stockEl?.textContent.replace("Stok: ", "") || "";
-            card.dataset.defaultPrice = priceEl?.textContent.replace(/[^\d]/g, "") || "";
-            card.dataset.defaultImage = imgEl?.src || "";
+            card.dataset.defaultName = name?.textContent || "";
+            card.dataset.defaultStock = stock?.textContent.replace("Stok: ", "") || "";
+            card.dataset.defaultPrice = price?.textContent.replace(/[^\d]/g, "") || "";
+            card.dataset.defaultImage = img?.src || "";
             card.dataset.defaultSaved = "true";
         }
 
@@ -46,12 +46,12 @@ document.querySelectorAll(".productColor input[type='checkbox']").forEach(checkb
         console.log("Now showing:", displayColor || "Default");
 
         if (!displayColor) {
-            if (nameEl) nameEl.textContent = card.dataset.defaultName;
-            if (stockEl) stockEl.textContent = "Stok: " + card.dataset.defaultStock;
-            if (priceEl)
-                priceEl.textContent =
+            if (name) name.textContent = card.dataset.defaultName;
+            if (stock) stock.textContent = "Stok: " + card.dataset.defaultStock;
+            if (price)
+                price.textContent =
                     "Rp " + new Intl.NumberFormat("id-ID").format(card.dataset.defaultPrice);
-            if (imgEl) imgEl.src = card.dataset.defaultImage;
+            if (img) img.src = card.dataset.defaultImage;
             return;
         }
 
@@ -78,12 +78,34 @@ document.querySelectorAll(".productColor input[type='checkbox']").forEach(checkb
                 return;
             }
 
-            if (nameEl) nameEl.textContent = data.product_name;
-            if (stockEl) stockEl.textContent = "Stok: " + data.stock;
-            if (priceEl)
-                priceEl.textContent =
+            if (name) name.textContent = data.product_name;
+            if (stock) stock.textContent = "Stok: " + data.stock;
+            if (price)
+                price.textContent =
                     "Rp " + new Intl.NumberFormat("id-ID").format(data.price);
-            if (imgEl) imgEl.src = "/back-end/database/images/" + data.image + ".png";
+            if (img) {
+                setTimeout(() => {
+                    if (img) {
+                        img.style.transition = "opacity 0.2s ease";
+                        img.style.opacity = "0";
+
+                        setTimeout(() => {
+                            const newSrc = "/back-end/database/images/" + data.image + ".png";
+                            const tmpImg = new Image();
+
+                            tmpImg.onload = () => {
+                                img.src = newSrc;
+
+                                void img.offsetWidth;
+
+                                img.style.opacity = "1";
+                            };
+
+                            tmpImg.src = newSrc;
+                        }, 200);
+                    }
+                }, 100);
+            }
         } catch (err) {
             console.error("Fetch failed:", err);
         }
