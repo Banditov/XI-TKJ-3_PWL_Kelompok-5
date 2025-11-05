@@ -6,7 +6,7 @@
         <title>ATK SKI - REGISTER ADMIN</title>
         <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/style.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/global-style.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/responsive.css">
     </head>
     <body>
@@ -35,9 +35,6 @@
                     </div>
                     <div class="inputForm">
                         <input type="password" id="password" name="password" class="inputField" placeholder="Password" required>
-                    </div>
-                    <div class="inputForm">
-                        <input type="password" id="password" name="confirm" class="inputField" placeholder="Confirm Password" required>
                     </div>
                     <button type="submit" name="register" class="submitButton">Lanjut</button>
                     <a href="/front-end/pages/login/index.php" class="submitButton">Skip</a>
