@@ -19,3 +19,11 @@
     padding: 8px 8px 8px 20px;
     cursor: pointer;
 }
+
+.parentRow .dropDown {
+    transition: transform 0.3s ease;
+}
+
+.parentRow.active .dropDown {
+    transform: rotate(90deg);
+}
