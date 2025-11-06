@@ -52,17 +52,17 @@
 1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").
    <details>
       <summary>Step 1A-1</summary>
-      <img src=".github/images/tutorial/1A-1.png">
+      <img src=".github/images/tutorial/A1A-1.png">
    </details>
 2. Unzip file tersebut.
    <details>
       <summary>Step 1A-2</summary>
-      <img src=".github/images/tutorial/1A-2.png">
+      <img src=".github/images/tutorial/A1A-2.png">
    </details>
 3. Buka Visual Studio Code.
    <details>
       <summary>Step 1A-3</summary>
-      <img src=".github/images/tutorial/1A-3.png">
+      <img src=".github/images/tutorial/A1A-3.png">
    </details>
 4. Lanjut ke Step 2.
 </details>
@@ -72,22 +72,22 @@
 1. Buka page <a href="https://github.com/Banditov/PWL-Kelompok-5/releases">Releases</a> dari repository ini.
    <details>
       <summary>Step 1B-1</summary>
-      <img src=".github/images/tutorial/1B-1.png">
+      <img src=".github/images/tutorial/A1B-1.png">
    </details>
 2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".
    <details>
       <summary>Step 1B-2</summary>
-      <img src=".github/images/tutorial/1B-2.png">
+      <img src=".github/images/tutorial/A1B-2.png">
    </details>
 3. Unzip file tersebut.
    <details>
       <summary>Step 1B-3</summary>
-      <img src=".github/images/tutorial/1B-3.png">
+      <img src=".github/images/tutorial/A1B-3.png">
    </details>
 4. Buka Visual Studio Code.
    <details>
       <summary>Step 1B-4</summary>
-      <img src=".github/images/tutorial/1B-4.png">
+      <img src=".github/images/tutorial/A1B-4.png">
    </details>
 5. Lanjut ke Step 2.
 </details>
@@ -99,12 +99,12 @@
 1. Buka tab extension.
    <details>
       <summary>Step 2-1</summary>
-      <img src=".github/images/tutorial/2-1.png">
+      <img src=".github/images/tutorial/A2-1.png">
    </details>
 2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.
    <details>
       <summary>Step 2-2</summary>
-      <img src=".github/images/tutorial/2-2.png">
+      <img src=".github/images/tutorial/A2-2.png">
    </details>
 3. Lanjut ke Step 3.
 </details>
@@ -115,18 +115,18 @@
 1. Open folder dimana kamu mengekstrak file zip tersebut.
    <details>
       <summary>Step 3-1</summary>
-      <img src=".github/images/tutorial/3-1-1.png">
-      <img src=".github/images/tutorial/3-1-2.png">
+      <img src=".github/images/tutorial/A3-1-1.png">
+      <img src=".github/images/tutorial/A3-1-2.png">
    </details>
 2. Buka file "start.html".
    <details>
       <summary>Step 3-2</summary>
-      <img src=".github/images/tutorial/3-2.png">
+      <img src=".github/images/tutorial/A3-2.png">
    </details>
 3. Tekan "Go Live" pada kanan bawah.
    <details>
       <summary>Step 3-3</summary>
-      <img src=".github/images/tutorial/3-3.png">
+      <img src=".github/images/tutorial/A3-3.png">
    </details>
 <h3 align="center">Selesai!</h3>
 </details>
@@ -137,20 +137,20 @@
 1. Cari private IPv4 komputer kamu (Dapat dicari di properties wifi)
    <details>
       <summary>Step 4-1</summary>
-      <img src=".github/images/tutorial/4-1-1.png">
-      <img src=".github/images/tutorial/4-1-2.png">
+      <img src=".github/images/tutorial/A4-1-1.png">
+      <img src=".github/images/tutorial/A4-1-2.png">
    </details>
 2. Cari port dari server
    <details>
       <summary>Step 4-2</summary>
-      <img src=".github/images/tutorial/4-2.png">
+      <img src=".github/images/tutorial/A4-2.png">
    </details>
 3. Buka browser di HP kamu dan masukin informasi yang sudah didapati dengan format<br>
    
    `(IP Komputer):(Port Server)/start.html`
    <details>
       <summary>Contoh</summary>
-      <img src=".github/images/tutorial/4-3.jpg">
+      <img src=".github/images/tutorial/A4-3.jpg">
    </details>
 <h3 align="center">Selesai!</h3>
 </details>
