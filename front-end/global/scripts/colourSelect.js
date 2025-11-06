@@ -30,10 +30,10 @@ function initProductColorEvents() {
             card.dataset.defaultSaved = "true";
         }
 
-        checkboxes.forEach(checkbox => {
-            if (checkbox.value.toLowerCase() === "none") return;
-
-            checkbox.replaceWith(checkbox.cloneNode(true));
+        checkboxes.forEach(cb => {
+            if (cb.value.toLowerCase() !== "none") {
+                cb.replaceWith(cb.cloneNode(true));
+            }
         });
 
         group.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
@@ -41,17 +41,12 @@ function initProductColorEvents() {
 
             checkbox.addEventListener("change", async function () {
                 const productId = card.dataset.id;
-                const color = this.value;
-                if (!productId || !color) return;
+                const color = this.checked ? this.value : null;
 
-                const checkedBoxes = Array.from(group.querySelectorAll("input[type='checkbox']"))
-                    .filter(cb => cb.checked && cb.value.toLowerCase() !== "none");
-                const displayColor = checkedBoxes.length > 0
-                    ? checkedBoxes[checkedBoxes.length - 1].value
-                    : null;
+                if (!productId) return;
 
-                if (displayColor) {
-                    card.dataset.activeColor = displayColor;
+                if (color) {
+                    card.dataset.activeColor = color;
                 } else {
                     delete card.dataset.activeColor;
                 }
@@ -61,7 +56,7 @@ function initProductColorEvents() {
                 const price = card.querySelector(".productPrice");
                 const img = card.querySelector(".productImage img") || card.querySelector(".productImageHorizon img");
 
-                if (!displayColor) {
+                if (!color) {
                     if (name) name.textContent = card.dataset.defaultName;
                     if (stock) stock.textContent = "Stok: " + card.dataset.defaultStock;
                     if (price)
@@ -74,7 +69,7 @@ function initProductColorEvents() {
                     const response = await fetch("/back-end/actions/products/update-product-colours.php", {
                         method: "POST",
                         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                        body: `product_id=${encodeURIComponent(productId)}&color=${encodeURIComponent(displayColor)}`
+                        body: `product_id=${encodeURIComponent(productId)}&color=${encodeURIComponent(color)}`
                     });
 
                     const text = await response.text();
@@ -99,6 +94,7 @@ function initProductColorEvents() {
                     if (img) {
                         img.style.transition = "opacity 0.2s ease";
                         img.style.opacity = "0";
+
                         setTimeout(() => {
                             const newSrc = "/back-end/database/images/" + data.image + ".png";
                             const tmpImg = new Image();

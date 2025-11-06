@@ -13,13 +13,11 @@ $sort = $_POST['sort'] ?? 'default';
 
 try {
     if ($categoryId === 0) {
-        // Default category: get all products
         $stmt = $pdo->query("
             SELECT product_id, product_name, price, stock, image, color
             FROM products
         ");
     } else {
-        // Check if parent has products
         $check = $pdo->prepare("SELECT COUNT(*) FROM products WHERE category_parent_id = :id");
         $check->execute([':id' => $categoryId]);
 
@@ -40,7 +38,6 @@ try {
 
     $rawProducts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    // Group products and collect all colors
     $groupedProducts = [];
     foreach ($rawProducts as $row) {
         $pid = $row['product_id'];
@@ -59,20 +56,16 @@ try {
         }
     }
 
-    // Ensure price is numeric
     foreach ($groupedProducts as &$prod) {
         $prod['price'] = (float) str_replace(',', '', $prod['price']);
     }
 
-    // Convert to indexed array
     $productsArray = array_values($groupedProducts);
 
-    // Shuffle only for default category + default sort
     if ($categoryId === 0 && $sort === 'default') {
         shuffle($productsArray);
     }
 
-    // Apply sorting
     switch ($sort) {
         case 'lowHigh':
             usort($productsArray, fn($a, $b) => $a['price'] <=> $b['price']);
@@ -87,7 +80,6 @@ try {
             usort($productsArray, fn($a, $b) => strcmp(trim($b['product_name']), trim($a['product_name'])));
             break;
         default:
-            // already shuffled if needed
             break;
     }
 
