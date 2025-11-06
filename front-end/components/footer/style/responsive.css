@@ -1,0 +1,122 @@
+/* max dilakukan saat kurang */
+/* min dilakukan saat lebih */
+
+@media screen and (min-width: 5500px) {
+    #footer {
+        zoom: 5;
+    }
+}
+
+@media screen and (max-width: 5500px) {
+    #footer {
+        zoom: 4;
+    }
+}
+
+@media screen and (max-width: 3500px) {
+    #footer {
+        zoom: 2.5;
+    }
+}
+
+@media screen and (max-width: 2600px) {
+    #footer {
+        zoom: 1.8;
+    }
+}
+
+@media screen and (max-width: 2300px) {
+    #footer {
+        zoom: 1.8;
+    }
+}
+
+@media screen and (max-width: 2200px) {
+    #footer {
+        zoom: 1.7;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    #footer {
+        zoom: 1.4;
+    }
+}
+
+@media screen and (max-width: 1850px) {
+    #footer {
+        zoom: 1;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    footer {
+        zoom: 0.9;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    footer {
+        zoom: 0.8;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    #footer {
+        zoom: 1.2;
+    }
+
+    #footer {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    #footer > img {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #footer {
+        justify-content: space-between;
+    }
+
+    #footerContent {
+        zoom: 1;
+        flex-wrap: wrap;
+        max-width: 500px;
+        gap: 20px;
+    }
+
+    #footer > img {
+        zoom: 1.5;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #footerContent {
+        zoom: 0.8;
+    }
+
+    #footer {
+        zoom: 1.65;
+        justify-content: center;
+    }
+
+    #footer > img {
+        zoom: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #footer {
+        zoom: 1.4;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #footer {
+        zoom: 1.2;
+    }
+}
