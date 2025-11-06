@@ -12,8 +12,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>ATK SKI - Products</title>
 		<link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
-		<link rel="stylesheet" type="text/css" href="/front-end/pages/product/styles/style.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
+		<link rel="stylesheet" type="text/css" href="/front-end/pages/product/styles/style.css">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productColor.css">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productCard.css">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productHover.css">
@@ -24,6 +24,7 @@
 
 <!-- Loading Screen -->
 
+        <?php include '../../components/loading-screen/loading-screen.php'; ?>
 
 <!-- Header -->
 
@@ -43,15 +44,16 @@
             <p>Category</p>
             <div class="filterRow">
         <?php foreach($parents as $index => $parent): ?>
-                <div class="parentRow" data-type="parent" data-id="<?= $parent['id']; ?>">
-                    <img src="/front-end/global/resources/image/arrowWhite.png">
-                    <p><?= $parent['name']; ?></p>
+                <div class="parentRow" data-type="parent" data-parent-id="<?= $parent['id']; ?>">
+                    <div class="dropDownButton">
+                        <img src="/front-end/global/resources/image/arrowWhite.png" class="dropDown">
+                    </div>
+                    <p class="parentText"><?= $parent['name']; ?></p>
                 </div>
             <?php foreach($childs as $index => $child): ?>
                 <?php if ($child['parent_id'] == $parent['id']): ?>
-                    <div class="childRow" data-type="child" data-id="<?= $child['id']; ?>">
-                        <img src="/front-end/global/resources/image/arrowWhite.png">
-                        <p><?= $child['name']; ?></p>
+                    <div class="childRow" data-parent-id="<?= $parent['id']; ?>" data-type="child" data-child-id="<?= $child['id']; ?>">
+                        <p class="childText"><?= $child['name']; ?></p>
                     </div>
                 <?php endif; ?>
             <?php endforeach; ?>
