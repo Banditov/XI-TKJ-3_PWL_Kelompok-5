@@ -63,34 +63,34 @@
 
 		<div id="content">
 
-			<div id="productContainer">
-                <?php foreach($products as $index => $product): ?>
-                        <div class="stationeryProduct" data-id="<?= $product['product_id'] ?>">
-                            <div class="productImageHorizon">
-                                <img src="/back-end/database/images/<?= $product['image']; ?>.png">
-                            </div>
-                            <div class="productDesc">
-                                <p class="productStock">Stok: <?= $product['stock']; ?></p>
-                                <p class="productName"><?= $product['product_name']; ?></p>
-                                <p class="productPrice">Rp <?= number_format($product['price'], 0, ',', '.'); ?></p>
-                    <?php if (isset($colors[$product['product_id']])): ?>
-                                <div class="colorForm">
-                                    <form class="productColor">
-                        <?php foreach($colors[$product['product_id']] as $color): ?>
-                                        <label class="colorOption" id="<?= $color ?>">
-                                            <input type="checkbox" value="<?= $color ?>">
-                                        </label>
-                        <?php endforeach; ?>
-                                    </form>
+                <div id="productContainer">
+                    <?php foreach($products as $index => $product): ?>
+                            <div class="stationeryProduct" data-id="<?= $product['product_id'] ?>">
+                                <div class="productImageHorizon">
+                                    <img src="/back-end/database/images/<?= $product['image']; ?>.png">
                                 </div>
-                    <?php endif; ?>
-                                <div class="addToCart">
-                                    <img src="/front-end/global/resources/image/add.png">
+                                <div class="productDesc">
+                                    <p class="productStock">Stok: <?= $product['stock']; ?></p>
+                                    <p class="productName"><?= $product['product_name']; ?></p>
+                                    <p class="productPrice">Rp <?= number_format($product['price'], 0, ',', '.'); ?></p>
+                        <?php if (isset($colors[$product['product_id']])): ?>
+                                    <div class="colorForm">
+                                        <form class="productColor">
+                            <?php foreach($colors[$product['product_id']] as $color): ?>
+                                            <label class="colorOption" id="<?= $color ?>">
+                                                <input type="checkbox" value="<?= $color ?>">
+                                            </label>
+                            <?php endforeach; ?>
+                                        </form>
+                                    </div>
+                        <?php endif; ?>
+                                    <div class="addToCart">
+                                        <img src="/front-end/global/resources/image/add.png">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                <?php endforeach; ?>
-			</div>
+                    <?php endforeach; ?>
+                </div>
 
 		</div>
 

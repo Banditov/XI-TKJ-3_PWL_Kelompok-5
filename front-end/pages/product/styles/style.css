@@ -1,7 +1,3 @@
-.stationeryProduct {
-    zoom: 1.03;
-}
-
 #productContainer {
     display: flex;
     flex-wrap: wrap;
