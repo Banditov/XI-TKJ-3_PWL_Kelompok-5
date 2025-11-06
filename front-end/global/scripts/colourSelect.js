@@ -3,55 +3,69 @@ function initProductColorEvents() {
         const checkboxes = group.querySelectorAll("input[type='checkbox']");
         if (checkboxes.length === 0) return;
 
+        // Remove colorForm if the only option is "none"
         if (checkboxes.length === 1 && checkboxes[0].value.toLowerCase() === "none") {
             group.closest(".colorForm")?.remove();
             return;
         }
 
-        const firstCheckbox = checkboxes[0];
-        if (firstCheckbox && firstCheckbox.value.toLowerCase() !== "none") {
-            firstCheckbox.checked = true;
-            firstCheckbox.dispatchEvent(new Event("change"));
+        const card = group.closest(".stationeryProduct, .bookProduct");
+        if (!card) return;
+
+        // Set default color only once per product
+        if (!card.dataset.defaultSaved) {
+            const firstValid = Array.from(checkboxes).find(cb => cb.value.toLowerCase() !== "none");
+            if (firstValid) {
+                firstValid.checked = true;
+                card.dataset.activeColor = firstValid.value;
+            }
+
+            const name = card.querySelector(".productName");
+            const stock = card.querySelector(".productStock");
+            const price = card.querySelector(".productPrice");
+            const img = card.querySelector(".productImage img") || card.querySelector(".productImageHorizon img");
+
+            card.dataset.defaultName = name?.textContent || "";
+            card.dataset.defaultStock = stock?.textContent.replace("Stok: ", "") || "";
+            card.dataset.defaultPrice = price?.textContent.replace(/[^\d]/g, "") || "";
+            card.dataset.defaultImage = img?.src || "";
+            card.dataset.defaultSaved = "true";
         }
 
+        // Attach change event to all valid checkboxes
         checkboxes.forEach(checkbox => {
             if (checkbox.value.toLowerCase() === "none") return;
 
-            checkbox.addEventListener("change", async function () {
-                const card = this.closest(".stationeryProduct, .bookProduct");
-                if (!card) return;
+            // Remove previous event listener to prevent duplicates
+            checkbox.replaceWith(checkbox.cloneNode(true));
+        });
 
-                const productId = card.dataset?.id;
+        group.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
+            if (checkbox.value.toLowerCase() === "none") return;
+
+            checkbox.addEventListener("change", async function () {
+                const productId = card.dataset.id;
                 const color = this.value;
                 if (!productId || !color) return;
 
+                // Update active color dataset
+                const checkedBoxes = Array.from(group.querySelectorAll("input[type='checkbox']"))
+                    .filter(cb => cb.checked && cb.value.toLowerCase() !== "none");
+                const displayColor = checkedBoxes.length > 0
+                    ? checkedBoxes[checkedBoxes.length - 1].value
+                    : null;
+
+                if (displayColor) {
+                    card.dataset.activeColor = displayColor;
+                } else {
+                    delete card.dataset.activeColor;
+                }
+
+                // Reset to default if no color selected
                 const name = card.querySelector(".productName");
                 const stock = card.querySelector(".productStock");
                 const price = card.querySelector(".productPrice");
-                const img = card.querySelector(".productImage img") ||
-                            card.querySelector(".productImageHorizon img");
-
-                if (!card.dataset.defaultSaved) {
-                    card.dataset.defaultName = name?.textContent || "";
-                    card.dataset.defaultStock = stock?.textContent.replace("Stok: ", "") || "";
-                    card.dataset.defaultPrice = price?.textContent.replace(/[^\d]/g, "") || "";
-                    card.dataset.defaultImage = img?.src || "";
-                    card.dataset.defaultSaved = "true";
-                }
-
-                const checkedBoxes = Array.from(checkboxes).filter(box => box.checked && box.value.toLowerCase() !== "none");
-                let displayColor = null;
-
-                if (this.checked) {
-                    displayColor = color;
-                    card.dataset.activeColor = color;
-                } else if (checkedBoxes.length > 0) {
-                    displayColor = checkedBoxes[checkedBoxes.length - 1].value;
-                    card.dataset.activeColor = displayColor;
-                } else {
-                    displayColor = null;
-                    delete card.dataset.activeColor;
-                }
+                const img = card.querySelector(".productImage img") || card.querySelector(".productImageHorizon img");
 
                 if (!displayColor) {
                     if (name) name.textContent = card.dataset.defaultName;
@@ -62,6 +76,7 @@ function initProductColorEvents() {
                     return;
                 }
 
+                // Fetch updated product info for selected color
                 try {
                     const response = await fetch("/back-end/actions/products/update-product-colours.php", {
                         method: "POST",
@@ -109,5 +124,6 @@ function initProductColorEvents() {
         });
     });
 }
+
 
 initProductColorEvents();

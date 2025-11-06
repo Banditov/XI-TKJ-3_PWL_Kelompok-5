@@ -15,7 +15,6 @@
             $stmt = $pdo->query("
                 SELECT product_id, product_name, price, stock, image, color
                 FROM products
-                WHERE is_first = 1
             ");
         } else {
             $check = $pdo->prepare("SELECT COUNT(*) FROM products WHERE category_parent_id = :id");
@@ -38,6 +37,7 @@
 
         $rawProducts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+        // Group by product_id
         $groupedProducts = [];
         foreach ($rawProducts as $row) {
             $pid = $row['product_id'];
@@ -56,7 +56,13 @@
             }
         }
 
-        echo json_encode(['products' => array_values($groupedProducts)]);
+        // Randomize the order only for default category
+        $productsArray = array_values($groupedProducts);
+        if ($categoryId === 0) {
+            shuffle($productsArray);
+        }
+
+        echo json_encode(['products' => $productsArray]);
 
     } catch (PDOException $e) {
         echo json_encode(['error' => 'Database error: ' . $e->getMessage()]);
