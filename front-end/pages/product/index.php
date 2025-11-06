@@ -100,6 +100,7 @@
 
 <!-- Scripts -->
 
+        <script src="/front-end/pages/product/scripts/sort.js"></script>
         <script src="/front-end/pages/product/scripts/dropDown.js"></script>
         <script src="/front-end/pages/product/scripts/filter.js"></script>
         <script src="/front-end/global/scripts/colourSelect.js"></script>

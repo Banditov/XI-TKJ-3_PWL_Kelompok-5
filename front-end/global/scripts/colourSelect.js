@@ -3,7 +3,6 @@ function initProductColorEvents() {
         const checkboxes = group.querySelectorAll("input[type='checkbox']");
         if (checkboxes.length === 0) return;
 
-        // Remove colorForm if the only option is "none"
         if (checkboxes.length === 1 && checkboxes[0].value.toLowerCase() === "none") {
             group.closest(".colorForm")?.remove();
             return;
@@ -12,7 +11,6 @@ function initProductColorEvents() {
         const card = group.closest(".stationeryProduct, .bookProduct");
         if (!card) return;
 
-        // Set default color only once per product
         if (!card.dataset.defaultSaved) {
             const firstValid = Array.from(checkboxes).find(cb => cb.value.toLowerCase() !== "none");
             if (firstValid) {
@@ -32,11 +30,9 @@ function initProductColorEvents() {
             card.dataset.defaultSaved = "true";
         }
 
-        // Attach change event to all valid checkboxes
         checkboxes.forEach(checkbox => {
             if (checkbox.value.toLowerCase() === "none") return;
 
-            // Remove previous event listener to prevent duplicates
             checkbox.replaceWith(checkbox.cloneNode(true));
         });
 
@@ -48,7 +44,6 @@ function initProductColorEvents() {
                 const color = this.value;
                 if (!productId || !color) return;
 
-                // Update active color dataset
                 const checkedBoxes = Array.from(group.querySelectorAll("input[type='checkbox']"))
                     .filter(cb => cb.checked && cb.value.toLowerCase() !== "none");
                 const displayColor = checkedBoxes.length > 0
@@ -61,7 +56,6 @@ function initProductColorEvents() {
                     delete card.dataset.activeColor;
                 }
 
-                // Reset to default if no color selected
                 const name = card.querySelector(".productName");
                 const stock = card.querySelector(".productStock");
                 const price = card.querySelector(".productPrice");
@@ -76,7 +70,6 @@ function initProductColorEvents() {
                     return;
                 }
 
-                // Fetch updated product info for selected color
                 try {
                     const response = await fetch("/back-end/actions/products/update-product-colours.php", {
                         method: "POST",
@@ -124,6 +117,5 @@ function initProductColorEvents() {
         });
     });
 }
-
 
 initProductColorEvents();
