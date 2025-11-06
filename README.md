@@ -200,6 +200,26 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
+      
+### 6/11/2025 - 0.3.0 ( WIP )
+
+- Database telah diupdate
+- Page produk telah dibuat
+- Branch baru untuk pre-deploy telah dibuat
+
+### 5/11/2025 - 0.3.0 ( WIP )
+
+- Beberapa animasi kecil telah ditambahkan
+- Page produk telah dibuat
+  
+### 4/11/2025 - 0.3.0 ( WIP )
+
+- Page FAQ telah dibuat ulang
+  
+### 3/11/2025 - 0.3.0 ( WIP )
+
+- Beberapa bug fix
+- Menambahkan intro
 
 ### 31/10/2025 - 0.3.0 ( WIP )
 
