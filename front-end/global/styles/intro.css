@@ -1,0 +1,16 @@
+img {
+    zoom: 0.4;
+}
+
+#block {
+    background-color: #1d7ac4;
+    height: 100vh;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}

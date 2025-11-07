@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="/front-end/components/header/style/style.css">
-<link rel="stylesheet" type="text/css" href="/front-end/global/styles/global-style.css">
+<link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
 <link rel="stylesheet" type="text/css" href="/front-end/components/header/style/responsive.css">
 
 <header>
@@ -14,10 +14,10 @@
             <a href="/front-end/pages/home/index.php">
                 <div class="navTab">
                     <img src="/front-end/global/resources/image/home.png">
-                    <p id="selectedTab">HOME</p>
+                    <p>HOME</p>
                 </div>
             </a>
-            <a href="">
+            <a href="/front-end/pages/product/index.php">
                 <div class="navTab">
                     <img src="/front-end/global/resources/image/category.png">
                     <p>SHOP BY <b>CATEGORY</b></p>
