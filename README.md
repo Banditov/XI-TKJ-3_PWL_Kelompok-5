@@ -185,7 +185,7 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
 <b>! -- Proyek Terpisah -- !</b> <br>
 ![React.JS](https://img.shields.io/badge/React.JS-087EA4?logo=react&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
-
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 
 ## Kontributor
 <img src="https://avatars.githubusercontent.com/u/199484083" width="20"> [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.<br>
