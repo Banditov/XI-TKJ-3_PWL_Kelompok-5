@@ -1,3 +1,7 @@
+<?php
+    require_once __DIR__ . '/../../../back-end/actions/users/session-check.php';
+?>
+
 <!DOCTYPE html>
 	<html lang="en">
 	<head>

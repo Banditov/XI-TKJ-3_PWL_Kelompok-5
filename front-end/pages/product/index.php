@@ -3,6 +3,7 @@
     require_once __DIR__ . '/../../../back-end/actions/filter/get-filter-parents.php';
     require_once __DIR__ . '/../../../back-end/actions/products/get-products.php';
     require_once __DIR__ . '/../../../back-end/actions/products/get-product-colours.php';
+    require_once __DIR__ . '/../../../back-end/actions/users/session-check.php';
 ?>
 
 <!DOCTYPE html>
