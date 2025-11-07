@@ -38,19 +38,11 @@
                 </div>
             </a>
         </div>
-        <div class="navSection">
-            <a href="">
-                <div class="navTab">
-                    <img src="/front-end/global/resources/image/history.png">
-                    <p>HISTORY</p>
-                </div>
-            </a>
-            <a href="">
-                <div class="navTab">
-                    <img src="/front-end/global/resources/image/wishlist.png">
-                    <p>WISHLIST</p>
-                </div>
-            </a>
-        </div>
+        <a href="">
+            <div class="navTab">
+                <img src="/front-end/global/resources/image/history.png">
+                <p>HISTORY</p>
+            </div>
+        </a>
     </div>
 </header>
