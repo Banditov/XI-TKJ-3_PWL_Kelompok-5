@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__ . '/../../../back-end/actions/faq/get-qa.php';
+    require_once __DIR__ . '/../../../back-end/actions/users/session-check.php';
 ?>
 
 <!DOCTYPE html>

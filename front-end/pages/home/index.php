@@ -2,6 +2,7 @@
     require_once __DIR__ . '/../../../back-end/actions/products/get-home-products.php';
     require_once __DIR__ . '/../../../back-end/actions/products/get-books.php';
     require_once __DIR__ . '/../../../back-end/actions/products/get-product-colours.php';
+    require_once __DIR__ . '/../../../back-end/actions/users/session-check.php';
 ?>
 
 <!DOCTYPE html>
@@ -14,8 +15,9 @@
         <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/style.css">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productColor.css">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productCard.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productHover.css">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/responsive.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/animation.css">
     </head>
     <body>
 
@@ -127,7 +129,7 @@
 
 <!-- Scripts -->
 
-        <script src="/front-end/pages/home/scripts/colourSelect.js"></script>
+        <script src="/front-end/global/scripts/colourSelect.js"></script>
         <script src="/front-end/global/scripts/loading-screen.js"></script>
     </body>
 </html>
