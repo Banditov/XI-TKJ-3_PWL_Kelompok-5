@@ -9,7 +9,7 @@
             <div id="cartSection">
                 <div id="cartInfo">
                     <p>My Cart</p>
-                    <p>Rp???.???</p>
+                    <p>Rp ???.???</p>
                 </div>
                 <a href="/front-end/pages/cart/index.php">
                     <img src="/front-end/global/resources/image/cart.png" class="headerIcon">
