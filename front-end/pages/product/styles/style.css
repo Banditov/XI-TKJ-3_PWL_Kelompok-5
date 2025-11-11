@@ -76,3 +76,7 @@
 .childText {
     font-size: 16px;
 }
+
+#filter:hover {
+    cursor: default;
+}

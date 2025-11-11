@@ -1,0 +1,15 @@
+.rowBottom > button:hover {
+    background-color: white;
+    color: #E83838;
+    transition: 0.3s;
+}
+
+.rowBottom {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.rowBottom.open {
+    max-height: min-content;
+    opacity: 1;
+    margin-top: 15px;
+    padding-top: 15px;
+}

@@ -5,9 +5,23 @@
 <header>
     <div id="header">
         <img src="/front-end/global/resources/image/logo.png" id="logo">
-        <a href="/front-end/pages/login/index.php">
-            <img src="/front-end/global/resources/image/account.png" class="accountIcon">
-        </a>
+        <div id="headerIcons">
+            <div id="cartSection">
+                <div id="cartInfo">
+                    <p>My Cart</p>
+                    <p>Rp ???.???</p>
+                </div>
+                <a href="/front-end/pages/cart/index.php">
+                    <img src="/front-end/global/resources/image/cart.png" class="headerIcon">
+                </a>
+            </div>
+            <a href="/front-end/pages/status/index.php">
+                <img src="/front-end/global/resources/image/notification.png" class="headerIcon">
+            </a>
+            <a href="/front-end/pages/profile/index.php">
+                <img src="/front-end/global/resources/image/account.png" class="headerIcon">
+            </a>
+        </div>
     </div>
     <div id="nav">
         <div class="navSection">
@@ -24,19 +38,11 @@
                 </div>
             </a>
         </div>
-        <div class="navSection">
-            <a href="">
-                <div class="navTab">
-                    <img src="/front-end/global/resources/image/history.png">
-                    <p>HISTORY</p>
-                </div>
-            </a>
-            <a href="">
-                <div class="navTab">
-                    <img src="/front-end/global/resources/image/wishlist.png">
-                    <p>WISHLIST</p>
-                </div>
-            </a>
-        </div>
+        <a href="/front-end/pages/history/index.php">
+            <div class="navTab">
+                <img src="/front-end/global/resources/image/history.png">
+                <p>HISTORY</p>
+            </div>
+        </a>
     </div>
 </header>
