@@ -1,0 +1,330 @@
+/* Pengaturan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* Menggunakan font generik mirip Arial */
+}
+
+body {
+  background-color: #f4f4f4; /* Latar belakang abu-abu muda */
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Header / Navbar Atas --- */
+.top-header {
+  background-color: #ffffff;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px; /* Ukuran logo */
+  height: 40px;
+
+  border-radius: 5px;
+  margin-right: 10px;
+  content: url("Logo-placeholder.png"); /* Placeholder logo */
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #007bff; /* Warna biru */
+  margin-right: 5px;
+}
+
+.sub-text {
+  font-size: 0.7em;
+  color: #555;
+  align-self: flex-end;
+  margin-bottom: 2px;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.my-cart-text,
+.rp-text {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.rp-text {
+  font-weight: bold;
+}
+
+.icon-big {
+  font-size: 1.2em;
+  color: #555;
+  cursor: pointer;
+}
+
+.user-icon {
+  font-size: 2em; /* Ikon user lebih besar */
+  color: #007bff;
+}
+
+/* --- Navigation Bar Utama --- */
+.main-nav {
+  background-color: #ffffff;
+  padding: 10px 40px;
+  border-bottom: 2px solid #ddd; /* Garis pemisah di bawah nav utama */
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.active-nave {
+    margin-left: 965px
+}
+
+.active-nav {
+    margin-left: 5px
+}
+
+.main-nav ul li .fa-home {
+  margin-right: 5px;
+}
+
+.main-nav ul li.active-nav a {
+  color: #007bff; /* Warna biru untuk item aktif */
+  font-weight: bold;
+}
+
+.separator {
+  color: #ccc;
+}
+
+.nav-divider {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 0;
+}
+
+/* --- Konten Utama: HISTORY --- */
+.history-container {
+  padding: 20px 40px;
+  flex-grow: 1; /* Agar mengambil ruang yang tersedia */
+}
+
+.history-title {
+  font-size: 2.5em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-section {
+  margin-bottom: 30px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  width: 300px; /* Lebar sesuai gambar */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Tabel Riwayat Pesanan */
+.order-table {
+  display: grid;
+  /* Menyesuaikan lebar kolom agar mirip gambar */
+  grid-template-columns: 150px 120px minmax(300px, 1fr) 150px;
+  text-align: left;
+  gap: 10px 20px;
+}
+
+.table-header,
+.table-row {
+  display: contents; /* Agar elemen anak diatur oleh grid */
+  font-size: 1em;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.table-header {
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #ccc; /* Garis yang lebih tebal di header */
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.table-row {
+  color: #555;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+/* Pengaturan kolom spesifik untuk memastikan lebar */
+.col-pesanan {
+  grid-column: 1;
+}
+.col-tanggal {
+  grid-column: 2;
+}
+.col-produk {
+  grid-column: 3;
+}
+.col-status {
+  grid-column: 4;
+}
+
+/* Styling Status */
+.status-ready {
+  color: #28a745; /* Hijau */
+  font-weight: 600;
+}
+
+.status-complete {
+  color: #007bff; /* Biru */
+  font-weight: 600;
+}
+
+.scroll-indicator {
+  text-align: center;
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 1.5em;
+}
+
+/* Spacer untuk memisahkan konten utama dan footer */
+.main-content-spacer {
+  flex-grow: 1;
+}
+
+/* --- Footer --- */
+.main-footer {
+  background-color: #007bff; /* Warna biru gelap */
+  color: #ffffff;
+  padding: 30px 40px;
+  font-size: 0.9em;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+}
+
+.logo-img-footer {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  content: url("https://via.placeholder.com/50x50.png?text=Logo"); /* Placeholder logo footer */
+}
+
+.logo-text-footer {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.sub-text-footer {
+  font-size: 0.8em;
+}
+
+.footer-section {
+  width: 25%;
+}
+
+.footer-section h3 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #eee;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section:nth-child(2) {
+  /* About This Website */
+  width: 35%;
+}
+
+.footer-section:nth-child(4) {
+  /* Contact Us */
+  width: 20%;
+}
+
+/* Media Queries untuk responsivitas dasar (opsional) */
+@media (max-width: 768px) {
+  .top-header,
+  .main-nav {
+    padding: 10px 20px;
+  }
+  .main-nav ul {
+    flex-wrap: wrap;
+  }
+  .history-container {
+    padding: 20px;
+  }
+  .order-table {
+    grid-template-columns: 100px 80px minmax(150px, 1fr) 100px;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-section,
+  .footer-logo,
+  .footer-section:nth-child(2),
+  .footer-section:nth-child(4) {
+    width: 100%;
+  }
+}
