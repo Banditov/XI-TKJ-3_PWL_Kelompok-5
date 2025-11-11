@@ -18,7 +18,7 @@
             <a href="/front-end/pages/status/index.php">
                 <img src="/front-end/global/resources/image/notification.png" class="headerIcon">
             </a>
-            <a href="/front-end/pages/login/index.php">
+            <a href="/front-end/pages/profile/index.php">
                 <img src="/front-end/global/resources/image/account.png" class="headerIcon">
             </a>
         </div>

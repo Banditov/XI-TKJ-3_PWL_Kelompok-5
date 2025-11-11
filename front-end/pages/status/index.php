@@ -18,6 +18,7 @@
 
 <!-- Loading Screen -->
 
+        <?php include '../../components/loading-screen/loading-screen.php'; ?>
 
 <!-- Header -->
 
