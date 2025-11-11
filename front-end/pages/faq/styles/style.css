@@ -81,3 +81,7 @@
 .hiddenRow, .filtered {
     display: none;
 }
+
+.qaRow:hover {
+    cursor: default;
+}

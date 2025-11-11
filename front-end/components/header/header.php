@@ -9,7 +9,7 @@
             <div id="cartSection">
                 <div id="cartInfo">
                     <p>My Cart</p>
-                    <p>Rp???.???</p>
+                    <p>Rp ???.???</p>
                 </div>
                 <a href="/front-end/pages/cart/index.php">
                     <img src="/front-end/global/resources/image/icon/cart.png" class="headerIcon">
@@ -18,7 +18,7 @@
             <a href="/front-end/pages/status/index.php">
                 <img src="/front-end/global/resources/image/icon/notification.png" class="headerIcon">
             </a>
-            <a href="/front-end/pages/login/index.php">
+            <a href="/front-end/pages/profile/index.php">
                 <img src="/front-end/global/resources/image/icon/account.png" class="headerIcon">
             </a>
         </div>
@@ -38,7 +38,7 @@
                 </div>
             </a>
         </div>
-        <a href="">
+        <a href="/front-end/pages/history/index.php">
             <div class="navTab">
                 <img src="/front-end/global/resources/image/icon/history.png">
                 <p>HISTORY</p>

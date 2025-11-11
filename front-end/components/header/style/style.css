@@ -65,3 +65,7 @@ header {
     display: flex;
     align-items: center;
 }
+
+#header:hover {
+    cursor: default;
+}
