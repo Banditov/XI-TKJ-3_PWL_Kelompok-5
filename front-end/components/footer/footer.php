@@ -4,7 +4,7 @@
 
 <footer>
     <div id="footer">
-        <img src="/front-end/global/resources/image/logo.png" id="logo">
+        <img src="/front-end/global/resources/image/logo/logo.png" id="logo">
         <div id="footerContent">
             <div id="footerAbout">
                 <h4><b>About This Website</b></h4>
@@ -17,11 +17,11 @@
             <div>
                 <h4><b>Contact Us</b></h4>
                 <div class="contact">
-                    <img src="/front-end/global/resources/image/email.png">
+                    <img src="/front-end/global/resources/image/icon/email.png">
                     <h5>ATKski@ski.sch.id</h5>
                 </div>
                 <div class="contact">
-                    <img src="/front-end/global/resources/image/phone.png">
+                    <img src="/front-end/global/resources/image/icon/phone.png">
                     <h5>+62896-1224-0668</h5>
                 </div>
             </div>
