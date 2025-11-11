@@ -18,7 +18,24 @@
 
 #banner > img {
     width: 100%;
-    height: fit-content;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bannerTitle {
+    display: block;
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+#bannerTitle > p {
+    font-family: serif;
 }
 
 #bookBanner {
@@ -73,4 +90,8 @@
 #stationerySection {
     display: flex;
     justify-content: space-between;
+}
+
+#banner:hover {
+    cursor: default;
 }
