@@ -85,3 +85,7 @@
 .qaRow:hover {
     cursor: default;
 }
+
+#extendQAIcon {
+    transform: rotate(0deg);
+}

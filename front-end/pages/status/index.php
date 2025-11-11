@@ -8,7 +8,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>ATK SKI - Status</title>
-		<link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
+		<link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
 		<link rel="stylesheet" type="text/css" href="/front-end/pages/status/styles/style.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/pages/status/styles/animation.css">
@@ -41,7 +41,7 @@
 							<p>#123</p>
 							<p class="status">Order Status</p>
 						</div>
-						<img src="/front-end/global/resources/image/statusDropOff.png" class="dropDownButton">
+						<img src="/front-end/global/resources/image/icon/statusDropOff.png" class="dropDownButton">
 					</div>
 					<div class="rowBottom">
 						<button>Cancel</button>
@@ -53,7 +53,7 @@
 							<p>#123</p>
 							<p class="status">Order Status</p>
 						</div>
-						<img src="/front-end/global/resources/image/statusRemove.png">
+						<img src="/front-end/global/resources/image/icon/statusRemove.png">
 					</div>
 				</div>
 			</div>

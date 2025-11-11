@@ -8,7 +8,7 @@ document.querySelectorAll('.statusRow').forEach(row => {
         bottomRow.classList.toggle('open', !isOpen);
 
         dropButton.src = isOpen 
-        ? '/front-end/global/resources/image/statusDropOff.png' 
-        : '/front-end/global/resources/image/statusDropOn.png';
+        ? '/front-end/global/resources/image/icon/statusDropOff.png' 
+        : '/front-end/global/resources/image/icon/statusDropOn.png';
     });
 });
