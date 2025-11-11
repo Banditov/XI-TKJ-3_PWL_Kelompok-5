@@ -38,7 +38,7 @@
                 </div>
             </a>
         </div>
-        <a href="">
+        <a href="/front-end/pages/history/index.php">
             <div class="navTab">
                 <img src="/front-end/global/resources/image/history.png">
                 <p>HISTORY</p>
