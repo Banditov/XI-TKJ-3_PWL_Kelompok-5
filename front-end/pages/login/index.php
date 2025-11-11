@@ -6,26 +6,40 @@
         <title>ATK SKI - Login</title>
         <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/style.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/global-style.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/responsive.css">
     </head>
     <body>
+
+<!-- Loading Screen -->
+
+        <?php include '../../components/loading-screen/loading-screen.php'; ?>
+
+<!-- Content -->
+
         <div id="loginBackground">
             <img src="/front-end/global/resources/image/login_background.png">
         </div>
+
+<!-- Content -->
+
         <div id="centerForm">
             <div class="loginForm">
-                <b>Yuk, masuk untuk melanjutkan!</b>
-                <form id="loginForm" action="/front-end/pages/home/home.php">
+                <b>Yuk, <a href="/front-end/pages/register-admin/index.php"><b>masuk</b></a> untuk melanjutkan!</b>
+                <form method="POST" id="loginForm" action="/back-end/actions/users/login.php">
                     <div class="inputForm">
-                        <input type="email" id="email" class="inputField" placeholder="Email Sekolah" required>
+                        <input type="email" id="email" name="email" class="inputField" placeholder="Email Sekolah" required>
                     </div>
                     <div class="inputForm">
-                        <input type="password" id="password" class="inputField" placeholder="Password" required>
+                        <input type="password" id="password" name="password" class="inputField" placeholder="Password" required>
                     </div>
-                    <button type="submit" class="submitButton">Lanjut</button>
+                    <button type="submit" name="login" class="submitButton">Lanjut</button>
                 </form>
             </div>
         </div>
+
+<!-- Scripts -->
+
+        <script src="/front-end/global/scripts/loading-screen.js"></script>
     </body>
 </html>
