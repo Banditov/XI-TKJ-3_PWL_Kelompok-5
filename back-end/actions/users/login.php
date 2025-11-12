@@ -1,6 +1,6 @@
 <?php
-    require_once '../../config/db-connection.php';
     session_start();
+    require_once '../../config/db-connection.php';
 
     if (isset($_POST['login'])) {
         $email = $_POST['email'];

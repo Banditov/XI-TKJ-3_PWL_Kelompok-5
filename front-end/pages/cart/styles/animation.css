@@ -1,0 +1,6 @@
+.cartBottomSeperator > button:hover {
+    border: 3px solid #1D7BC5;
+    background-color: white;
+    color: #1D7BC5;
+    transition: 0.3s;
+}
