@@ -132,6 +132,8 @@
 
 <!-- Scripts -->
 
+        <script src="/front-end/global/scripts/cart.js"></script>
+        <script src="/front-end/pages/home/scripts/addToCart.js"></script>
         <script src="/front-end/global/scripts/colourSelect.js"></script>
         <script src="/front-end/global/scripts/loading-screen.js"></script>
     </body>

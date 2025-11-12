@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__ . '/../../../back-end/actions/users/session-check.php';
+	require_once __DIR__ . '/../../../back-end/actions/cart/get-cart-items.php';
 ?>
 
 <!DOCTYPE html>
@@ -41,35 +42,48 @@
 					<p>Total</p>
 				</div>
 			</div>
-			<div class="cardRow">
-				<div class="cartCard">
-					<div class="imageCard">
-						<img src="/back-end/database/images/0011.png">
-					</div>
-					<div class="cardContent">
-						<p class="cardProduct">Suatu Produk - Warna</p>
-						<div class="rightCardContent">
-							<p>Rp 1.000</p>
-							<div class="cardQuantity">
-								<button>+</button>
-								<p>1</p>
-								<button>-</button>
+			<?php if (empty($cartItems)): ?>
+				<div class="empty-cart">
+					<p>Your cart is empty</p>
+					<a href="/front-end/pages/product/index.php">Continue Shopping</a>
+				</div>
+			<?php else: ?>
+				<?php foreach ($cartItems as $item): ?>
+					<?php
+					$itemTotal = $item['price'] * $item['quantity'];
+					$colorDisplay = $item['color'] !== 'None' ? " - " . $item['color'] : '';
+					?>
+					<div class="cardRow" data-cart-item-id="<?= $item['cart_item_id'] ?>">
+						<div class="cartCard">
+							<div class="imageCard">
+								<img src="/back-end/database/images/<?= $item['image'] ?>.png" alt="<?= $item['product_name'] ?>">
 							</div>
-							<p class="cardTotal">Rp 1.000</p>
+							<div class="cardContent">
+								<p class="cardProduct"><?= $item['product_name'] . $colorDisplay ?></p>
+								<div class="rightCardContent">
+									<p>Rp <?= number_format($item['price'], 0, ',', '.') ?></p>
+									<div class="cardQuantity">
+										<button class="quantity-btn" data-action="increase">+</button>
+										<p class="quantity-display"><?= $item['quantity'] ?></p>
+										<button class="quantity-btn" data-action="decrease">-</button>
+									</div>
+									<p class="cardTotal">Rp <?= number_format($itemTotal, 0, ',', '.') ?></p>
+								</div>
+							</div>
+						</div>
+						<div class="cardRemove" data-cart-item-id="<?= $item['cart_item_id'] ?>">
+							<img src="/front-end/global/resources/image/icon/remove.png">
 						</div>
 					</div>
-				</div>
-				<div class="cardRemove">
-					<img src="/front-end/global/resources/image/icon/remove.png">
-				</div>
-			</div>
+				<?php endforeach; ?>
 
-			<div class="cartBottom">
-				<div class="cartBottomSeperator">
-					<p>Total: Rp 1.000</p>
-					<button>Proceed To Checkout</button>
+				<div class="cartBottom">
+					<div class="cartBottomSeperator">
+						<p>Total: Rp <?= number_format($totalAmount, 0, ',', '.') ?></p>
+						<button id="checkoutBtn">Proceed To Checkout</button>
+					</div>
 				</div>
-			</div>
+			<?php endif; ?>
 
 		</div>
 
@@ -79,6 +93,7 @@
 
 <!-- Scripts -->
 
+		<script src="/front-end/pages/cart/scripts/updateQuantity.js"></script>
 		<script src="/front-end/global/scripts/loading-screen.js"></script>
 	</body>
 </html>

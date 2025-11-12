@@ -4,3 +4,13 @@
     color: #1D7BC5;
     transition: 0.3s;
 }
+
+.empty-cart a:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.empty-cart a:active {
+    transform: translateY(0);
+}
