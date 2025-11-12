@@ -1,0 +1,154 @@
+#content {
+    font-size: 20px;
+    color: #5E5E5E;
+}
+
+#indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#rightIndicator {
+    display: flex;
+    gap: 200px;
+    margin-right: 110px;
+}
+
+.cartCard {
+    box-shadow: 0px 0px 10px rgba(65, 62, 62, 0.151);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.cardRemove > img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.cardRemove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardRow {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.cardProduct {
+    margin-left: 50px;
+}
+
+.cardContent {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cardQuantity {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardQuantity > button {
+    min-width: 20px;
+    min-height: 20px;
+    border: 0;
+    background-color: transparent;
+    color: #5E5E5E;
+    font-size: 30px;
+}
+
+.rightCardContent {
+    display: flex;
+    align-items: center;
+    gap: 170px;
+}
+
+.cardTotal {
+    margin-right: 20px;
+}
+
+.imageCard {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 12px 0px 10px rgba(65, 62, 62, 0.151);
+}
+
+.imageCard > img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.cartBottom {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.cartBottomSeperator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 100px;
+    gap: 40px;
+}
+
+.cartBottomSeperator > button {
+    font-size: 20px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    background-color: #1D7BC5;
+    color: white;
+}
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 2px dashed #dee2e6;
+}
+
+.empty-cart p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.empty-cart a {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
