@@ -63,6 +63,11 @@ async function filterProducts(categoryId = 0, type = 'child', sort = 'default') 
                 </div>`;
         }).join('');
 
+        if (window.cartManager) {
+            window.cartManager.initializeAddToCartButtons();
+            window.cartManager.initializeColorSelection();
+        }
+        
         initProductColorEvents();
 
     } catch (err) {
