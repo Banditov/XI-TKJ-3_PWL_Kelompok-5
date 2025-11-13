@@ -93,6 +93,7 @@
 
 <!-- Scripts -->
 
+		<script src="/front-end/global/scripts/cart.js"></script>
 		<script src="/front-end/pages/cart/scripts/updateQuantity.js"></script>
 		<script src="/front-end/global/scripts/loading-screen.js"></script>
 	</body>
