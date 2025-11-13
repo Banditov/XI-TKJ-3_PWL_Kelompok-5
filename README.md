@@ -10,10 +10,10 @@
       <img src="https://img.shields.io/badge/License-Unlicense-c53535.svg">
    </a>
    <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/Version-b0.3.1-orange">
+      <img src="https://img.shields.io/badge/GitHub Version-b0.3.1-orange">
    </a>
    <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/Latest Release-0.2.1-yellow">
+      <img src="https://img.shields.io/badge/Latest Release-b0.3.0-yellow">
    </a>
    <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#kontributor">
       <img src="https://img.shields.io/badge/Contributor-3-green">
