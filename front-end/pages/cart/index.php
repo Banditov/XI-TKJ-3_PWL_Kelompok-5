@@ -37,8 +37,10 @@
 			<div id="indicator">
 				<p>Added Items</p>
 				<div id="rightIndicator">
-					<p>Price</p>
-					<p>Quantity</p>
+					<div id="rightIndicatorGroup">
+						<p>Price</p>
+						<p>Quantity</p>
+					</div>
 					<p>Total</p>
 				</div>
 			</div>
@@ -59,15 +61,17 @@
 								<img src="/back-end/database/images/<?= $item['image'] ?>.png" alt="<?= $item['product_name'] ?>">
 							</div>
 							<div class="cardContent">
-								<p class="cardProduct"><?= $item['product_name'] . $colorDisplay ?></p>
+								<p class="cardProduct"><?= htmlspecialchars($item['product_name']) . $colorDisplay ?></p>
 								<div class="rightCardContent">
-									<p>Rp <?= number_format($item['price'], 0, ',', '.') ?></p>
+									<p class="itemPrice">Rp <?= number_format($item['price'], 0, ',', '.') ?></p>
 									<div class="cardQuantity">
-										<button class="quantity-btn" data-action="increase">+</button>
-										<p class="quantity-display"><?= $item['quantity'] ?></p>
-										<button class="quantity-btn" data-action="decrease">-</button>
+										<button class="quantityBtn" data-action="increase">+</button>
+										<p class="quantityDisplay"><?= $item['quantity'] ?></p>
+										<button class="quantityBtn" data-action="decrease">-</button>
 									</div>
-									<p class="cardTotal">Rp <?= number_format($itemTotal, 0, ',', '.') ?></p>
+									<div class="cardTotalWrap">
+										<p class="cardTotal">Rp <?= number_format($itemTotal, 0, ',', '.') ?></p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -79,8 +83,8 @@
 
 				<div class="cartBottom">
 					<div class="cartBottomSeperator">
-						<p>Total: Rp <?= number_format($totalAmount, 0, ',', '.') ?></p>
-						<button id="checkoutBtn">Proceed To Checkout</button>
+						<p class="totalAmount">Total: Rp <?= number_format($totalAmount, 0, ',', '.') ?></p>
+						<button id="checkoutBtn" class="checkoutButton">Proceed To Checkout</button>
 					</div>
 				</div>
 			<?php endif; ?>
@@ -93,8 +97,7 @@
 
 <!-- Scripts -->
 
-		<script src="/front-end/global/scripts/cart.js"></script>
-		<script src="/front-end/pages/cart/scripts/updateQuantity.js"></script>
+		<script src="/front-end/pages/cart/scripts/cartUpdate.js"></script>
 		<script src="/front-end/global/scripts/loading-screen.js"></script>
 	</body>
 </html>

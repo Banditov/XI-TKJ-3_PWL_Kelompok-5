@@ -23,24 +23,34 @@
     $color = isset($input['color']) ? $input['color'] : 'None';
     $quantity = isset($input['quantity']) ? intval($input['quantity']) : 1;
 
-    if (!$product_id) {
-        echo json_encode(['success' => false, 'message' => 'Product ID is required.']);
+    if (!$product_id || $product_id <= 0) {
+        echo json_encode(['success' => false, 'message' => 'Invalid product ID.']);
+        exit;
+    }
+
+    if ($quantity <= 0) {
+        echo json_encode(['success' => false, 'message' => 'Invalid quantity.']);
         exit;
     }
 
     try {
-        $productQuery = "SELECT id, stock, product_name FROM products WHERE product_id = ? AND color = ?";
+        $pdo = Database::getPDO();
+        
+        $productQuery = "SELECT id, stock, product_name, price FROM products WHERE product_id = ? AND color = ?";
         $productStmt = $pdo->prepare($productQuery);
         $productStmt->execute([$product_id, $color]);
         $product = $productStmt->fetch();
 
         if (!$product) {
-            echo json_encode(['success' => false, 'message' => 'Product not found.']);
+            echo json_encode(['success' => false, 'message' => 'Product not found for the selected color.']);
             exit;
         }
 
         if ($product['stock'] < $quantity) {
-            echo json_encode(['success' => false, 'message' => 'Insufficient stock for ' . $product['product_name']]);
+            echo json_encode([
+                'success' => false, 
+                'message' => 'Insufficient stock. Only ' . $product['stock'] . ' items available for ' . $product['product_name']
+            ]);
             exit;
         }
 
@@ -53,7 +63,10 @@
             $newQuantity = $existingItem['quantity'] + $quantity;
             
             if ($product['stock'] < $newQuantity) {
-                echo json_encode(['success' => false, 'message' => 'Cannot add more than available stock for ' . $product['product_name']]);
+                echo json_encode([
+                    'success' => false, 
+                    'message' => 'Cannot add more than available stock. You already have ' . $existingItem['quantity'] . ' in cart.'
+                ]);
                 exit;
             }
             
@@ -65,23 +78,33 @@
                 'success' => true, 
                 'message' => 'Cart updated successfully',
                 'product_name' => $product['product_name'],
-                'color' => $color
+                'color' => $color,
+                'quantity' => $newQuantity,
+                'action' => 'updated'
             ]);
         } else {
             $insertQuery = "INSERT INTO cart_items (account_id, product_id, quantity) VALUES (?, ?, ?)";
             $insertStmt = $pdo->prepare($insertQuery);
             $insertStmt->execute([$user_id, $product['id'], $quantity]);
             
+            $cart_item_id = $pdo->lastInsertId();
+            
             echo json_encode([
                 'success' => true, 
                 'message' => 'Item added to cart successfully',
                 'product_name' => $product['product_name'],
-                'color' => $color
+                'color' => $color,
+                'quantity' => $quantity,
+                'cart_item_id' => $cart_item_id,
+                'action' => 'added'
             ]);
         }
         
+    } catch (PDOException $e) {
+        error_log("Database error in add-to-cart: " . $e->getMessage());
+        echo json_encode(['success' => false, 'message' => 'Database error occurred. Please try again.']);
     } catch (Exception $e) {
-        error_log("Cart error: " . $e->getMessage());
-        echo json_encode(['success' => false, 'message' => 'Database error occurred.']);
+        error_log("General error in add-to-cart: " . $e->getMessage());
+        echo json_encode(['success' => false, 'message' => 'An unexpected error occurred.']);
     }
 ?>

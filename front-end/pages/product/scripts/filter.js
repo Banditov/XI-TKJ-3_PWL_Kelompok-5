@@ -1,111 +1,77 @@
-class CartManager {
-    constructor() {
-        this.initialized = false;
-        this.observer = null;
-        this.init();
-    }
+let activeCategoryId = null;
 
-    init() {
-        if (this.initialized) return;
-        
-        console.log('CartManager initializing...');
-        this.initializeAddToCartButtons();
-        this.initializeColorSelection();
-        this.setupMutationObserver();
-        this.initialized = true;
-    }
+const productContainer = document.getElementById('productContainer');
 
-    setupMutationObserver() {
-        this.observer = new MutationObserver((mutations) => {
-            mutations.forEach((mutation) => {
-                if (mutation.type === 'childList') {
-                    mutation.addedNodes.forEach((node) => {
-                        if (node.nodeType === 1) {
-                            if (node.classList && (node.classList.contains('stationeryProduct') || node.classList.contains('bookProduct'))) {
-                                this.initializeProduct(node);
-                            } else if (node.querySelector) {
-                                const products = node.querySelectorAll('.stationeryProduct, .bookProduct');
-                                products.forEach(product => this.initializeProduct(product));
-                            }
-                        }
-                    });
-                }
-            });
+document.querySelectorAll('.parentText, .childText').forEach(item => {
+    item.addEventListener('click', () => {
+        const isParent = item.classList.contains('parentText');
+        const categoryId = isParent 
+            ? parseInt(item.closest('.parentRow').dataset.parentId) 
+            : parseInt(item.closest('.childRow').dataset.childId);
+        const type = isParent ? 'parent' : 'child';
+        const sortValue = sortFilter.value;
+
+        const newCategoryId = (activeCategoryId === categoryId) ? 0 : categoryId;
+        activeCategoryId = (newCategoryId === 0) ? null : newCategoryId;
+
+        document.querySelectorAll('.parentText, .childText').forEach(el => el.classList.remove('active'));
+        if (activeCategoryId) item.classList.add('active');
+
+        filterProducts(newCategoryId, type, sortValue);
+    });
+});
+
+async function filterProducts(categoryId = 0, type = 'child', sort = 'default') {
+    productContainer.innerHTML = "<p>Loading...</p>";
+
+    const formData = new URLSearchParams({ 
+        category_id: categoryId, 
+        type, 
+        sort 
+    });
+
+    try {
+        const res = await fetch('/back-end/actions/filter/filter-products.php', {
+            method: 'POST',
+            body: formData
         });
+        const data = await res.json();
 
-        this.observer.observe(document.body, {
-            childList: true,
-            subtree: true
-        });
-    }
+        if (data.error) return productContainer.innerHTML = `<p>${data.error}</p>`;
+        if (!data.products || !data.products.length) return productContainer.innerHTML = "<p>No products found.</p>";
 
-    initializeProduct(productElement) {
-        const addButton = productElement.querySelector('.addToCart');
-        if (addButton && !addButton.hasAttribute('data-cart-initialized')) {
-            addButton.setAttribute('data-cart-initialized', 'true');
-            addButton.addEventListener('click', (e) => {
-                console.log('Add to cart clicked (dynamic)');
-                this.addToCart(productElement);
-            });
+        productContainer.innerHTML = data.products.map(p => {
+            const colorsHTML = (p.colors || []).map(color => `
+                <label class="colorOption" id="${color}">
+                    <input type="checkbox" value="${color}">
+                </label>`).join('');
+
+            return `
+                <div class="stationeryProduct" data-id="${p.id}">
+                    <div class="productImageHorizon">
+                        <img src="/back-end/database/images/${p.image}.png" alt="${p.product_name}">
+                    </div>
+                    <div class="productDesc">
+                        <p class="productStock">Stok: ${p.stock}</p>
+                        <p class="productName">${p.product_name}</p>
+                        <p class="productPrice">Rp ${new Intl.NumberFormat('id-ID').format(p.price)}</p>
+                        ${colorsHTML ? `<div class="colorForm"><form class="productColor">${colorsHTML}</form></div>` : ''}
+                        <div class="addToCart">
+                            <img src="/front-end/global/resources/image/icon/add.png">
+                        </div>
+                    </div>
+                </div>`;
+        }).join('');
+
+        if (window.cartManager) {
+            window.cartManager.initializeAddToCartButtons();
+            window.cartManager.initializeColorSelection();
         }
-
-        const colorOptions = productElement.querySelectorAll('.colorOption');
-        colorOptions.forEach(option => {
-            if (!option.hasAttribute('data-cart-initialized')) {
-                option.setAttribute('data-cart-initialized', 'true');
-                option.style.cursor = 'pointer';
-                option.addEventListener('click', (e) => {
-                    if (e.target.type !== 'checkbox') {
-                        const checkbox = option.querySelector('input[type="checkbox"]');
-                        if (checkbox) {
-                            checkbox.checked = !checkbox.checked;
-                            this.updateColorAppearance(option, checkbox.checked);
-                        }
-                    }
-                });
-                
-                const checkbox = option.querySelector('input[type="checkbox"]');
-                if (checkbox) {
-                    this.updateColorAppearance(option, checkbox.checked);
-                }
-            }
-        });
-    }
-
-    initializeAddToCartButtons() {
-        console.log('Initializing add to cart buttons...');
         
-        const bookProducts = document.querySelectorAll('.bookProduct');
-        const stationeryProducts = document.querySelectorAll('.stationeryProduct');
-        
-        console.log('Found products:', {
-            book: bookProducts.length,
-            stationery: stationeryProducts.length
-        });
-        
-        bookProducts.forEach(product => this.initializeProduct(product));
-        stationeryProducts.forEach(product => this.initializeProduct(product));
-    }
+        initProductColorEvents();
 
-    initializeColorSelection() {
-    }
-
-    updateColorAppearance(colorOption, isChecked) {
-    }
-
-    addToCart(productElement) {
-    }
-
-    getSelectedColors(productElement) {
-    }
-
-    showNotification(message, type = 'info') {
-    }
-
-    updateCartCounter(addedCount = 1) {
+    } catch (err) {
+        console.error(err);
+        productContainer.innerHTML = "<p>Connection failed.</p>";
     }
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    window.cartManager = new CartManager();
-});

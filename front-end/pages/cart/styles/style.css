@@ -11,8 +11,13 @@
 
 #rightIndicator {
     display: flex;
-    gap: 200px;
+    gap: 290px;
     margin-right: 110px;
+}
+
+#rightIndicatorGroup {
+    display: flex;
+    gap: 230px;
 }
 
 .cartCard {
@@ -59,9 +64,8 @@
     gap: 20px;
 }
 
-.cardQuantity > button {
-    min-width: 20px;
-    min-height: 20px;
+.quantityBtn {
+    width: 40px;
     border: 0;
     background-color: transparent;
     color: #5E5E5E;
@@ -76,6 +80,11 @@
 
 .cardTotal {
     margin-right: 20px;
+    text-align: end;
+}
+
+.cardTotalWrap {
+    width: 175px;
 }
 
 .imageCard {
@@ -151,4 +160,9 @@
     border: none;
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.quantityDisplay {
+    min-width: 30px;
+    text-align: center;
 }

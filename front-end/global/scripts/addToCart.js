@@ -323,4 +323,3 @@ if (!document.querySelector('#cart-styles')) {
     styleSheet.textContent = cartStyles;
     document.head.appendChild(styleSheet);
 }
-
