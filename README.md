@@ -6,20 +6,26 @@
 <img src=".github/images/banner/github_banner.png">
 
 <div align="center">
-   <a href="http://unlicense.org/">
-      <img src="https://img.shields.io/badge/License-Unlicense-c53535.svg">
+   <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
+      <img src="https://img.shields.io/badge/GitHub Version-b0.3.1-red">
    </a>
-   <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/GitHub Version-b0.3.1-orange">
-   </a>
-   <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/Latest Release-b0.3.0-yellow">
-   </a>
-   <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#kontributor">
-      <img src="https://img.shields.io/badge/Contributor-3-green">
+   <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
+      <img src="https://img.shields.io/badge/Latest Release-b0.3.0-green">
    </a>
    <a href="https://app.netlify.com/projects/atkski/deploys">
       <img src="https://img.shields.io/badge/Netlify-0.2.1-00C7B7?style=flat&logo=Netlify&logoColor=white">
+   </a><br>
+   <a href="http://unlicense.org/">
+      <img src="https://img.shields.io/badge/License-Unlicense-blue.svg">
+   </a>
+   <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#kontributor">
+      <img src="https://img.shields.io/badge/Contributor-3-orange">
+   </a>
+   <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5/issues">
+     <img src="https://img.shields.io/github/issues/Banditov/XI-TKJ-3_PWL_Kelompok-5?label=Issues">
+   </a>
+   <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5/commits/main">
+     <img src="https://img.shields.io/github/repo-size/Banditov/XI-TKJ-3_PWL_Kelompok-5?color=purple&label=Repo%20Size">
    </a><br>
    <a href="https://app.netlify.com/projects/atkski/deploys">
       <img src="https://api.netlify.com/api/v1/badges/11368017-fe23-41df-b99b-f94ff06ccccc/deploy-status">
@@ -36,19 +42,35 @@
 - [Kontributor](#kontributor)
 - [Lisensi](#lisensi)
 - [Change Logs](#changelog)
-- [Useful Links](#links)
+- [Link](#links)
 </details>
 
 
 ## Instalasi
 <details>
-   <summary>Pilih antara instalasi secara lokal atau online</summary>
+   <summary>Instalasi</summary>
+<details>
+   <summary>Versi Beta</summary>
+
+### Step 1
+<details>
+   <summary>Pilih Versi</summary>
+1. 
+</details>
+</details>
+
+<br><br>
+
+<details>
+   <summary>Versi Alpha</summary><br>
+<details>
+   <summary>Pilih antara instalasi secara lokal atau online</summary><br>
 <details>
    <summary>Lokal</summary>
    
 ### Step 1
 <details>
-   <summary>Pick a Version!</summary><br>
+   <summary>Pilih Versi!</summary><br>
    
 <details>
    <summary>Unstable Version</summary>
@@ -72,7 +94,7 @@
 <br>
 <details>
    <summary>Stable Version</summary>
-1. Buka page <a href="https://github.com/Banditov/PWL-Kelompok-5/releases">Releases</a> dari repository ini.
+1. Buka page <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5/releases">Releases</a> dari repository ini.
    <details>
       <summary>Step 1B-1</summary>
       <img src=".github/images/tutorial/A1B-1.png">
@@ -165,6 +187,8 @@
 Note tambahan:<br>
 Website lewat link ini mungkin tidak up-to-date dengan versi rilis dalam GitHub (Dapat cek badge versi Netlify pada bagian atas) dan juga ada kemungkinan website ini tidak online.
    
+</details>
+</details>
 </details>
 </details>
 
