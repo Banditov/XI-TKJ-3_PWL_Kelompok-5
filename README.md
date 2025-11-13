@@ -10,7 +10,10 @@
       <img src="https://img.shields.io/badge/License-Unlicense-c53535.svg">
    </a>
    <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/Version-0.2.1-yellow">
+      <img src="https://img.shields.io/badge/Version-b0.3.1-orange">
+   </a>
+   <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#changelog">
+      <img src="https://img.shields.io/badge/Latest Release-0.2.1-yellow">
    </a>
    <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#kontributor">
       <img src="https://img.shields.io/badge/Contributor-3-green">
@@ -200,7 +203,20 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
-      
+   
+### 13/11/2025 - 0.3.0 ( WIP )
+
+- Desain banner telah diganti
+
+### 12/11/2025 - 0.3.0 ( WIP )
+
+- Halaman cart telah dibuat
+- Fitur add to cart telah ditambahkan
+
+### 11/11/2025 - 0.3.0 ( WIP )
+
+- Struktur image telah diupdate
+
 ### 6/11/2025 - 0.3.0 ( WIP )
 
 - Database telah diupdate
