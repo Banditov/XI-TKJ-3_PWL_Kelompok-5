@@ -5,12 +5,18 @@
 		$user_id = $_SESSION['accounts']['id'];
 	} else if (isset($_SESSION['user'])) {
 		$user_id = $_SESSION['user']['id'];
+	} else {
+		header('Location: /front-end/pages/login/index.php');
+		exit;
 	}
 
 	$cartItems = [];
 	$totalAmount = 0;
+	$totalItems = 0;
 
 	try {
+		$pdo = Database::getPDO();
+		
 		$query = "
 			SELECT 
 				ci.id as cart_item_id,
@@ -33,10 +39,13 @@
 		$cartItems = $stmt->fetchAll();
 		
 		foreach ($cartItems as $item) {
-			$totalAmount += $item['price'] * $item['quantity'];
+			$itemTotal = $item['price'] * $item['quantity'];
+			$totalAmount += $itemTotal;
+			$totalItems += $item['quantity'];
 		}
 		
 	} catch (Exception $e) {
 		error_log("Cart page error: " . $e->getMessage());
+		$error = "Unable to load cart items. Please try again.";
 	}
 ?>

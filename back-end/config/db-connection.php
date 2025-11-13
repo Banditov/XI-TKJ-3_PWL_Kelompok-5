@@ -1,25 +1,49 @@
 <?php
-    $host = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "atkski";
-    $charset = "utf8mb4";
-    $dsn = "mysql:host=$host;dbname=$database;charset=$charset";
+    class Database {
+        private static $connection = null;
+        private static $pdo = null;
 
-    $options = [
-        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        PDO::ATTR_EMULATE_PREPARES   => false,
-    ];
+        public static function getConnection() {
+            if (self::$connection === null) {
+                $host = "localhost";
+                $username = "root";
+                $password = "";
+                $database = "atkski";
+                
+                self::$connection = mysqli_connect($host, $username, $password, $database);
+                
+                if (!self::$connection) {
+                    die("Error Connection to database: " . mysqli_connect_error());
+                }
+            }
+            return self::$connection;
+        }
 
-    $connection = mysqli_connect($host, $username,$password,$database);
+        public static function getPDO() {
+            if (self::$pdo === null) {
+                $host = "localhost";
+                $username = "root";
+                $password = "";
+                $database = "atkski";
+                $charset = "utf8mb4";
+                $dsn = "mysql:host=$host;dbname=$database;charset=$charset";
 
-    if (!$connection) {
-        die("Error Connection to database: " . mysqli_connect_error());
+                $options = [
+                    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+                    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                    PDO::ATTR_EMULATE_PREPARES   => false,
+                ];
+
+                try {
+                    self::$pdo = new PDO($dsn, $username, $password, $options);
+                } catch (PDOException $e) {
+                    die('Connection failed: ' . $e->getMessage());
+                }
+            }
+            return self::$pdo;
+        }
     }
-    try {
-        $pdo = new PDO($dsn, $username, $password, $options);
-    } catch (PDOException $e) {
-        die('Connection failed: ' . $e->getMessage());
-    }
+
+    $connection = Database::getConnection();
+    $pdo = Database::getPDO();
 ?>
