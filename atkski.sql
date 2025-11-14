@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 05, 2025 at 11:48 PM
+-- Generation Time: Nov 14, 2025 at 02:40 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -47,6 +47,28 @@ INSERT INTO `accounts` (`id`, `name`, `email`, `password`, `class`) VALUES
 (10, 'TEST5', 'test.005@ski.sch.id', '$2y$10$1NKAvzrQQXao9oP4Kg0vRerXWwjlo8Y1.DzJLBP6xNI3dzIN0rfe.', 'XI-TKJ-3'),
 (11, 'TEST6', 'test.006@ski.sch.id', '$2y$10$dgI5nqq9ls9Sko4eqrRH0OyY/TumY1OLzGdIyZNANYOEqTCvasr2e', 'XI-TKJ-3'),
 (13, 'TEST7', 'test.007@ski.sch.id', '$2y$10$fAZQBlFw1I4eqnvTEe3h6ec8G6wc20KIeWOBplvS/0rEG3hpjPN5i', 'XI-TKJ-3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart_items`
+--
+
+CREATE TABLE `cart_items` (
+  `id` int NOT NULL,
+  `account_id` int NOT NULL,
+  `product_id` int NOT NULL,
+  `quantity` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `cart_items`
+--
+
+INSERT INTO `cart_items` (`id`, `account_id`, `product_id`, `quantity`) VALUES
+(51, 5, 49, 1),
+(52, 5, 51, 1),
+(53, 5, 52, 1);
 
 -- --------------------------------------------------------
 
@@ -230,7 +252,9 @@ CREATE TABLE `sales` (
   `customer_id` int NOT NULL,
   `product_id` int NOT NULL,
   `quantity` int NOT NULL,
-  `price` int NOT NULL
+  `price` int NOT NULL,
+  `date` date NOT NULL,
+  `status` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
@@ -244,6 +268,12 @@ ALTER TABLE `accounts`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`),
   ADD UNIQUE KEY `name` (`name`);
+
+--
+-- Indexes for table `cart_items`
+--
+ALTER TABLE `cart_items`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `child_category`
@@ -286,6 +316,12 @@ ALTER TABLE `sales`
 --
 ALTER TABLE `accounts`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `cart_items`
+--
+ALTER TABLE `cart_items`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `child_category`
