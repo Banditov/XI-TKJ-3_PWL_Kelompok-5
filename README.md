@@ -38,29 +38,152 @@
    
 - [Instalasi](#instalasi)
 - [Penggunaan](#penggunaan)
+- [Fitur Utama](#fitur-utama)
 - [Arsitektur](#arsitektur)
 - [Kontributor](#kontributor)
 - [Lisensi](#lisensi)
-- [Change Logs](#changelog)
-- [Link](#links)
+- [Changelog](#changelog)
+- [Link](#link)
 </details>
 
 
 ## Instalasi
 <details>
    <summary>Instalasi</summary>
+
+<!-- Instalasi Baru -->
 <details>
    <summary>Versi Beta</summary>
 
 ### Step 1
 <details>
-   <summary>Pilih Versi</summary>
-1. 
+   <summary>Pilih Versi</summary><br>
+
+   <details>
+      <summary>Unstable Version</summary>
+1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").
+      <details>
+         <summary>Step 1A-1</summary>
+         <img src=".github/images/tutorial/A1A-1.png">
+      </details>
+2. Ekstrak file tersebut.
+      <details>
+         <summary>Step 1A-2</summary>
+         <img src=".github/images/tutorial/A1A-2.png">
+      </details>
+3. Pindahkan folder "XI-TKJ-3_PWL_Kelompok-5" ke directory "C:\laragon\www\".
+      <details>
+         <summary>Step 1A-3</summary>
+         <img src=".github/images/tutorial/B1A-3.png">
+      </details>
+4. Buka Laragon.
+      <details>
+         <summary>Step 1A-4</summary>
+         <img src=".github/images/tutorial/B1A-4.png">
+      </details>
+5. Tekan "Start All" dan tekan "Database".
+      <details>
+         <summary>Step 1A-5</summary>
+         <img src=".github/images/tutorial/B1A-5.png">
+      </details>
+6. Login ke phpMyAdmin menggunakan username "root" dan password kosong.
+      <details>
+         <summary>Step 1A-6</summary>
+         <img src=".github/images/tutorial/B1A-6.png">
+      </details>
+7. Buat database dengan nama "atkski."
+      <details>
+         <summary>Step 1A-7</summary>
+         <img src=".github/images/tutorial/B1A-7.png">
+      </details>
+8. Import file "atkski.sql" yang terdapat di dalam folder yang telah dipindahkan.
+      <details>
+         <summary>Step 1A-8</summary>
+         <img src=".github/images/tutorial/B1A-8-1.png">
+         <img src=".github/images/tutorial/B1A-8-2.png">
+         <img src=".github/images/tutorial/B1A-8-3.png">
+      </details>
+9. Lanjut ke Step 2.
+   </details>
+<br>
+   <details>
+      <summary>Stable Version</summary>
+1. Buka page <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5/releases">Releases</a> dari repository ini.
+      <details>
+         <summary>Step 1B-1</summary>
+         <img src=".github/images/tutorial/A1B-1.png">
+      </details>
+2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".
+      <details>
+         <summary>Step 1B-2</summary>
+         <img src=".github/images/tutorial/A1B-2.png">
+      </details>
+3. Ekstrak file tersebut.
+      <details>
+         <summary>Step 1B-3</summary>
+         <img src=".github/images/tutorial/A1B-3.png">
+      </details>
+4. Pindahkan folder "XI-TKJ-3_PWL_Kelompok-5" ke directory "C:\laragon\www\".
+      <details>
+         <summary>Step 1B-4</summary>
+         <img src=".github/images/tutorial/B1B-4.png">
+      </details>
+5. Buka Laragon.
+      <details>
+         <summary>Step 1B-5</summary>
+         <img src=".github/images/tutorial/B1B-5.png">
+      </details>
+6. Tekan "Start All" dan tekan "Database".
+      <details>
+         <summary>Step 1B-6</summary>
+         <img src=".github/images/tutorial/B1B-6.png">
+      </details>
+7. Login ke phpMyAdmin menggunakan username "root" dan password kosong.
+      <details>
+         <summary>Step 1B-7</summary>
+         <img src=".github/images/tutorial/B1B-7.png">
+      </details>
+8. Buat database dengan nama "atkski".
+      <details>
+         <summary>Step 1B-8</summary>
+         <img src=".github/images/tutorial/B1B-8.png">
+      </details>
+9. Import file "atkski.sql" yang terdapat di dalam folder yang telah dipindahkan.
+      <details>
+         <summary>Step 1B-9</summary>
+         <img src=".github/images/tutorial/B1B-9-1.png">
+         <img src=".github/images/tutorial/B1B-9-2.png">
+         <img src=".github/images/tutorial/B1B-9-3.png">
+      </details>
+10. Lanjut ke Step 2.
+   </details>
+</details>
+
+### Step 2
+<details>
+   <summary>Step 2</summary>
+1. Buka terminal di Laragon.
+      <details>
+         <summary>Step 2-1</summary>
+         <img src=".github/images/tutorial/B2-1.png">
+      </details>
+2. Ketikkan "cd XI-TKJ-3_PWL_Kelompok-5".
+      <details>
+         <summary>Step 2-2</summary>
+         <img src=".github/images/tutorial/B2-2.png">
+      </details>
+3. Ketikkan "php -S localhost:5500" dan tekan link yang diberikan sambil menekan ctrl kiri.
+      <details>
+         <summary>Step 2-3</summary>
+         <img src=".github/images/tutorial/B2-3.png">
+      </details>
+   <h3 align="center">Selesai!</h3>
 </details>
 </details>
 
 <br><br>
 
+<!-- Instalasi Lama -->
 <details>
    <summary>Versi Alpha</summary><br>
 <details>
@@ -70,7 +193,7 @@
    
 ### Step 1
 <details>
-   <summary>Pilih Versi!</summary><br>
+   <summary>Pilih Versi</summary><br>
    
 <details>
    <summary>Unstable Version</summary>
@@ -195,6 +318,10 @@ Website lewat link ini mungkin tidak up-to-date dengan versi rilis dalam GitHub 
 ## Penggunaan
 Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara lebih praktis. Guru, siswa, maupun pihak sekolah dapat melihat daftar barang yang tersedia, lengkap dengan informasi harga dan kategori. Dengan adanya fitur keranjang, pengguna bisa memilih beberapa barang sekaligus sebelum melakukan pemesanan. Website ini membantu sekolah mengatur kebutuhan ATK secara lebih cepat, transparan, dan terorganisir tanpa harus melakukan pembelian manual.
 
+## Fitur Utama
+Fitur-fitur utama website ATK SKI ini adalah:
+- Fungsi add-to-cart
+- Pemesanan secara online
 
 ## Arsitektur
 <b>-- Front-end Development --</b> <br>
@@ -227,8 +354,12 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
-   
-### 13/11/2025 - 0.3.0 ( WIP )
+
+### 14/11/2025 - 0.3.1 ( WIP )
+
+- README.md diupdate, menambahkan bagian fitur utama & update instalasi
+
+### 13/11/2025 - 0.3.0 ( Release )
 
 - Desain banner telah diganti
 
@@ -367,7 +498,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 - Tambahkan license
 </details>
 
-## Links
+## Link
 - [Figma - Mock-up](https://www.figma.com/design/LLrqwRu8kVeNYoYhqZ2jOe/PWL?node-id=0-1&t=mJ8mLZNfG32KhL0a-1)
 - [Figma - Flowchart](https://www.figma.com/board/VeHNnlabuOyT3nS0Fraw8t/Flowchart?node-id=0-1&t=5i79boHm57RZayuk-1)
 - [Netlify](https://atkski.netlify.app)
