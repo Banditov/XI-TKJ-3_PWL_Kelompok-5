@@ -81,9 +81,9 @@
                 </div>
         <?php endforeach; ?>
                 <div id="bookBanner">
-                    <div id="bookBannerButton">
-                        <a href="/front-end/pages/cart/index.php">Shop Now ></a>
-                    </div>
+                    <a href="/front-end/pages/product/index.php" id="bookBannerButton">
+                        <p>Shop Now ></p>
+                    </a>
                     <img src="/front-end/global/resources/image/banner/bookBanner.jpg">
                 </div>
             </div>
@@ -98,9 +98,9 @@
             </div>
             <div id="stationerySection">
                 <div id="bannerStationery">
-                    <div id="bannerStationeryButton">
-                        <a href="/front-end/pages/cart/index.php">More ...</a>
-                    </div>
+                    <a href="/front-end/pages/product/index.php" id="bannerStationeryButton">
+                        <p>More...</p>
+                    </a>
                     <img src="/front-end/global/resources/image/banner/bannerStationery.jpg">
                 </div>
                 <div class="stationeryProducts">
