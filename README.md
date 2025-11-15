@@ -91,7 +91,7 @@
          <summary>Step 1A-6</summary>
          <img src=".github/images/tutorial/B1A-6.png">
       </details>
-7. Buat database dengan nama "atkski."
+7. Buat database dengan nama "atkski".
       <details>
          <summary>Step 1A-7</summary>
          <img src=".github/images/tutorial/B1A-7.png">
