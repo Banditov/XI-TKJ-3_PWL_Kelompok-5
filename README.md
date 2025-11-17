@@ -6,17 +6,20 @@
 <img src=".github/images/banner/github_banner.png">
 
 <div align="center">
-   <a href="http://unlicense.org/">
-      <img src="https://img.shields.io/badge/License-Unlicense-c53535.svg">
+   <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
+      <img src="https://img.shields.io/badge/GitHub Version-b0.3.1-red">
    </a>
-   <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/Version-0.2.1-yellow">
-   </a>
-   <a href="https://github.com/Banditov/PWL-Kelompok-5?tab=readme-ov-file#kontributor">
-      <img src="https://img.shields.io/badge/Contributor-3-green">
+   <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
+      <img src="https://img.shields.io/badge/Latest Release-b0.3.0-green">
    </a>
    <a href="https://app.netlify.com/projects/atkski/deploys">
       <img src="https://img.shields.io/badge/Netlify-0.2.1-00C7B7?style=flat&logo=Netlify&logoColor=white">
+   </a><br>
+   <a href="http://unlicense.org/">
+      <img src="https://img.shields.io/badge/License-Unlicense-blue.svg">
+   </a>
+   <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#kontributor">
+      <img src="https://img.shields.io/badge/Contributor-3-orange">
    </a><br>
    <a href="https://app.netlify.com/projects/atkski/deploys">
       <img src="https://api.netlify.com/api/v1/badges/11368017-fe23-41df-b99b-f94ff06ccccc/deploy-status">
@@ -29,65 +32,204 @@
    
 - [Instalasi](#instalasi)
 - [Penggunaan](#penggunaan)
+- [Fitur Utama](#fitur-utama)
 - [Arsitektur](#arsitektur)
 - [Kontributor](#kontributor)
 - [Lisensi](#lisensi)
-- [Change Logs](#changelog)
-- [Useful Links](#links)
+- [Changelog](#changelog)
+- [Link](#link)
 </details>
 
 
 ## Instalasi
 <details>
-   <summary>Pilih antara instalasi secara lokal atau online</summary>
+   <summary>Instalasi</summary>
+
+<!-- Instalasi Baru -->
+<details>
+   <summary>Versi Beta</summary>
+
+### Step 1
+<details>
+   <summary>Pilih Versi</summary><br>
+
+   <details>
+      <summary>Unstable Version</summary>
+1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").
+      <details>
+         <summary>Step 1A-1</summary>
+         <img src=".github/images/tutorial/A1A-1.png">
+      </details>
+2. Ekstrak file tersebut.
+      <details>
+         <summary>Step 1A-2</summary>
+         <img src=".github/images/tutorial/A1A-2.png">
+      </details>
+3. Pindahkan folder "XI-TKJ-3_PWL_Kelompok-5" ke directory "C:\laragon\www\".
+      <details>
+         <summary>Step 1A-3</summary>
+         <img src=".github/images/tutorial/B1A-3.png">
+      </details>
+4. Buka Laragon.
+      <details>
+         <summary>Step 1A-4</summary>
+         <img src=".github/images/tutorial/B1A-4.png">
+      </details>
+5. Tekan "Start All" dan tekan "Database".
+      <details>
+         <summary>Step 1A-5</summary>
+         <img src=".github/images/tutorial/B1A-5.png">
+      </details>
+6. Login ke phpMyAdmin menggunakan username "root" dan password kosong.
+      <details>
+         <summary>Step 1A-6</summary>
+         <img src=".github/images/tutorial/B1A-6.png">
+      </details>
+7. Buat database dengan nama "atkski".
+      <details>
+         <summary>Step 1A-7</summary>
+         <img src=".github/images/tutorial/B1A-7.png">
+      </details>
+8. Import file "atkski.sql" yang terdapat di dalam folder yang telah dipindahkan.
+      <details>
+         <summary>Step 1A-8</summary>
+         <img src=".github/images/tutorial/B1A-8-1.png">
+         <img src=".github/images/tutorial/B1A-8-2.png">
+         <img src=".github/images/tutorial/B1A-8-3.png">
+      </details>
+9. Lanjut ke Step 2.
+   </details>
+<br>
+   <details>
+      <summary>Stable Version</summary>
+1. Buka page <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5/releases">Releases</a> dari repository ini.
+      <details>
+         <summary>Step 1B-1</summary>
+         <img src=".github/images/tutorial/A1B-1.png">
+      </details>
+2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".
+      <details>
+         <summary>Step 1B-2</summary>
+         <img src=".github/images/tutorial/A1B-2.png">
+      </details>
+3. Ekstrak file tersebut.
+      <details>
+         <summary>Step 1B-3</summary>
+         <img src=".github/images/tutorial/A1B-3.png">
+      </details>
+4. Pindahkan folder "XI-TKJ-3_PWL_Kelompok-5" ke directory "C:\laragon\www\".
+      <details>
+         <summary>Step 1B-4</summary>
+         <img src=".github/images/tutorial/B1B-4.png">
+      </details>
+5. Buka Laragon.
+      <details>
+         <summary>Step 1B-5</summary>
+         <img src=".github/images/tutorial/B1B-5.png">
+      </details>
+6. Tekan "Start All" dan tekan "Database".
+      <details>
+         <summary>Step 1B-6</summary>
+         <img src=".github/images/tutorial/B1B-6.png">
+      </details>
+7. Login ke phpMyAdmin menggunakan username "root" dan password kosong.
+      <details>
+         <summary>Step 1B-7</summary>
+         <img src=".github/images/tutorial/B1B-7.png">
+      </details>
+8. Buat database dengan nama "atkski".
+      <details>
+         <summary>Step 1B-8</summary>
+         <img src=".github/images/tutorial/B1B-8.png">
+      </details>
+9. Import file "atkski.sql" yang terdapat di dalam folder yang telah dipindahkan.
+      <details>
+         <summary>Step 1B-9</summary>
+         <img src=".github/images/tutorial/B1B-9-1.png">
+         <img src=".github/images/tutorial/B1B-9-2.png">
+         <img src=".github/images/tutorial/B1B-9-3.png">
+      </details>
+10. Lanjut ke Step 2.
+   </details>
+</details>
+
+### Step 2
+<details>
+   <summary>Step 2</summary>
+1. Buka terminal di Laragon.
+      <details>
+         <summary>Step 2-1</summary>
+         <img src=".github/images/tutorial/B2-1.png">
+      </details>
+2. Ketikkan "cd XI-TKJ-3_PWL_Kelompok-5".
+      <details>
+         <summary>Step 2-2</summary>
+         <img src=".github/images/tutorial/B2-2.png">
+      </details>
+3. Ketikkan "php -S localhost:5500" dan tekan link yang diberikan sambil menekan ctrl kiri.
+      <details>
+         <summary>Step 2-3</summary>
+         <img src=".github/images/tutorial/B2-3.png">
+      </details>
+   <h3 align="center">Selesai!</h3>
+</details>
+</details>
+
+<br><br>
+
+<!-- Instalasi Lama -->
+<details>
+   <summary>Versi Alpha</summary><br>
+<details>
+   <summary>Pilih antara instalasi secara lokal atau online</summary><br>
 <details>
    <summary>Lokal</summary>
    
 ### Step 1
 <details>
-   <summary>Pick a Version!</summary><br>
+   <summary>Pilih Versi</summary><br>
    
 <details>
    <summary>Unstable Version</summary>
 1. Download repository ini (Cari tombol code warna hijau di bagian atas terus tekan "Download ZIP").
    <details>
       <summary>Step 1A-1</summary>
-      <img src=".github/images/tutorial/1A-1.png">
+      <img src=".github/images/tutorial/A1A-1.png">
    </details>
 2. Unzip file tersebut.
    <details>
       <summary>Step 1A-2</summary>
-      <img src=".github/images/tutorial/1A-2.png">
+      <img src=".github/images/tutorial/A1A-2.png">
    </details>
 3. Buka Visual Studio Code.
    <details>
       <summary>Step 1A-3</summary>
-      <img src=".github/images/tutorial/1A-3.png">
+      <img src=".github/images/tutorial/A1A-3.png">
    </details>
 4. Lanjut ke Step 2.
 </details>
 <br>
 <details>
    <summary>Stable Version</summary>
-1. Buka page <a href="https://github.com/Banditov/PWL-Kelompok-5/releases">Releases</a> dari repository ini.
+1. Buka page <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5/releases">Releases</a> dari repository ini.
    <details>
       <summary>Step 1B-1</summary>
-      <img src=".github/images/tutorial/1B-1.png">
+      <img src=".github/images/tutorial/A1B-1.png">
    </details>
 2. Pilih salah satu release, tekan "Assets", dan tekan "Source code (zip)".
    <details>
       <summary>Step 1B-2</summary>
-      <img src=".github/images/tutorial/1B-2.png">
+      <img src=".github/images/tutorial/A1B-2.png">
    </details>
 3. Unzip file tersebut.
    <details>
       <summary>Step 1B-3</summary>
-      <img src=".github/images/tutorial/1B-3.png">
+      <img src=".github/images/tutorial/A1B-3.png">
    </details>
 4. Buka Visual Studio Code.
    <details>
       <summary>Step 1B-4</summary>
-      <img src=".github/images/tutorial/1B-4.png">
+      <img src=".github/images/tutorial/A1B-4.png">
    </details>
 5. Lanjut ke Step 2.
 </details>
@@ -99,12 +241,12 @@
 1. Buka tab extension.
    <details>
       <summary>Step 2-1</summary>
-      <img src=".github/images/tutorial/2-1.png">
+      <img src=".github/images/tutorial/A2-1.png">
    </details>
 2. Cari extension "Live Server" dan tekan install terus tunggu sampai selesai.
    <details>
       <summary>Step 2-2</summary>
-      <img src=".github/images/tutorial/2-2.png">
+      <img src=".github/images/tutorial/A2-2.png">
    </details>
 3. Lanjut ke Step 3.
 </details>
@@ -115,18 +257,18 @@
 1. Open folder dimana kamu mengekstrak file zip tersebut.
    <details>
       <summary>Step 3-1</summary>
-      <img src=".github/images/tutorial/3-1-1.png">
-      <img src=".github/images/tutorial/3-1-2.png">
+      <img src=".github/images/tutorial/A3-1-1.png">
+      <img src=".github/images/tutorial/A3-1-2.png">
    </details>
 2. Buka file "start.html".
    <details>
       <summary>Step 3-2</summary>
-      <img src=".github/images/tutorial/3-2.png">
+      <img src=".github/images/tutorial/A3-2.png">
    </details>
 3. Tekan "Go Live" pada kanan bawah.
    <details>
       <summary>Step 3-3</summary>
-      <img src=".github/images/tutorial/3-3.png">
+      <img src=".github/images/tutorial/A3-3.png">
    </details>
 <h3 align="center">Selesai!</h3>
 </details>
@@ -137,20 +279,20 @@
 1. Cari private IPv4 komputer kamu (Dapat dicari di properties wifi)
    <details>
       <summary>Step 4-1</summary>
-      <img src=".github/images/tutorial/4-1-1.png">
-      <img src=".github/images/tutorial/4-1-2.png">
+      <img src=".github/images/tutorial/A4-1-1.png">
+      <img src=".github/images/tutorial/A4-1-2.png">
    </details>
 2. Cari port dari server
    <details>
       <summary>Step 4-2</summary>
-      <img src=".github/images/tutorial/4-2.png">
+      <img src=".github/images/tutorial/A4-2.png">
    </details>
 3. Buka browser di HP kamu dan masukin informasi yang sudah didapati dengan format<br>
    
    `(IP Komputer):(Port Server)/start.html`
    <details>
       <summary>Contoh</summary>
-      <img src=".github/images/tutorial/4-3.jpg">
+      <img src=".github/images/tutorial/A4-3.jpg">
    </details>
 <h3 align="center">Selesai!</h3>
 </details>
@@ -164,10 +306,16 @@ Website lewat link ini mungkin tidak up-to-date dengan versi rilis dalam GitHub 
    
 </details>
 </details>
+</details>
+</details>
 
 ## Penggunaan
 Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara lebih praktis. Guru, siswa, maupun pihak sekolah dapat melihat daftar barang yang tersedia, lengkap dengan informasi harga dan kategori. Dengan adanya fitur keranjang, pengguna bisa memilih beberapa barang sekaligus sebelum melakukan pemesanan. Website ini membantu sekolah mengatur kebutuhan ATK secara lebih cepat, transparan, dan terorganisir tanpa harus melakukan pembelian manual.
 
+## Fitur Utama
+Fitur-fitur utama website ATK SKI ini adalah:
+- Fungsi add-to-cart
+- Pemesanan secara online
 
 ## Arsitektur
 <b>-- Front-end Development --</b> <br>
@@ -185,7 +333,7 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
 <b>! -- Proyek Terpisah -- !</b> <br>
 ![React.JS](https://img.shields.io/badge/React.JS-087EA4?logo=react&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
-
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 
 ## Kontributor
 <img src="https://avatars.githubusercontent.com/u/199484083" width="20"> [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.<br>
@@ -200,7 +348,69 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
-   
+
+### 14/11/2025 - 0.3.1 ( WIP )
+
+- README.md diupdate, menambahkan bagian fitur utama & update instalasi
+
+### 13/11/2025 - 0.3.0 ( Release )
+
+- Desain banner telah diganti
+
+### 12/11/2025 - 0.3.0 ( WIP )
+
+- Halaman cart telah dibuat
+- Fitur add to cart telah ditambahkan
+
+### 11/11/2025 - 0.3.0 ( WIP )
+
+- Struktur image telah diupdate
+
+### 6/11/2025 - 0.3.0 ( WIP )
+
+- Database telah diupdate
+- Page produk telah dibuat
+- Branch baru untuk pre-deploy telah dibuat
+
+### 5/11/2025 - 0.3.0 ( WIP )
+
+- Beberapa animasi kecil telah ditambahkan
+- Page produk telah dibuat
+  
+### 4/11/2025 - 0.3.0 ( WIP )
+
+- Page FAQ telah dibuat ulang
+  
+### 3/11/2025 - 0.3.0 ( WIP )
+
+- Beberapa bug fix
+- Menambahkan intro
+
+### 31/10/2025 - 0.3.0 ( WIP )
+
+- Loading screen sudah responsif
+
+### 30/10/2025 - 0.3.0 ( WIP )
+
+- Fitur checkbox warna telah ditambahkan
+- Page FAQ sudah responsif
+- Halaman login sudah terintegrasi dengan database
+- Beberapa masalah telah diperbaiki
+
+### 24/10/2025 - 0.3.0 ( WIP )
+
+- Page FAQ telah dibuat
+
+### 23/10/2025 - 0.3.0 ( WIP )
+
+- Database telah terhubung dengan halaman home
+- Home telah dibagi menjadi berbagai komponen terpisah
+
+### 22/10/2025 - 0.3.0 ( WIP )
+
+- Database terintegrasi dengan halaman home
+- Halaman home dibagi menjadi beberapa komponen
+
 ### 21/09/2025 - 0.3.0 ( WIP )
 
 - Penghapusan Laravel dari arsitektur
@@ -282,7 +492,8 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 - Tambahkan license
 </details>
 
-## Links
+## Link
 - [Figma - Mock-up](https://www.figma.com/design/LLrqwRu8kVeNYoYhqZ2jOe/PWL?node-id=0-1&t=mJ8mLZNfG32KhL0a-1)
 - [Figma - Flowchart](https://www.figma.com/board/VeHNnlabuOyT3nS0Fraw8t/Flowchart?node-id=0-1&t=5i79boHm57RZayuk-1)
 - [Netlify](https://atkski.netlify.app)
+- [Free-Hosting.org](https://atkski.yzz.me)

@@ -1,0 +1,211 @@
+/* max dilakukan saat kurang */
+/* min dilakukan saat lebih */
+
+@media screen and (min-width: 5500px) {
+    .stationeryProduct, #filter {
+        zoom: 4;
+    }
+
+    #filter {
+        top: 190px;
+    }
+}
+
+@media screen and (max-width: 5500px) {
+    .stationeryProduct, #filter {
+        zoom: 3;
+    }
+
+    #filter {
+        top: 195px;
+    }
+}
+
+@media screen and (max-width: 3500px) {
+    .stationeryProduct, #filter {
+        zoom: 2;
+    }
+
+    #filter {
+        top: 190px;
+    }
+}
+
+@media screen and (max-width: 2600px) {
+    .stationeryProduct, #filter {
+        zoom: 1.5;
+    }
+
+}
+
+@media screen and (max-width: 2300px) {
+    .stationeryProduct, #filter {
+        zoom: 1.3;
+    }
+
+    #filter {
+        top: 230px;
+    }
+}
+
+@media screen and (max-width: 2200px) {
+    .stationeryProduct, #filter {
+        zoom: 1.2;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .stationeryProduct, #filter {
+        zoom: 1.1;
+    }
+}
+
+@media screen and (max-width: 1850px) {
+    .stationeryProduct, #filter {
+        zoom: 1;
+    }
+
+    #filter {
+        top: 180px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .stationeryProduct, #filter {
+        zoom: 0.95;
+    }
+
+    #filter {
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .stationeryProduct, #filter {
+        zoom: 0.9;
+    }
+
+    #filter {
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .stationeryProduct, #filter {
+        zoom: 0.85;
+    }
+
+    #filter {
+        top: 210px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .stationeryProduct, #filter {
+        zoom: 0.8;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .stationeryProduct, #filter {
+        zoom: 0.75;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .stationeryProduct, #filter {
+        zoom: 0.7;
+    }
+
+    #filter {
+        top: 230px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .stationeryProduct, #filter {
+        zoom: 0.65;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .stationeryProduct, #filter {
+        zoom: 0.85;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .stationeryProduct, #filter {
+        zoom: 0.8;
+    }
+
+    #filter {
+        top: 250px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .stationeryProduct, #filter {
+        zoom: 1.1;
+    }
+
+    #filter {
+        top: 190px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .stationeryProduct, #filter {
+        zoom: 1;
+    }
+
+    #filter {
+        top: 210px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .stationeryProduct, #filter {
+        zoom: 0.9;
+    }
+
+    #filter {
+        top: 220px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .stationeryProduct, #filter {
+        zoom: 0.8;
+    }
+
+    #filter {
+        top: 225px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .stationeryProduct, #filter {
+        zoom: 0.75;
+    }
+
+    #filter {
+        top: 230px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .stationeryProduct, #filter {
+        zoom: 0.65;
+    }
+
+    #filter {
+        top: 250px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .stationeryProduct, #filter {
+        zoom: 0.6;
+    }
+}

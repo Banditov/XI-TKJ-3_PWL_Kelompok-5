@@ -1,0 +1,29 @@
+#filter {
+    transition: all 0.3s ease;
+    transform: translateX(-240px);
+}
+
+#filter:hover {
+    transform: translateX(0px);
+}
+
+#filter::after {
+    content: "⚙️";
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1D7BC5;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 8px 8px 8px 20px;
+    cursor: pointer;
+}
+
+.parentRow .dropDown {
+    transition: transform 0.3s ease;
+}
+
+.parentRow.active .dropDown {
+    transform: rotate(90deg);
+}

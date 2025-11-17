@@ -41,3 +41,7 @@
     height: fit-content;
     margin-right: 10px;
 }
+
+footer:hover {
+    cursor: default;
+}

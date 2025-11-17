@@ -88,6 +88,10 @@
         max-width: 500px;
         gap: 20px;
     }
+
+    #footer > img {
+        zoom: 1.5;
+    }
 }
 
 @media screen and (max-width: 870px) {
@@ -98,6 +102,10 @@
     #footer {
         zoom: 1.65;
         justify-content: center;
+    }
+
+    #footer > img {
+        zoom: 1;
     }
 }
 

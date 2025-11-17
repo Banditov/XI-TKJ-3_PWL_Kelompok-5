@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>ATK SKI - REGISTER ADMIN</title>
-        <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
+        <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/style.css">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/responsive.css">
@@ -18,7 +18,7 @@
 <!-- Content -->
 
         <div id="loginBackground">
-            <img src="/front-end/global/resources/image/login_background.png">
+            <img src="/front-end/global/resources/image/background/login_background.png">
         </div>
         <div id="centerForm">
             <div class="loginForm">
@@ -37,7 +37,7 @@
                         <input type="password" id="password" name="password" class="inputField" placeholder="Password" required>
                     </div>
                     <button type="submit" name="register" class="submitButton">Lanjut</button>
-                    <a href="/front-end/pages/login/index.php" class="submitButton">Skip</a>
+                    <a href="/front-end/pages/login/index.php" class="submitButton">Exit</a>
                 </form>
             </div>
         </div>

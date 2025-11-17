@@ -65,14 +65,14 @@
 
 @media screen and (max-width: 1230px) {
     header {
-        zoom: 0.8;
+        zoom: 0.7;
     }
 }
 
 @media screen and (max-width: 1170px) {
     #nav,
     #header {
-        zoom: 1.5;
+        zoom: 1;
     }
 }
 

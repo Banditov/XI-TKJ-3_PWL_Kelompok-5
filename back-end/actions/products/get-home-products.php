@@ -4,7 +4,7 @@
     $homeProducts = [];
 
     $query = "SELECT * FROM products 
-            WHERE is_bwt = 1 AND is_first = 1  
+            WHERE category_parent_id = 1 AND is_first = 1  
             ORDER BY RAND() 
             LIMIT 6";
 

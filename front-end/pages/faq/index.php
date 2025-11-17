@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__ . '/../../../back-end/actions/faq/get-qa.php';
+    require_once __DIR__ . '/../../../back-end/actions/users/session-check.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +9,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>ATK SKI - FAQ</title>
-		<link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
+		<link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
 		<link rel="stylesheet" type="text/css" href="/front-end/pages/faq/styles/style.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/pages/faq/styles/responsive.css">
@@ -57,7 +58,7 @@
         <?php $i++; endforeach; ?>
 				<div class="extendQA">
 					<button id="extendQA">
-						<img src="/front-end/global/resources/image/arrow.png" id="extendQAIcon" style="transform: rotate(0deg);">
+						<img src="/front-end/global/resources/image/icon/arrow.png" id="extendQAIcon">
 					</button>
 				</div>
 			</div>
