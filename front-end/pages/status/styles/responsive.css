@@ -1,0 +1,74 @@
+/* max dilakukan saat kurang */
+/* min dilakukan saat lebih */
+
+@media screen and (min-width: 5500px) {
+    #content, #container  {
+        zoom: 4.5;
+    }
+}
+
+@media screen and (max-width: 5500px) {
+    #content, #container  {
+        zoom: 4;
+    }
+}
+
+@media screen and (max-width: 3500px) {
+    #content, #container  {
+        zoom: 2;
+    }
+}
+
+@media screen and (max-width: 2600px) {
+    #content, #container  {
+        zoom: 1.5;
+    }
+}
+
+@media screen and (max-width: 2300px) {
+    #content, #container  {
+        zoom: 1.2;
+    }
+}
+
+@media screen and (max-width: 2200px) {
+    #content, #container  {
+        zoom: 1.2;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    #content, #container  {
+        zoom: 1.1;
+    }
+}
+
+@media screen and (max-width: 1850px) {
+    #content, #container  {
+        zoom: 1;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    #content, #container {
+        zoom: 0.9;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    #content, #container {
+        zoom: 0.8;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #content, #container  {
+        zoom: 0.85;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #content, #container  {
+        zoom: 0.6;
+    }
+}

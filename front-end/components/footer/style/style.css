@@ -1,0 +1,47 @@
+#footer {
+    background-color: #1D7BC5;
+    padding: 20px 60px 20px 60px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 10px 5px rgba(65, 62, 62, 0.151);
+}
+
+#footer > img {
+    margin-right: 100px;
+}
+
+#footerAbout {
+    max-width: 600px;
+}
+
+#footerContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#footerContent > div > a {
+    color: white;
+}
+
+#footerContent > div > h4 {
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.contact > img {
+    width: 20px;
+    height: fit-content;
+    margin-right: 10px;
+}
+
+footer:hover {
+    cursor: default;
+}

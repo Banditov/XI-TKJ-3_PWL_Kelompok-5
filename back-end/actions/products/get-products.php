@@ -3,7 +3,9 @@
 
     $products = [];
 
-    $query = "SELECT * from products";
+    $query = "SELECT * FROM products 
+            WHERE is_first = 1  
+            ORDER BY RAND()";
 
     $stmt = $connection->prepare($query);
     $stmt->execute();

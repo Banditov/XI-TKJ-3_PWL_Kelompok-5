@@ -1,0 +1,24 @@
+.cartBottomSeperator > button:hover {
+    border: 3px solid #1D7BC5;
+    background-color: white;
+    color: #1D7BC5;
+    transition: 0.3s;
+}
+
+.emptyCart a:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.emptyCart a:active {
+    transform: translateY(0);
+}
+
+#checkOutPopUp, #checkOutContainer {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#checkOutPopUp[style*="display: flex"] #checkOutContainer {
+    transform: scale(1);
+}

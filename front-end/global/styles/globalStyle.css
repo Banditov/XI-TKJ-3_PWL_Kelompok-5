@@ -41,3 +41,22 @@ footer {
 
 }
 
+#logo {
+    width: 125px;
+    height: fit-content;
+}
+
+#pageTitle {
+    font-size: 30px;
+    color: #5E5E5E;
+}
+
+#pageTitle:hover {
+    cursor: default;
+}
+
+#content {
+    margin: 40px 60px 0px 60px;
+    min-height: 80vh;
+    width: auto;
+}

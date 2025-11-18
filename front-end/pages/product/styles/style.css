@@ -1,0 +1,82 @@
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#filter {
+    padding: 40px 20px 40px 20px;
+    background-color: #1D7BC5;
+    position: fixed;
+    width: fit-content;
+    border-radius: 0px 30px 30px 0px;
+    z-index: 99;
+    top: 180px;
+    left: 0;
+}
+
+#filter > p {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+#sortFilter {
+    zoom: 1.1;
+    margin: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    color: #5E5E5E;
+    padding: 6px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding-right: 30px;
+    background-image: url('/front-end/global/resources/image/icon/arrowBlack.png');
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: right 10px center;
+}
+
+.filterRow {
+    margin: 10px;
+}
+
+.filterRow > div {
+    margin-bottom: 10px;
+}
+
+.parentRow, .childRow {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.dropDownButton > img {
+    width: 8px;
+    height: fit-content;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.childRow {
+    margin-left: 20px;
+    display: none;
+}
+
+.childRow.show {
+    display: block;
+}
+
+.childText {
+    font-size: 16px;
+}
+
+#filter:hover {
+    cursor: default;
+}
