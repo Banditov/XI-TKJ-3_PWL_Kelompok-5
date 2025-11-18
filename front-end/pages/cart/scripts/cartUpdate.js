@@ -17,11 +17,6 @@ function initializeCartInteractions() {
             removeFromCart(cartItemId);
         });
     });
-
-    const checkoutBtn = document.getElementById('checkoutBtn');
-    if (checkoutBtn) {
-        checkoutBtn.addEventListener('click', proceedToCheckout);
-    }
 }
 
 function updateQuantity(cartItemId, action) {
@@ -54,6 +49,10 @@ function updateQuantity(cartItemId, action) {
             quantityDisplay.textContent = currentQuantity;
             updateItemTotal(cartItemId, data.new_total);
             updateCartTotal(data.new_grand_total);
+            
+            if (window.headerCartTotal) {
+                window.headerCartTotal.refresh();
+            }
         } else {
             alert(data.message);
             quantityDisplay.textContent = currentQuantity - (action === 'increase' ? 1 : -1);
@@ -71,6 +70,14 @@ function removeFromCart(cartItemId) {
         return;
     }
     
+    const cardRow = document.querySelector(`[data-cart-item-id="${cartItemId}"]`);
+    if (!cardRow) return;
+    
+    const priceText = cardRow.querySelector('.itemPrice').textContent;
+    const itemPrice = extractPrice(priceText);
+    const quantity = parseInt(cardRow.querySelector('.quantityDisplay').textContent);
+    const totalItemPrice = itemPrice * quantity;
+    
     fetch('/back-end/actions/cart/remove-cart-item.php', {
         method: 'POST',
         headers: {
@@ -83,9 +90,19 @@ function removeFromCart(cartItemId) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            document.querySelector(`[data-cart-item-id="${cartItemId}"]`).remove();
-            updateCartCounter();
-            location.reload();
+            cardRow.remove();
+            
+            if (window.headerCartTotal) {
+                window.headerCartTotal.updateTotalByChange(-totalItemPrice);
+            }
+            
+            if (document.querySelectorAll('.cardRow').length === 0) {
+                setTimeout(() => {
+                    location.reload();
+                }, 1000);
+            } else {
+                updateCartTotal();
+            }
         } else {
             alert(data.message);
         }
@@ -104,23 +121,31 @@ function updateItemTotal(cartItemId, newTotal) {
 }
 
 function updateCartTotal(newGrandTotal) {
-    const totalElement = document.querySelector('.totalAmount');
-    if (totalElement && newGrandTotal) {
-        totalElement.textContent = 'Total: Rp ' + new Intl.NumberFormat('id-ID').format(newGrandTotal);
-    }
-}
-
-function updateCartCounter() {
-    const cartCounter = document.querySelector('.cartCount');
-    if (cartCounter) {
-        const currentCount = parseInt(cartCounter.textContent) || 0;
-        cartCounter.textContent = Math.max(0, currentCount - 1);
-        if (cartCounter.textContent === '0') {
-            cartCounter.remove();
+    if (newGrandTotal) {
+        const totalElement = document.querySelector('.totalAmount');
+        if (totalElement) {
+            totalElement.textContent = 'Total: Rp ' + new Intl.NumberFormat('id-ID').format(newGrandTotal);
         }
+    } else {
+        recalculateCartTotal();
     }
 }
 
-function proceedToCheckout() {
-    window.location.href = '/front-end/pages/checkout/index.php';
+function recalculateCartTotal() {
+    let manualTotal = 0;
+    document.querySelectorAll('.cardRow').forEach(row => {
+        const quantity = parseInt(row.querySelector('.quantityDisplay').textContent);
+        const priceText = row.querySelector('.itemPrice').textContent;
+        const price = extractPrice(priceText);
+        manualTotal += price * quantity;
+    });
+    
+    const totalElement = document.querySelector('.totalAmount');
+    if (totalElement) {
+        totalElement.textContent = 'Total: Rp ' + new Intl.NumberFormat('id-ID').format(manualTotal);
+    }
+}
+
+function extractPrice(priceText) {
+    return parseInt(priceText.replace(/[^\d]/g, '')) || 0;
 }

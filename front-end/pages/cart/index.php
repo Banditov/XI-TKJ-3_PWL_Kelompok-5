@@ -1,6 +1,6 @@
 <?php
     require_once __DIR__ . '/../../../back-end/actions/users/session-check.php';
-	require_once __DIR__ . '/../../../back-end/actions/cart/get-cart-items.php';
+    require_once __DIR__ . '/../../../back-end/actions/cart/get-cart-items.php';
 ?>
 
 <!DOCTYPE html>
@@ -45,17 +45,17 @@
 					<p>Total</p>
 				</div>
 			</div>
-			<?php if (empty($cartItems)): ?>
-				<div class="empty-cart">
-					<p>Your cart is empty</p>
-					<a href="/front-end/pages/product/index.php">Continue Shopping</a>
-				</div>
-			<?php else: ?>
-				<?php foreach ($cartItems as $item): ?>
-					<?php
-					$itemTotal = $item['price'] * $item['quantity'];
-					$colorDisplay = $item['color'] !== 'None' ? " - " . $item['color'] : '';
-					?>
+		<?php if (empty($cartItems)): ?>
+			<div class="emptyCart">
+				<p>Your cart is empty</p>
+				<a href="/front-end/pages/product/index.php">Continue Shopping</a>
+			</div>
+		<?php else: ?>
+			<?php foreach ($cartItems as $item): ?>
+				<?php
+				$itemTotal = $item['price'] * $item['quantity'];
+				$colorDisplay = $item['color'] !== 'None' ? " - " . $item['color'] : '';
+				?>
 					<div class="cardRow" data-cart-item-id="<?= $item['cart_item_id'] ?>">
 						<div class="cartCard">
 							<div class="imageCard">
@@ -80,16 +80,26 @@
 							<img src="/front-end/global/resources/image/icon/remove.png">
 						</div>
 					</div>
-				<?php endforeach; ?>
-
-				<div class="cartBottom">
-					<div class="cartBottomSeperator">
-						<p class="totalAmount">Total: Rp <?= number_format($totalAmount, 0, ',', '.') ?></p>
-						<button id="checkoutBtn" class="checkoutButton">Proceed To Checkout</button>
-					</div>
+			<?php endforeach; ?>
+			<div class="cartBottom">
+				<div class="cartBottomSeperator">
+					<p class="totalAmount">Total: Rp <?= number_format($totalAmount, 0, ',', '.') ?></p>
+					<button id="checkoutBtn" class="checkoutButton">Proceed To Checkout</button>
 				</div>
-			<?php endif; ?>
+			</div>
+		<?php endif; ?>
 
+		</div>
+
+<!-- Checkout -->
+
+		<div id="checkOutPopUp">
+			<div id="checkOutContainer">
+				<h2>Order Received!</h2>
+				<p>Order Number: </p>
+				<p>Total Harga: </p>
+				<button id="checkOutButton">Ok</button>
+			</div>
 		</div>
 
 <!-- Footer -->
@@ -99,6 +109,7 @@
 <!-- Scripts -->
 
 		<script src="/front-end/pages/cart/scripts/cartUpdate.js"></script>
+		<script src="/front-end/pages/cart/scripts/sales.js"></script>
 		<script src="/front-end/global/scripts/loading-screen.js"></script>
 	</body>
 </html>
