@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="/front-end/pages/faq/styles/style.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/pages/faq/styles/responsive.css">
+		<link rel="stylesheet" type="text/css" href="/front-end/pages/faq/styles/animation.css">
 	</head>
 	<body>
 

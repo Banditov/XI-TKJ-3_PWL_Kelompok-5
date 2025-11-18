@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__ . '/../../../back-end/actions/users/session-check.php';
+    require_once __DIR__ . '/../../../back-end/actions/sales/get-status.php';
 ?>
 
 <!DOCTYPE html>
@@ -35,27 +36,36 @@
 <!-- Content -->
 
 			<div id="container">
-				<div class="statusRow">
-					<div class="rowHead">
-						<div class="rowTitle">
-							<p>#123</p>
-							<p class="status">Order Status</p>
+				<?php if (empty($orders)): ?>
+					<div class="emptyState">
+						<p>No Orders Found</p>
+						<p>You haven't placed any orders yet.</p>
+					</div>
+				<?php else: ?>
+					<?php foreach ($orders as $order): ?>
+						<div class="statusRow">
+							<div class="rowHead">
+								<div class="rowTitle">
+									<p>#<?php echo htmlspecialchars($order['order_number']); ?></p>
+									<p class="status"><?php echo htmlspecialchars($order['act']); ?></p>
+								</div>
+								<?php if ($order['act'] == 'Not Ready'): ?>
+									<img src="/front-end/global/resources/image/icon/statusDropOff.png" class="dropDownButton">
+								<?php else: ?>
+									<img src="/front-end/global/resources/image/icon/statusRemove.png" 
+										class="staticIcon remove-btn" 
+										data-order-id="<?php echo $order['id']; ?>" 
+										data-order-number="<?php echo $order['order_number']; ?>">
+								<?php endif; ?>
+							</div>
+							<?php if ($order['act'] == 'Not Ready'): ?>
+								<div class="rowBottom">
+									<button class="cancelBtn" data-order-id="<?php echo $order['id']; ?>" data-order-number="<?php echo $order['order_number']; ?>">Cancel</button>
+								</div>
+							<?php endif; ?>
 						</div>
-						<img src="/front-end/global/resources/image/icon/statusDropOff.png" class="dropDownButton">
-					</div>
-					<div class="rowBottom">
-						<button>Cancel</button>
-					</div>
-				</div>
-				<div class="statusRow">
-					<div class="rowHead">
-						<div class="rowTitle">
-							<p>#123</p>
-							<p class="status">Order Status</p>
-						</div>
-						<img src="/front-end/global/resources/image/icon/statusRemove.png">
-					</div>
-				</div>
+					<?php endforeach; ?>
+				<?php endif; ?>
 			</div>
 
 		</div>
@@ -66,6 +76,8 @@
 
 <!-- Scripts -->
 
+		<script src="/front-end/pages/status/scripts/removeOrder.js"></script>
+		<script src="/front-end/pages/status/scripts/cancelOrder.js"></script>
 		<script src="/front-end/pages/status/scripts/dropDown.js"></script>
 		<script src="/front-end/global/scripts/loading-screen.js"></script>
 	</body>

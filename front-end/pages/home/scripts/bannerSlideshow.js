@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
     
-    console.log('Slideshow initialized with', slides.length, 'slides');
-    
     parallaxImage.style.backgroundImage = `url('${slides[0]}')`;
     parallaxImage.style.backgroundSize = 'cover';
     parallaxImage.style.backgroundPosition = 'center';
@@ -28,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     setInterval(() => {
         currentSlide = (currentSlide + 1) % slides.length;
-        console.log('Changing to slide', currentSlide);
         
         parallaxImage.style.backgroundImage = `url('${slides[currentSlide]}')`;
         
