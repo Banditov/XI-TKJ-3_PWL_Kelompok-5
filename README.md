@@ -7,10 +7,10 @@
 
 <div align="center">
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/GitHub Version-b0.3.1-red">
+      <img src="https://img.shields.io/badge/GitHub Version-r1.0.0-red">
    </a>
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/Latest Release-b0.3.0-green">
+      <img src="https://img.shields.io/badge/Latest Release-b0.3.1-green">
    </a>
    <a href="https://app.netlify.com/projects/atkski/deploys">
       <img src="https://img.shields.io/badge/Netlify-0.2.1-00C7B7?style=flat&logo=Netlify&logoColor=white">
@@ -348,6 +348,17 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
+
+### 19/11/2025 - 0.3.1 ( WIP )
+
+- Halaman history telah dibuat
+- Fungsi ordering telah ditambahkan
+- Fungsi pada status page sudah bekerja
+- Database telah diupdate
+
+### 16/11/2025 - 0.3.1 ( WIP )
+
+- Perbaikan README
 
 ### 14/11/2025 - 0.3.1 ( WIP )
 
