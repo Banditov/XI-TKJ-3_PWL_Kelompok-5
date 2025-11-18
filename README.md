@@ -353,7 +353,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 
 - Database telah diupdate
   
-### 19/11/2025 - 0.4.0 ( Release )
+### 18/11/2025 - 0.4.0 ( Release )
 
 - Halaman history telah dibuat
 - Fungsi ordering telah ditambahkan
