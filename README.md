@@ -47,7 +47,7 @@
 
 <!-- Instalasi Baru -->
 <details>
-   <summary>Versi Atas Beta</summary>
+   <summary>Versi Beta & Release</summary>
 
 ### Step 1
 <details>
