@@ -7,7 +7,7 @@
 
 <div align="center">
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/GitHub Version-r1.0.0-red">
+      <img src="https://img.shields.io/badge/GitHub Version-r1.0.0-yellow">
    </a>
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
       <img src="https://img.shields.io/badge/Latest Release-b0.4.1-green">
