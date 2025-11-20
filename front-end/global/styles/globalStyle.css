@@ -60,3 +60,8 @@ footer {
     min-height: 80vh;
     width: auto;
 }
+
+.noInteract {
+    cursor: default;
+    user-select: none;
+}

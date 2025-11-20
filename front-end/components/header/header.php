@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
 <link rel="stylesheet" type="text/css" href="/front-end/components/header/style/responsive.css">
 
-<header>
+<header class="noInteract">
     <div id="header">
         <a href="/front-end/pages/admin-orders/index.php">
             <img src="/front-end/global/resources/image/logo/logo.png" id="logo">

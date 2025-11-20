@@ -36,7 +36,7 @@
 
 <!-- Banner -->
 
-        <div id="banner">
+        <div id="banner" class="noInteract">
             <div class="parallaxWrapper">
                 <div class="parallaxImage">
                     <div id="bannerTitle">
@@ -48,7 +48,7 @@
 
 <!-- Produk Buku -->
 
-        <div id="homeSection">
+        <div id="homeSection" class="noInteract">
             <div id="homeTitle">
                 <img src="/front-end/global/resources/image/icon/book.png">
                 <p>Books</p>
@@ -91,7 +91,7 @@
 
 <!-- Produk Alat Tulis -->
 
-        <div id="homeSection">
+        <div id="homeSection" class="noInteract">
             <div id="homeTitle">
                 <img src="/front-end/global/resources/image/icon/pen.png">
                 <p>Basic Writing Tools</p>

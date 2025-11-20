@@ -22,3 +22,13 @@
 #checkOutPopUp[style*="display: flex"] #checkOutContainer {
     transform: scale(1);
 }
+
+#checkOutButton:hover {
+    background-color: #1565a7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(29, 123, 197, 0.3);
+}
+
+#checkOutButton:active {
+    transform: translateY(0);
+}

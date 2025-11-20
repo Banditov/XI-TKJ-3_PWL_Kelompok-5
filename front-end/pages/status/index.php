@@ -29,7 +29,7 @@
 
 <!-- Page Title -->
 
-			<div id="pageTitle">
+			<div id="pageTitle" class="noInteract">
 				<b>STATUS</b>
 			</div>
 
@@ -43,7 +43,7 @@
 					</div>
 				<?php else: ?>
 					<?php foreach ($orders as $order): ?>
-						<div class="statusRow">
+						<div class="statusRow noInteract">
 							<div class="rowHead">
 								<div class="rowTitle">
 									<p>#<?php echo htmlspecialchars($order['order_number']); ?></p>
@@ -53,7 +53,7 @@
 									<img src="/front-end/global/resources/image/icon/statusDropOff.png" class="dropDownButton">
 								<?php else: ?>
 									<img src="/front-end/global/resources/image/icon/statusRemove.png" 
-										class="staticIcon remove-btn" 
+										class="staticIcon removeBtn" 
 										data-order-id="<?php echo $order['id']; ?>" 
 										data-order-number="<?php echo $order['order_number']; ?>">
 								<?php endif; ?>
