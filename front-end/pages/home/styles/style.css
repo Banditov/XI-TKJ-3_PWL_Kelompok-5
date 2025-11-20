@@ -16,24 +16,6 @@
     margin-right: 30px;
 }
 
-#banner > img {
-    width: 100%;
-}
-
-#banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#bannerTitle {
-    display: block;
-    position: absolute;
-    font-size: 50px;
-    color: white;
-    text-align: center;
-}
-
 #bannerTitle > p {
     font-family: serif;
 }
@@ -92,6 +74,56 @@
     justify-content: space-between;
 }
 
-#banner:hover, #homeTitle:hover {
-    cursor: default;
+#banner {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.parallaxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    overflow: hidden;
+}
+
+.parallaxImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url('/front-end/global/resources/image/banner/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bannerTitle {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+#bannerTitle > p {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+#banner.visible, #bannerTitle > p {
+    opacity: 1;
+    transform: translateY(0);
 }

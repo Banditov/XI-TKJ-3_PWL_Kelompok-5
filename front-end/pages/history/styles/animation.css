@@ -1,0 +1,9 @@
+.emptyHistory a:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.emptyHistory a:active {
+    transform: translateY(0);
+}

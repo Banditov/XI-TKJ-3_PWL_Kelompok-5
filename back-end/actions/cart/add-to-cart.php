@@ -61,7 +61,7 @@
 
         if ($existingItem) {
             $newQuantity = $existingItem['quantity'] + $quantity;
-            
+
             if ($product['stock'] < $newQuantity) {
                 echo json_encode([
                     'success' => false, 
@@ -69,32 +69,34 @@
                 ]);
                 exit;
             }
-            
+
             $updateQuery = "UPDATE cart_items SET quantity = ? WHERE id = ?";
             $updateStmt = $pdo->prepare($updateQuery);
             $updateStmt->execute([$newQuantity, $existingItem['id']]);
-            
+
             echo json_encode([
                 'success' => true, 
                 'message' => 'Cart updated successfully',
                 'product_name' => $product['product_name'],
                 'color' => $color,
                 'quantity' => $newQuantity,
+                'price' => $product['price'],
                 'action' => 'updated'
             ]);
         } else {
             $insertQuery = "INSERT INTO cart_items (account_id, product_id, quantity) VALUES (?, ?, ?)";
             $insertStmt = $pdo->prepare($insertQuery);
             $insertStmt->execute([$user_id, $product['id'], $quantity]);
-            
+
             $cart_item_id = $pdo->lastInsertId();
-            
+
             echo json_encode([
                 'success' => true, 
                 'message' => 'Item added to cart successfully',
                 'product_name' => $product['product_name'],
                 'color' => $color,
                 'quantity' => $quantity,
+                'price' => $product['price'],
                 'cart_item_id' => $cart_item_id,
                 'action' => 'added'
             ]);

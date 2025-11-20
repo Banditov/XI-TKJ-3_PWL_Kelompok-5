@@ -5,12 +5,30 @@
     transition: 0.3s;
 }
 
-.empty-cart a:hover {
+.emptyCart a:hover {
     background: #45a049;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
 }
 
-.empty-cart a:active {
+.emptyCart a:active {
+    transform: translateY(0);
+}
+
+#checkOutPopUp, #checkOutContainer {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#checkOutPopUp[style*="display: flex"] #checkOutContainer {
+    transform: scale(1);
+}
+
+#checkOutButton:hover {
+    background-color: #1565a7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(29, 123, 197, 0.3);
+}
+
+#checkOutButton:active {
     transform: translateY(0);
 }

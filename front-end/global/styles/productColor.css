@@ -16,6 +16,7 @@
     height: 8px;
     border-radius: 100px;
     background-color: black;
+    zoom: 0.9;
 }
 
 .colorOption {

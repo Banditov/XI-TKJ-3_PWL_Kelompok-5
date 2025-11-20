@@ -7,17 +7,13 @@ class CartManager {
     init() {
         if (this.initialized) return;
         
-        console.log('CartManager initializing...');
         this.initializeAddToCartButtons();
         this.initializeColorSelection();
         this.initialized = true;
     }
 
     initializeAddToCartButtons() {
-        console.log('Initializing add to cart buttons...');
-        
         const bookAddButtons = document.querySelectorAll('.bookProduct .addToCart');
-        console.log('Found book buttons:', bookAddButtons.length);
         
         bookAddButtons.forEach(button => {
             button.addEventListener('click', (e) => {
@@ -28,18 +24,15 @@ class CartManager {
         });
 
         const stationeryAddButtons = document.querySelectorAll('.stationeryProduct .addToCart');
-        console.log('Found stationery buttons:', stationeryAddButtons.length);
         
         stationeryAddButtons.forEach(button => {
             button.addEventListener('click', (e) => {
-                console.log('Stationery add to cart clicked');
                 const productElement = e.currentTarget.closest('.stationeryProduct');
                 this.addToCart(productElement);
             });
         });
 
         if (bookAddButtons.length === 0 && stationeryAddButtons.length === 0) {
-            console.log('No cart buttons found, will retry in 500ms');
             setTimeout(() => {
                 this.initializeAddToCartButtons();
             }, 500);
@@ -47,8 +40,6 @@ class CartManager {
     }
 
     initializeColorSelection() {
-        console.log('Initializing color selection...');
-        
         const colorOptions = document.querySelectorAll('.colorOption');
         colorOptions.forEach(option => {
             option.style.cursor = 'pointer';
@@ -60,7 +51,6 @@ class CartManager {
                     if (checkbox) {
                         checkbox.checked = !checkbox.checked;
                         this.updateColorAppearance(option, checkbox.checked);
-                        console.log('Color selected:', checkbox.value, checkbox.checked);
                     }
                 }
             });
@@ -79,40 +69,35 @@ class CartManager {
         });
     }
 
-    updateCartCounter(addedCount = 1) {
-        const cartCounter = document.querySelector('.cart-count');
-        if (cartCounter) {
-            const currentCount = parseInt(cartCounter.textContent) || 0;
-            cartCounter.textContent = currentCount + addedCount;
-        } else {
-            this.createCartCounter(addedCount);
+    updateCartTotal(addedItems = []) {
+        const totalPriceChange = addedItems.reduce((total, item) => {
+            return total + (item.price || 0);
+        }, 0);
+
+        if (window.headerCartTotal) {
+            window.headerCartTotal.updateTotalByChange(totalPriceChange);
         }
+        
+        this.dispatchCartUpdateEvent(totalPriceChange, 'add');
     }
 
-    createCartCounter(count = 1) {
-        const cartIcon = document.querySelector('.cart-icon a, .cart-icon');
-        if (cartIcon && !document.querySelector('.cart-count')) {
-            const counter = document.createElement('span');
-            counter.className = 'cart-count';
-            counter.textContent = count;
-            counter.style.cssText = `
-                position: absolute;
-                top: -8px;
-                right: -8px;
-                background: #ff4444;
-                color: white;
-                border-radius: 50%;
-                width: 18px;
-                height: 18px;
-                font-size: 12px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: bold;
-            `;
-            cartIcon.style.position = 'relative';
-            cartIcon.appendChild(counter);
-        }
+    extractPrice(priceText) {
+        return parseInt(priceText.replace(/[^\d]/g, '')) || 0;
+    }
+
+    formatPrice(price) {
+        return 'Rp ' + new Intl.NumberFormat('id-ID').format(price);
+    }
+
+    dispatchCartUpdateEvent(priceChange, action) {
+        const event = new CustomEvent('cartUpdated', {
+            detail: {
+                price_change: priceChange,
+                action: action,
+                timestamp: Date.now()
+            }
+        });
+        document.dispatchEvent(event);
     }
 
     updateColorAppearance(colorOption, isChecked) {
@@ -126,15 +111,10 @@ class CartManager {
     }
 
     addToCart(productElement) {
-        console.log('Add to cart function called');
-        
         const productId = productElement.getAttribute('data-id');
-        console.log('Product ID:', productId);
-        
         const selectedColors = this.getSelectedColors(productElement);
-        console.log('Selected colors:', selectedColors);
-        
         const colorForm = productElement.querySelector('.colorForm');
+        
         if (!colorForm) {
             selectedColors.push('None');
         } else if (selectedColors.length === 0) {
@@ -142,6 +122,9 @@ class CartManager {
             return;
         }
         
+        const priceElement = productElement.querySelector('.productPrice');
+        const productPrice = priceElement ? this.extractPrice(priceElement.textContent) : 0;
+
         const addButton = productElement.querySelector('.addToCart');
         const originalContent = addButton.innerHTML;
         addButton.innerHTML = '<div class="loading-spinner"></div>';
@@ -161,7 +144,11 @@ class CartManager {
             })
             .then(response => response.json())
             .then(data => {
-                return { color, ...data };
+                return { 
+                    color, 
+                    price: productPrice,
+                    ...data 
+                };
             });
         });
 
@@ -176,7 +163,8 @@ class CartManager {
                     } else {
                         this.showNotification(`${successfulAdds.length} of ${selectedColors.length} items added to cart`, 'success');
                     }
-                    this.updateCartCounter(successfulAdds.length);
+                    
+                    this.updateCartTotal(successfulAdds);
                 }
                 
                 if (failedAdds.length > 0) {
@@ -248,14 +236,6 @@ class CartManager {
                 }
             }, 300);
         }, 3000);
-    }
-
-    updateCartCounter(addedCount = 1) {
-        const cartCounter = document.querySelector('.cart-count');
-        if (cartCounter) {
-            const currentCount = parseInt(cartCounter.textContent) || 0;
-            cartCounter.textContent = currentCount + addedCount;
-        }
     }
 }
 

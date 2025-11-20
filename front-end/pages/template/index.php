@@ -23,7 +23,7 @@
 
 		<?php include '../../components/header/header.php'; ?>
 
-		<div id="content">
+		<div id="content" class="noInteract">
 
 <!-- Page Title -->
 

@@ -11,6 +11,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>ATK SKI - Home</title>
+
+        <link rel="preload" href="/front-end/global/resources/image/banner/banner1.jpg" as="image">
+        <link rel="preload" href="/front-end/global/resources/image/banner/banner2.jpg" as="image">
+        <link rel="preload" href="/front-end/global/resources/image/banner/banner3.jpg" as="image">
+
         <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/style.css">
@@ -31,16 +36,19 @@
 
 <!-- Banner -->
 
-        <div id="banner">
-            <div id="bannerTitle">
-                <p>Welcome To<br>ATK SMK Kristen Immanuel</p>
+        <div id="banner" class="noInteract">
+            <div class="parallaxWrapper">
+                <div class="parallaxImage">
+                    <div id="bannerTitle">
+                        <p>Welcome To<br>ATK SMK Kristen Immanuel</p>
+                    </div>
+                </div>
             </div>
-            <img src="/front-end/global/resources/image/banner/banner.png">
         </div>
 
 <!-- Produk Buku -->
 
-        <div id="homeSection">
+        <div id="homeSection" class="noInteract">
             <div id="homeTitle">
                 <img src="/front-end/global/resources/image/icon/book.png">
                 <p>Books</p>
@@ -73,27 +81,27 @@
                 </div>
         <?php endforeach; ?>
                 <div id="bookBanner">
-                    <div id="bookBannerButton">
+                    <a href="/front-end/pages/product/index.php" id="bookBannerButton">
                         <p>Shop Now ></p>
-                    </div>
-                    <img src="/front-end/global/resources/image/banner/bookBanner.png">
+                    </a>
+                    <img src="/front-end/global/resources/image/banner/bookBanner.jpg">
                 </div>
             </div>
         </div>
 
 <!-- Produk Alat Tulis -->
 
-        <div id="homeSection">
+        <div id="homeSection" class="noInteract">
             <div id="homeTitle">
                 <img src="/front-end/global/resources/image/icon/pen.png">
                 <p>Basic Writing Tools</p>
             </div>
             <div id="stationerySection">
                 <div id="bannerStationery">
-                    <div id="bannerStationeryButton">
-                        <p>More ...</p>
-                    </div>
-                    <img src="/front-end/global/resources/image/banner/bannerStationery.png">
+                    <a href="/front-end/pages/product/index.php" id="bannerStationeryButton">
+                        <p>More...</p>
+                    </a>
+                    <img src="/front-end/global/resources/image/banner/bannerStationery.jpg">
                 </div>
                 <div class="stationeryProducts">
             <?php foreach($homeProducts as $index => $product): ?>
@@ -133,7 +141,8 @@
 <!-- Scripts -->
 
         <script src="/front-end/global/scripts/addToCart.js"></script>
-        <script src="/front-end/pages/home/scripts/addToCart.js"></script>
+        <script src="/front-end/pages/home/scripts/bannerSlideshow.js"></script>
+        <script src="/front-end/pages/home/scripts/bannerParallax.js"></script>
         <script src="/front-end/global/scripts/colourSelect.js"></script>
         <script src="/front-end/global/scripts/loading-screen.js"></script>
     </body>

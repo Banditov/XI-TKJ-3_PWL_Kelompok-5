@@ -33,7 +33,7 @@
 
 <!-- Filter -->
 
-        <div id="filter">
+        <div id="filter" class="noInteract">
             <p>Sort By</p>
             <select id="sortFilter">
                 <option value="default">Default</option>
@@ -64,7 +64,7 @@
 
 <!-- Content -->
 
-		<div id="content">
+		<div id="content" class="noInteract">
 
                 <div id="productContainer">
                     <?php foreach($products as $index => $product): ?>
