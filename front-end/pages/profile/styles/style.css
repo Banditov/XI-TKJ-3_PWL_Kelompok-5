@@ -85,13 +85,6 @@
     margin: 0;
 }
 
-#confirmContainer > p {
-    font-size: 18px;
-    margin: 0;
-    color: #5E5E5E;
-    text-align: center;
-}
-
 #confirmButton {
     margin-top: 20px;
     width: 150px;
@@ -112,6 +105,10 @@
 
 #confirmText {
     width: 300px;
+    font-size: 18px;
+    margin: 0;
+    color: #5E5E5E;
+    text-align: center;
 }
 
 .false {

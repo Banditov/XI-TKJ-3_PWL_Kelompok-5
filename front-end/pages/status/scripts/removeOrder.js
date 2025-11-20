@@ -17,7 +17,7 @@ function removeOrder(orderId, orderNumber) {
             loadingScreen.style.display = 'flex';
         }
 
-        fetch('/back-end/actions/sales/remove-sales.php', {
+        fetch('/back-end/actions/sales/remove-sale.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

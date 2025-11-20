@@ -13,3 +13,28 @@
     margin-top: 15px;
     padding-top: 15px;
 }
+
+#confirmPopUp, #checkOutContainer {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#confirmPopUp[style*="display: flex"] #checkOutContainer {
+    transform: scale(1);
+}
+
+#confirmButton:hover, #cancelConfirmButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(29, 123, 197, 0.3);
+}
+
+#confirmButton:active, #cancelConfirmButton:active {
+    transform: translateY(0);
+}
+
+.false:hover {
+    background-color: #1565a7;
+}
+
+.true:hover {
+    background-color: #ac2626;
+}

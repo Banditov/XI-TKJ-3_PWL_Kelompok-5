@@ -70,6 +70,16 @@
 
 		</div>
 
+		<div id="confirmPopUp" class="noInteract">
+			<div id="confirmContainer">
+				<h2 id="confirmText">Apakah anda yakin ingin membatalkan order ini?</h2>
+				<div id="confirmButtons">
+					<button id="cancelConfirmButton" class="false">Tidak</button>
+					<button id="confirmButton" class="true">Ya</button>
+				</div>
+			</div>
+		</div>
+
 <!-- Footer -->
 
 		<?php include '../../components/footer/footer.php'; ?> 
