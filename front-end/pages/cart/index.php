@@ -25,7 +25,7 @@
 
 		<?php include '../../components/header/header.php'; ?>
 
-		<div id="content">
+		<div id="content" class="noInteract">
 
 <!-- Page Title -->
 
@@ -93,7 +93,7 @@
 
 <!-- Checkout -->
 
-		<div id="checkOutPopUp">
+		<div id="checkOutPopUp" class="noInteract">
 			<div id="checkOutContainer">
 				<h2>Order Received!</h2>
 				<p>Order Number: </p>

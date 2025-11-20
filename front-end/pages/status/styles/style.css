@@ -53,10 +53,6 @@
     font-size: 25px;
 }
 
-.statusRow:hover {
-    cursor: default;
-}
-
 .emptyState {
     display: flex;
     flex-direction: column;
@@ -72,6 +68,10 @@
     margin-bottom: 20px;
 }
 
-.removeBtn {
+.removeBtn, .cancelBtn, .dropDownButton {
     cursor: pointer;
+}
+
+#content {
+    min-height: 70vh !important;
 }

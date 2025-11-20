@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 5500px) {
-    #content, #checkOutContainer{
+    #content, #checkOutContainer {
         zoom: 2;
     }
 }

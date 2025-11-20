@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
 <link rel="stylesheet" type="text/css" href="/front-end/components/footer/style/responsive.css">
 
-<footer>
+<footer class="noInteract">
     <div id="footer">
         <img src="/front-end/global/resources/image/logo/logo.png" id="logo">
         <div id="footerContent">

@@ -77,6 +77,6 @@
     font-size: 16px;
 }
 
-#filter:hover {
-    cursor: default;
+.filterRow {
+    cursor: pointer;
 }
