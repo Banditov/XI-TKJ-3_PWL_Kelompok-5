@@ -7,22 +7,17 @@ function initializeFilter() {
     
     if (inputFilter) {
         inputFilter.addEventListener('input', function() {
-            filterOrders(this.value.trim());
+            filterProducts(this.value.trim());
         });
-
-        const initialSearchTerm = inputFilter.value.trim();
-        if (initialSearchTerm) {
-            filterOrders(initialSearchTerm);
-        }
     }
 }
 
-function filterOrders(searchTerm) {
-    const orderRows = document.querySelectorAll('.row');
+function filterProducts(searchTerm) {
+    const productRows = document.querySelectorAll('.row');
     const searchLower = searchTerm.toLowerCase();
     let hasVisibleResults = false;
 
-    orderRows.forEach(row => {
+    productRows.forEach(row => {
         const rowText = row.textContent.toLowerCase();
         const isVisible = searchTerm === '' || rowText.includes(searchLower);
         row.style.display = isVisible ? 'flex' : 'none';
@@ -45,7 +40,7 @@ function showNoResultsMessage(show) {
         const noResultsMessage = document.createElement('div');
         noResultsMessage.className = 'noResultsMessage';
         noResultsMessage.innerHTML = `
-            <p>No orders found for "<strong>${document.getElementById('inputFilter').value}</strong>"</p>
+            <p>No products found for "<strong>${document.getElementById('inputFilter').value}</strong>"</p>
             <p>Try searching with different keywords</p>
         `;
 

@@ -74,31 +74,42 @@
     margin-bottom: 10px;
 }
 
-.orderNumber {
-    width: 200px;
+.productName {
+    width: 500px;
 }
 
-.customerInfo {
+.productCategory {
     width: 400px;
     text-align: center;
 }
 
-.orderDate {
+.currentStock {
     width: 150px;
     text-align: center;
 }
 
-.totalAmount {
-    width: 300px;
-    text-align: center;
+.stockChange {
+    padding: 5px 10px;
+    border: 2px solid #1D7BC5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.statusDropdown {
-    width: 150px;
-    text-align: center;
+.stockBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 30px;
+    color: #5E5E5E;
+    width: 15px;
 }
 
-select {
-    border: 2px solid #444444;
-    border-radius: 5px;
+.stockInput {
+    width: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #5E5E5E;
+    border: 0;
+    padding-left: 10px;
 }
