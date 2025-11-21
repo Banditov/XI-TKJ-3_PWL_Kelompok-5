@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const statusDropdowns = document.querySelectorAll('.statusDropdown');
-    
+
     statusDropdowns.forEach(dropdown => {
         dropdown.addEventListener('change', function() {
             const orderId = this.getAttribute('data-order-id');

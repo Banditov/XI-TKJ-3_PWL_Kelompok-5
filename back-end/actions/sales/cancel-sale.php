@@ -1,6 +1,7 @@
 <?php
-    require_once __DIR__ . '/../../../back-end/actions/users/session-check.php';
     require_once __DIR__ . '/../../config/db-connection.php';
+
+    session_start();
 
     header('Content-Type: application/json');
 
@@ -28,6 +29,8 @@
     }
 
     try {
+        $pdo->beginTransaction();
+
         $stmt = $pdo->prepare("
             SELECT id FROM orders 
             WHERE id = ? AND customer_id = ? AND act = 'Not Ready'
@@ -36,8 +39,24 @@
         $order = $stmt->fetch();
 
         if (!$order) {
-            echo json_encode(['success' => false, 'message' => 'Order not found or cannot be cancelled']);
-            exit;
+            throw new Exception('Order not found or cannot be cancelled');
+        }
+
+        $stmt = $pdo->prepare("
+            SELECT product_id, quantity 
+            FROM sales 
+            WHERE order_id = ?
+        ");
+        $stmt->execute([$order_id]);
+        $order_items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($order_items as $item) {
+            $stmt = $pdo->prepare("
+                UPDATE products 
+                SET stock = stock + ? 
+                WHERE id = ?
+            ");
+            $stmt->execute([$item['quantity'], $item['product_id']]);
         }
 
         $stmt = $pdo->prepare("
@@ -47,10 +66,13 @@
         ");
         $stmt->execute([$order_id]);
 
-        echo json_encode(['success' => true, 'message' => 'Order cancelled successfully']);
+        $pdo->commit();
 
-    } catch (PDOException $e) {
+        echo json_encode(['success' => true, 'message' => 'Order cancelled successfully and stock restored']);
+
+    } catch (Exception $e) {
+        $pdo->rollBack();
         error_log("Cancel order error: " . $e->getMessage());
-        echo json_encode(['success' => false, 'message' => 'Database error']);
+        echo json_encode(['success' => false, 'message' => $e->getMessage()]);
     }
 ?>

@@ -33,6 +33,31 @@
     $statusData = $statusMap[$new_act];
 
     try {
+        if ($new_act === 'cancelled') {
+            $stmt = $pdo->prepare("SELECT act FROM orders WHERE id = ?");
+            $stmt->execute([$order_id]);
+            $current_order = $stmt->fetch();
+            
+            if ($current_order && $current_order['act'] !== 'Cancelled') {
+                $stmt = $pdo->prepare("
+                    SELECT product_id, quantity 
+                    FROM sales 
+                    WHERE order_id = ?
+                ");
+                $stmt->execute([$order_id]);
+                $order_items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                foreach ($order_items as $item) {
+                    $stmt = $pdo->prepare("
+                        UPDATE products 
+                        SET stock = stock + ? 
+                        WHERE id = ?
+                    ");
+                    $stmt->execute([$item['quantity'], $item['product_id']]);
+                }
+            }
+        }
+
         $stmt = $pdo->prepare("
             UPDATE orders 
             SET status = ?, act = ? 
