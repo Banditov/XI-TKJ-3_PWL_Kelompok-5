@@ -348,6 +348,23 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
 - FAQ
 
    Pada halaman ini, para pengguna dapat mencari jawaban dari pertanyaan yang mereka inginkan.
+
+   <details>
+      <summary>Admin Pages</summary>
+
+  - Register
+ 
+    Digunakan untuk menambahkan akun.
+
+  - Status Changer
+ 
+    Digunakan untuk mengubah status dari semua pesanan.
+
+  - Stock Changer
+ 
+    Digunakan untuk mengubah stok dari produk-produk.
+
+   </details>
   
 </details>
 
@@ -445,6 +462,20 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
       - price // Untuk menyimpan total dari pembelian singularitas produk
       
    </details>
+</details>
+
+## Cara Login
+<details>
+   <summary>Cara login</summary>
+
+  Untuk login ke dalam akun siswa, format password adalah 2 digit pertama dari nama depan dan angka dari email mereka.
+  > Contoh password menggunakan akun `christopher.001@ski.sch.id` : `ch001`
+
+  Untuk login ke dalam akun guru atau staff, format password adalah nama depan.
+  > Contoh password menggunakan akun `richard_m@ski.sch.id` : `richard`
+
+  Untuk menggunakan akun admin, login menggunakan email `admin@ski.sch.id` atau `vinska@ski.sch.id`. Password dari akun `admin@ski.sch.id` adalah `admin123`.
+
 </details>
 
 ## Arsitektur
