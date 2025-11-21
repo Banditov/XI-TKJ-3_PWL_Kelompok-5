@@ -33,6 +33,7 @@
 - [Instalasi](#instalasi)
 - [Penggunaan](#penggunaan)
 - [Fitur Utama](#fitur-utama)
+- [Entitas](#entitas)
 - [Arsitektur](#arsitektur)
 - [Kontributor](#kontributor)
 - [Lisensi](#lisensi)
