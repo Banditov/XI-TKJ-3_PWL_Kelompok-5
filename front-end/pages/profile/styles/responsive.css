@@ -2,79 +2,79 @@
 /* min dilakukan saat lebih */
 
 @media screen and (min-width: 5500px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 4;
     }
 }
 
 @media screen and (max-width: 5500px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 3;
     }
 }
 
 @media screen and (max-width: 3500px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 2;
     }
 }
 
 @media screen and (max-width: 2600px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 1.5;
     }
 }
 
 @media screen and (max-width: 2300px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 1.3;
     }
 }
 
 @media screen and (max-width: 2200px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 1.2;
     }
 }
 
 @media screen and (max-width: 2000px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 1.1;
     }
 }
 
 @media screen and (max-width: 1850px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 1;
     }
 }
 
 @media screen and (max-width: 1480px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 0.9;
     }
 }
 
 @media screen and (max-width: 1230px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 0.6;
     }
 }
 
 @media screen and (max-width: 980px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 0.7;
     }
 }
 
 @media screen and (max-width: 900px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 0.6;
     }
 }
 
 @media screen and (max-width: 800px) {
-    #content, .confirmPopUp {
+    #content, #confirmPopUp {
         zoom: 0.5;
     }
 }

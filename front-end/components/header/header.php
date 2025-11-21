@@ -1,12 +1,11 @@
-<link rel="stylesheet" type="text/css" href="/front-end/components/header/style/style.css">
 <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
+<link rel="stylesheet" type="text/css" href="/front-end/components/header/style/style.css">
+<link rel="stylesheet" type="text/css" href="/front-end/components/header/style/animation.css">
 <link rel="stylesheet" type="text/css" href="/front-end/components/header/style/responsive.css">
 
 <header class="noInteract">
     <div id="header">
-        <a href="/front-end/pages/admin-orders/index.php">
-            <img src="/front-end/global/resources/image/logo/logo.png" id="logo">
-        </a>
+        <img src="/front-end/global/resources/image/logo/logo.png" id="logo">
         <div id="headerIcons">
             <div id="cartSection">
                 <div id="cartInfo">
@@ -23,6 +22,9 @@
             <a href="/front-end/pages/profile/index.php">
                 <img src="/front-end/global/resources/image/icon/account.png" class="headerIcon">
             </a>
+    <?php if (isset($_SESSION['user']) && $_SESSION['user']['is_admin'] == 1): ?>
+            <img src="/front-end/global/resources/image/icon/setting.png" class="headerIcon" id="accessButton">
+    <?php endif; ?>
         </div>
     </div>
     <div id="nav">
@@ -49,4 +51,16 @@
     </div>
 </header>
 
+<?php if (isset($_SESSION['user']) && $_SESSION['user']['is_admin'] == 1): ?>
+    <div id="adminPopUp" class="noInteract">
+        <div id="adminContainer">
+            <a href="/front-end/pages/admin/status-changer/index.php">Status Changer</a>
+            <a href="/front-end/pages/admin/product-stock-changer/index.php">Product Stock Changer</a>
+            <a href="/front-end/pages/admin/register/index.php">Register</a>
+            <p id="close">Close</p>
+        </div>
+    </div>
+<?php endif; ?>
+
+<script src="/front-end/components/header/scripts/adminPopUp.js"></script>
 <script src="/front-end/components/header/scripts/cartTotal.js"></script>

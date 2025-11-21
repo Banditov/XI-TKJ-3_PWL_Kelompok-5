@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $user = $_SESSION['user'];
     require_once '../../config/db-connection.php';
 
@@ -7,6 +8,8 @@
         $email = htmlspecialchars(trim($_POST['email']));
         $class = htmlspecialchars(trim($_POST['class']));
         $password = $_POST['password'];
+
+        $is_admin = isset($_POST['admin']) ? 1 : 0;
 
         $checkQuery = "SELECT id FROM accounts WHERE email = ?";
         $checkStmt = $connection->prepare($checkQuery);
@@ -25,12 +28,13 @@
         }
 
         $passwordHashed = password_hash($password, PASSWORD_BCRYPT);
-        $query = "INSERT INTO accounts (name, email, password, class) VALUES (?, ?, ?, ?)";
+
+        $query = "INSERT INTO accounts (name, email, password, class, is_admin) VALUES (?, ?, ?, ?, ?)";
         $stmt = $connection->prepare($query);
-        $stmt->bind_param('ssss', $name, $email, $passwordHashed, $class);
+        $stmt->bind_param('ssssi', $name, $email, $passwordHashed, $class, $is_admin);
 
         if ($stmt->execute()) {
-            header('Location: /front-end/pages/login/index.php');
+            header('Location: /front-end/pages/home/index.php');
             exit;
         } else {
             echo "
