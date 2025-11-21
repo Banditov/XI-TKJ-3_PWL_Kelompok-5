@@ -34,6 +34,7 @@
 - [Penggunaan](#penggunaan)
 - [Fitur Utama](#fitur-utama)
 - [Entitas](#entitas)
+- [Cara Login](#cara-login)
 - [Arsitektur](#arsitektur)
 - [Kontributor](#kontributor)
 - [Lisensi](#lisensi)
