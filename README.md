@@ -313,9 +313,138 @@ Website lewat link ini mungkin tidak up-to-date dengan versi rilis dalam GitHub 
 Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara lebih praktis. Guru, siswa, maupun pihak sekolah dapat melihat daftar barang yang tersedia, lengkap dengan informasi harga dan kategori. Dengan adanya fitur keranjang, pengguna bisa memilih beberapa barang sekaligus sebelum melakukan pemesanan. Website ini membantu sekolah mengatur kebutuhan ATK secara lebih cepat, transparan, dan terorganisir tanpa harus melakukan pembelian manual.
 
 ## Fitur Utama
-Fitur-fitur utama website ATK SKI ini adalah:
-- Fungsi add-to-cart
-- Pemesanan secara online
+<details>
+   <summary>Berikut ini adalah fitur-fitur utama yang terdapat pada setiap page pada website ATK SKI:</summary>
+
+- Login
+
+  Seperti dari nama halamannya, halaman ini hanya memiliki fitur login. Apabila pengguna mencoba untuk memasuki halaman lain secara paksa tanpa login, maka pengguna akan diredirect kembali ke halaman ini.
+
+- Home
+
+   Pada halaman home, kita dapat menemukan produk-produk yang esensial pada sekolah kita dan langsung menambahkan produk-produk tersebut ke dalam cart. Dalam kata lain, page ini digunakan untuk memberikan "shortcut" bagi para pengguna yang hanya ingin membeli produk penting sekolah.
+
+- Products
+
+   Pada halaman products, kita dapat menemukan semua produk-produk yang dijual oleh ATK sekolah kita. Halaman ini juga memiliki fitur filter pada bagian kiri untuk menolong pengguna mencari produk mereka.
+
+- Cart
+
+   Halaman ini adalah dimana kita dapat melihat produk-produk yang telah ingin kita pesan. Disini kita juga dapat mengubah kuantitas dari produk-produk yang ingin kita beli dan melihat harga total dari pesanan kita.
+
+- History
+
+   Fungsi dari halaman ini hanya satu, yaitu memperlihatkan riwayat pembelian mereka. Halaman ini juga memiliki fitur search untuk menolong pengguna mencari pesanan tertentu.
+
+- Status
+
+   Halaman ini digunakan untuk memeriksa proses dari pesanan kita dan juga dimana kita dapat membatalkan pesanan kita.
+
+- Profile
+
+   Halaman ini hanya memiliki satu fungsi, log out. Setelah log out, pengguna akan diredirect kembali ke halaman login.
+
+- FAQ
+
+   Pada halaman ini, para pengguna dapat mencari jawaban dari pertanyaan yang mereka inginkan.
+  
+</details>
+
+## Entitas
+<details>
+   <summary>Entitas Database</summary>
+
+   <details>
+      <summary>accounts</summary>
+      Entitas ini digunakan untuk menyimpan akun-akun
+      
+      - id // Untuk mengidentifikasi sebuah akun
+      - name // Untuk menyimpan username akun
+      - email // Untuk menyimpan email akun
+      - password // Untuk menyimpan password akun
+      - class // Untuk menyimpan kelas dari pengguna akun
+      - is_admin // Untuk menentukan akun admin atau tidak
+      
+   </details>
+   <details>
+      <summary>cart_items</summary>
+      Entitas ini digunakan untuk menyimpan produk-produk yang terdapat dalam cart
+
+      - id // Untuk mengidentifikasi sebuah item
+      - account_id // Untuk mengidentifikasi item punya siapa
+      - product_id // Untuk mengidentifikasi item yang terdapat dalam cart
+      - quantity // Untuk mengisi kuantitas dari item tersebut
+      
+   </details>
+   <details>
+      <summary>child_category</summary>
+      Entitas ini digunakan untuk menyimpan kategori-kategori child untuk filter pada page produk
+
+      - id // Untuk mengidentifikasi sebuah kategori child
+      - name // Untuk menyimpan nama dari kategori child
+      - parent_id // Untuk mengidentifikasi parent dari kategori child
+      
+   </details>
+   <details>
+      <summary>faq</summary>
+      Entitas ini digunakan untuk menyimpan pertanyaan dan jawaban pada page FAQ
+
+      - id // Untuk mengidentifikasi sebuah row FAQ
+      - question // Untuk menyimpan pertanyaan
+      - answer // Untuk menyimpan jawaban
+      
+   </details>
+   <details>
+      <summary>orders</summary>
+      Entitas ini digunakan untuk menyimpan informasi dari sebuah pesanan
+
+      - id // Untuk mengidentifikasi sebuah pesanan
+      - order_number // Untuk menyimpan kode pesanan
+      - customer_id // Untuk mengidentifikasi akun dari pesanan
+      - total_amount // Untuk menyimpan total harga dari pesanan
+      - order_date // Untuk menyimpan tanggal dari pesanan
+      - status // Untuk menyimpan status pesanan
+      - act // Untuk menyimpan proses yang sedang dilakukan pada pesanan
+      - isnt_shown // Untuk mengidentifikasi pesanan ini ditampilkan pada status page atau tidak
+      
+   </details>
+   <details>
+      <summary>parent_category</summary>
+      Entitas ini digunakan untuk menyimpan kategori-kategori parent untuk filter pada page produk
+
+      - id // Untuk mengidentifikasi sebuah kategori parent
+      - name // Untuk menyimpan nama dari kategori parent
+      
+   </details>
+   <details>
+      <summary>products</summary>
+      Entitas ini digunakan untuk menyimpan produk-produk
+
+      - id // Untuk mengidentifikasi sebuah produk secara individual (tiap produk dengan warna berbeda memiliki id sendiri)
+      - product_id // Untuk mengidentifikasi produk yang sama
+      - product_name // Untuk menyimpan nama produk
+      - stock // Untuk menyimpan stok dari produk
+      - price // Untuk menyimpan harga dari sebuah produk
+      - image // Untuk menyimpan kode foto produk
+      - color // Untuk menyimpan warna produk
+      - category_parent_id // Untuk mengidentifikasi kategori parent produk
+      - category_id // Untuk mengidentifikasi kategori child produk
+      - is_first // Untuk menentukan default yang akan ditampilkan pada card produk
+      
+   </details>
+   <details>
+      <summary>sales</summary>
+      Entitas ini digunakan untuk menyimpan informasi tambahan dari pesanan
+
+      - id // Untuk mengidentifikasi row pada database
+      - order_id // Untuk mengidentifikasi pesanan dari data
+      - customer_id // Untuk mengidentifikasi akun dari data
+      - product_id // Untuk mengidentifikasi produk dari data
+      - quantity // Untuk menyimpan kuantitas pembelian
+      - price // Untuk menyimpan total dari pembelian singularitas produk
+      
+   </details>
+</details>
 
 ## Arsitektur
 <b>-- Front-end Development --</b> <br>
@@ -348,6 +477,15 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
+
+### 21/11/2025 - 1.0.0 ( WIP )
+
+- Penambahan bagian fitur utama dan entitas pada README
+- Beberapa aksi telah ditambahkan sebuah konfirmasi
+
+### 20/11/2025 - 1.0.0 ( WIP )
+
+- Page profile telah dibuat
 
 ### 19/11/2025 - 0.4.1 ( Release )
 
