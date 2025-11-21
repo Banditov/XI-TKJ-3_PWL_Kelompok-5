@@ -512,8 +512,10 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 
 ### 21/11/2025 - 1.0.0 ( WIP )
 
-- Penambahan bagian fitur utama dan entitas pada README
+- Penambahan bagian fitur utama, cara login dan entitas pada README
 - Beberapa aksi telah ditambahkan sebuah konfirmasi
+- Beberapa masalah dan inkonsistensi kode telah diperbaiki
+- Page-page untuk admin telah dibuat.
 
 ### 20/11/2025 - 1.0.0 ( WIP )
 
