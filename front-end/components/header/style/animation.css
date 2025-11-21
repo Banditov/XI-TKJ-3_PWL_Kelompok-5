@@ -1,0 +1,7 @@
+#adminPopUp, #adminContainer {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#adminPopUp[style*="display: flex"] #adminContainer {
+    transform: scale(1);
+}

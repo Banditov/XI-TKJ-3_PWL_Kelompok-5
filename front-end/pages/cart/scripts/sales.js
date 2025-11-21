@@ -74,7 +74,7 @@ function createSalesData() {
     checkoutBtn.textContent = 'Processing...';
     checkoutBtn.disabled = true;
 
-    fetch('/back-end/actions/sales/create-sales.php', {
+    fetch('/back-end/actions/sales/create-sale.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

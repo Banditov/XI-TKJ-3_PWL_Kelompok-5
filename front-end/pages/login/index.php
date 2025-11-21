@@ -25,7 +25,7 @@
 
         <div id="centerForm">
             <div class="loginForm">
-                <b>Yuk, <a href="/front-end/pages/register-admin/index.php"><b>masuk</b></a> untuk melanjutkan!</b>
+                <b>Yuk, masuk untuk melanjutkan!</b>
                 <form method="POST" id="loginForm" action="/back-end/actions/users/login.php">
                     <div class="inputForm">
                         <input type="email" id="email" name="email" class="inputField" placeholder="Email Sekolah" required>

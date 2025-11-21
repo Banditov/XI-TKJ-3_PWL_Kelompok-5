@@ -1,3 +1,7 @@
+<?php
+    require_once __DIR__ . '/../../../../back-end/actions/users/admin-check.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,7 +17,7 @@
 
 <!-- Loading Screen -->
 
-        <?php include '../../components/loading-screen/loading-screen.php'; ?>
+        <?php include '../../../components/loading-screen/loading-screen.php'; ?>
 
 <!-- Content -->
 
@@ -25,19 +29,23 @@
                 <b>ADMIN REGISTER</b>
                 <form method="POST" id="loginForm" action="/back-end/actions/users/register.php">
                     <div class="inputForm">
-                        <input type="text" id="password" name="name" class="inputField" placeholder="Username" required>
+                        <input type="text" id="name" name="name" class="inputField" placeholder="Username" required>
                     </div>
                     <div class="inputForm">
                         <input type="email" id="email" name="email" class="inputField" placeholder="Email Sekolah" required>
                     </div>
                     <div class="inputForm">
-                        <input type="text" id="password" name="class" class="inputField" placeholder="Class" required>
+                        <input type="text" id="class" name="class" class="inputField" placeholder="Class" required>
                     </div>
                     <div class="inputForm">
                         <input type="password" id="password" name="password" class="inputField" placeholder="Password" required>
                     </div>
-                    <button type="submit" name="register" class="submitButton">Lanjut</button>
-                    <a href="/front-end/pages/login/index.php" class="submitButton">Exit</a>
+                    <div class="inputForm" id="adminCheck">
+                        <input type="checkbox" id="admin" name="admin" class="inputCheck">
+                        <label for="admin" class="inputCheck">Is Admin?</label>
+                    </div>
+                    <button type="submit" name="register" class="submitButton">Create</button>
+                    <a class="submitButton" onclick="history.back()">Exit</a>
                 </form>
             </div>
         </div>
