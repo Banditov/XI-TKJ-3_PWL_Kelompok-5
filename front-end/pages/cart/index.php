@@ -8,7 +8,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>ATK SKI - Cart</title>
+		<title>Cart | ATK SKI</title>
 		<link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
 		<link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/pages/cart/styles/style.css">
@@ -30,25 +30,25 @@
 <!-- Page Title -->
 
 			<div id="pageTitle">
-				<b>CART</b>
+				<b>Cart</b>
 			</div>
 
 <!-- Content -->
 
 			<div id="indicator">
-				<p>Added Items</p>
+				<p>Item</p>
 				<div id="rightIndicator">
 					<div id="rightIndicatorGroup">
-						<p>Price</p>
-						<p>Quantity</p>
+						<p>Harga</p>
+						<p>Kuantitas</p>
 					</div>
 					<p>Total</p>
 				</div>
 			</div>
 		<?php if (empty($cartItems)): ?>
 			<div class="emptyCart">
-				<p>Your cart is empty</p>
-				<a href="/front-end/pages/product/index.php">Continue Shopping</a>
+				<p>Cart anda kosong</p>
+				<a href="/front-end/pages/product/index.php">Yok Belanja!</a>
 			</div>
 		<?php else: ?>
 			<?php foreach ($cartItems as $item): ?>
@@ -84,7 +84,7 @@
 			<div class="cartBottom">
 				<div class="cartBottomSeperator">
 					<p class="totalAmount">Total: Rp <?= number_format($totalAmount, 0, ',', '.') ?></p>
-					<button id="checkoutBtn" class="checkoutButton">Proceed To Checkout</button>
+					<button id="checkoutBtn" class="checkoutButton">Checkout</button>
 				</div>
 			</div>
 		<?php endif; ?>
@@ -95,8 +95,8 @@
 
 		<div id="checkOutPopUp" class="noInteract">
 			<div id="checkOutContainer">
-				<h2>Order Received!</h2>
-				<p>Order Number: </p>
+				<h2>Order Berhasil!</h2>
+				<p>Kode Order: </p>
 				<p>Total Harga: </p>
 				<button id="checkOutButton">Ok</button>
 			</div>

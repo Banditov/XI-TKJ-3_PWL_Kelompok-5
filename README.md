@@ -7,10 +7,10 @@
 
 <div align="center">
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/GitHub Version-r1.0.0-red">
+      <img src="https://img.shields.io/badge/GitHub Version-r1.0.1-red">
    </a>
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/Latest Release-b0.4.1-green">
+      <img src="https://img.shields.io/badge/Latest Release-r1.0.0-green">
    </a>
    <a href="https://app.netlify.com/projects/atkski/deploys">
       <img src="https://img.shields.io/badge/Netlify-0.2.1-00C7B7?style=flat&logo=Netlify&logoColor=white">
@@ -19,12 +19,13 @@
       <img src="https://img.shields.io/badge/License-Unlicense-blue.svg">
    </a>
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#kontributor">
-      <img src="https://img.shields.io/badge/Contributor-3-orange">
+      <img src="https://img.shields.io/badge/Contributor-3-yellow">
    </a><br>
    <a href="https://app.netlify.com/projects/atkski/deploys">
       <img src="https://api.netlify.com/api/v1/badges/11368017-fe23-41df-b99b-f94ff06ccccc/deploy-status">
    </a>
 </div>
+
 
 ## Table of Contents
 <details>
@@ -33,6 +34,8 @@
 - [Instalasi](#instalasi)
 - [Penggunaan](#penggunaan)
 - [Fitur Utama](#fitur-utama)
+- [Entitas](#entitas)
+- [Cara Login](#cara-login)
 - [Arsitektur](#arsitektur)
 - [Kontributor](#kontributor)
 - [Lisensi](#lisensi)
@@ -47,7 +50,7 @@
 
 <!-- Instalasi Baru -->
 <details>
-   <summary>Versi Beta</summary>
+   <summary>Versi Beta & Release</summary>
 
 ### Step 1
 <details>
@@ -309,13 +312,178 @@ Website lewat link ini mungkin tidak up-to-date dengan versi rilis dalam GitHub 
 </details>
 </details>
 
+
 ## Penggunaan
 Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara lebih praktis. Guru, siswa, maupun pihak sekolah dapat melihat daftar barang yang tersedia, lengkap dengan informasi harga dan kategori. Dengan adanya fitur keranjang, pengguna bisa memilih beberapa barang sekaligus sebelum melakukan pemesanan. Website ini membantu sekolah mengatur kebutuhan ATK secara lebih cepat, transparan, dan terorganisir tanpa harus melakukan pembelian manual.
 
+
 ## Fitur Utama
-Fitur-fitur utama website ATK SKI ini adalah:
-- Fungsi add-to-cart
-- Pemesanan secara online
+<details>
+   <summary>Berikut ini adalah fitur-fitur utama yang terdapat pada setiap page pada website ATK SKI:</summary>
+
+- Login
+
+  Seperti dari nama halamannya, halaman ini hanya memiliki fitur login. Apabila pengguna mencoba untuk memasuki halaman lain secara paksa tanpa login, maka pengguna akan diredirect kembali ke halaman ini.
+
+- Home
+
+   Pada halaman home, kita dapat menemukan produk-produk yang esensial pada sekolah kita dan langsung menambahkan produk-produk tersebut ke dalam cart. Dalam kata lain, page ini digunakan untuk memberikan "shortcut" bagi para pengguna yang hanya ingin membeli produk penting sekolah.
+
+- Products
+
+   Pada halaman products, kita dapat menemukan semua produk-produk yang dijual oleh ATK sekolah kita. Halaman ini juga memiliki fitur filter pada bagian kiri untuk menolong pengguna mencari produk mereka.
+
+- Cart
+
+   Halaman ini adalah dimana kita dapat melihat produk-produk yang telah ingin kita pesan. Disini kita juga dapat mengubah kuantitas dari produk-produk yang ingin kita beli dan melihat harga total dari pesanan kita.
+
+- History
+
+   Fungsi dari halaman ini hanya satu, yaitu memperlihatkan riwayat pembelian mereka. Halaman ini juga memiliki fitur search untuk menolong pengguna mencari pesanan tertentu.
+
+- Status
+
+   Halaman ini digunakan untuk memeriksa proses dari pesanan kita dan juga dimana kita dapat membatalkan pesanan kita.
+
+- Profile
+
+   Halaman ini hanya memiliki satu fungsi, log out. Setelah log out, pengguna akan diredirect kembali ke halaman login.
+
+- FAQ
+
+   Pada halaman ini, para pengguna dapat mencari jawaban dari pertanyaan yang mereka inginkan.
+
+   <details>
+      <summary>Admin Pages</summary>
+
+  - Register
+ 
+    Digunakan untuk menambahkan akun.
+
+  - Status Changer
+ 
+    Digunakan untuk mengubah status dari semua pesanan.
+
+  - Stock Changer
+ 
+    Digunakan untuk mengubah stok dari produk-produk.
+
+   </details>
+  
+</details>
+
+
+## Entitas
+<details>
+   <summary>Entitas Database</summary>
+
+   <details>
+      <summary>accounts</summary>
+      Entitas ini digunakan untuk menyimpan akun-akun
+      
+      - id // Untuk mengidentifikasi sebuah akun
+      - name // Untuk menyimpan username akun
+      - email // Untuk menyimpan email akun
+      - password // Untuk menyimpan password akun
+      - class // Untuk menyimpan kelas dari pengguna akun
+      - is_admin // Untuk menentukan akun admin atau tidak
+      
+   </details>
+   <details>
+      <summary>cart_items</summary>
+      Entitas ini digunakan untuk menyimpan produk-produk yang terdapat dalam cart
+
+      - id // Untuk mengidentifikasi sebuah item
+      - account_id // Untuk mengidentifikasi item punya siapa
+      - product_id // Untuk mengidentifikasi item yang terdapat dalam cart
+      - quantity // Untuk mengisi kuantitas dari item tersebut
+      
+   </details>
+   <details>
+      <summary>child_category</summary>
+      Entitas ini digunakan untuk menyimpan kategori-kategori child untuk filter pada page produk
+
+      - id // Untuk mengidentifikasi sebuah kategori child
+      - name // Untuk menyimpan nama dari kategori child
+      - parent_id // Untuk mengidentifikasi parent dari kategori child
+      
+   </details>
+   <details>
+      <summary>faq</summary>
+      Entitas ini digunakan untuk menyimpan pertanyaan dan jawaban pada page FAQ
+
+      - id // Untuk mengidentifikasi sebuah row FAQ
+      - question // Untuk menyimpan pertanyaan
+      - answer // Untuk menyimpan jawaban
+      
+   </details>
+   <details>
+      <summary>orders</summary>
+      Entitas ini digunakan untuk menyimpan informasi dari sebuah pesanan
+
+      - id // Untuk mengidentifikasi sebuah pesanan
+      - order_number // Untuk menyimpan kode pesanan
+      - customer_id // Untuk mengidentifikasi akun dari pesanan
+      - total_amount // Untuk menyimpan total harga dari pesanan
+      - order_date // Untuk menyimpan tanggal dari pesanan
+      - status // Untuk menyimpan status pesanan
+      - act // Untuk menyimpan proses yang sedang dilakukan pada pesanan
+      - isnt_shown // Untuk mengidentifikasi pesanan ini ditampilkan pada status page atau tidak
+      
+   </details>
+   <details>
+      <summary>parent_category</summary>
+      Entitas ini digunakan untuk menyimpan kategori-kategori parent untuk filter pada page produk
+
+      - id // Untuk mengidentifikasi sebuah kategori parent
+      - name // Untuk menyimpan nama dari kategori parent
+      
+   </details>
+   <details>
+      <summary>products</summary>
+      Entitas ini digunakan untuk menyimpan produk-produk
+
+      - id // Untuk mengidentifikasi sebuah produk secara individual (tiap produk dengan warna berbeda memiliki id sendiri)
+      - product_id // Untuk mengidentifikasi produk yang sama
+      - product_name // Untuk menyimpan nama produk
+      - stock // Untuk menyimpan stok dari produk
+      - price // Untuk menyimpan harga dari sebuah produk
+      - image // Untuk menyimpan kode foto produk
+      - color // Untuk menyimpan warna produk
+      - category_parent_id // Untuk mengidentifikasi kategori parent produk
+      - category_id // Untuk mengidentifikasi kategori child produk
+      - is_first // Untuk menentukan default yang akan ditampilkan pada card produk
+      
+   </details>
+   <details>
+      <summary>sales</summary>
+      Entitas ini digunakan untuk menyimpan informasi tambahan dari pesanan
+
+      - id // Untuk mengidentifikasi row pada database
+      - order_id // Untuk mengidentifikasi pesanan dari data
+      - customer_id // Untuk mengidentifikasi akun dari data
+      - product_id // Untuk mengidentifikasi produk dari data
+      - quantity // Untuk menyimpan kuantitas pembelian
+      - price // Untuk menyimpan total dari pembelian singularitas produk
+      
+   </details>
+</details>
+
+
+## Cara Login
+<details>
+   <summary>Cara login</summary>
+
+  Untuk login ke dalam akun siswa, format password adalah 2 digit pertama dari nama depan dan angka dari email mereka.
+  > Contoh password menggunakan akun `christopher.001@ski.sch.id` : `ch001`
+
+  Untuk login ke dalam akun guru atau staff, format password adalah nama depan.
+  > Contoh password menggunakan akun `richard_m@ski.sch.id` : `richard`
+
+  Untuk menggunakan akun admin, login menggunakan email `admin@ski.sch.id` atau `vinska@ski.sch.id`. Password dari akun `admin@ski.sch.id` adalah `admin123`.
+
+</details>
+
 
 ## Arsitektur
 <b>-- Front-end Development --</b> <br>
@@ -335,6 +503,7 @@ Fitur-fitur utama website ATK SKI ini adalah:
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 
+
 ## Kontributor
 <img src="https://avatars.githubusercontent.com/u/199484083" width="20"> [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.<br>
 <img src="https://avatars.githubusercontent.com/u/226641704" width="20"> [Nicholas J.G - "nikoe-ee"](https://github.com/nikoe-ee), sebagai front-end developer.<br>
@@ -349,162 +518,265 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 <details>
    <summary>Click to Expand</summary>
 
+<details>
+   <summary>November</summary>
+   
+### 22/11/2025 - 1.0.0 ( Release )
+<details>
+
+   - Database diperbarui dengan produk tambahan
+   - Ikon notifikasi akan memberikan tanda apabila ada orderan yang sudah siap
+   - Menambahkan beberapa animasi saat hover
+   - Fungsi pengganti warna pada card produk telah diperbarui agar lebih intuitif
+   - Responsivitas page login/register telah diperbarui
+   - Kebanyakan teks telah ditranslasikan ke bahasa Indonesia
+</details>
+
+### 21/11/2025 - 1.0.0 ( WIP )
+<details>
+
+   - Penambahan bagian fitur utama, cara login dan entitas pada README
+   - Beberapa aksi telah ditambahkan sebuah konfirmasi
+   - Beberapa masalah dan inkonsistensi kode telah diperbaiki
+   - Page-page untuk admin telah dibuat.
+</details>
+
+### 20/11/2025 - 1.0.0 ( WIP )
+<details>
+
+   - Page profile telah dibuat
+</details>
+
 ### 19/11/2025 - 0.4.1 ( Release )
+<details>
 
-- Database telah diupdate
+   - Database telah diupdate
+</details>
   
-### 19/11/2025 - 0.4.0 ( Release )
+### 18/11/2025 - 0.4.0 ( Release )
+<details>
 
-- Halaman history telah dibuat
-- Fungsi ordering telah ditambahkan
-- Fungsi pada status page sudah bekerja
+   - Halaman history telah dibuat
+   - Fungsi ordering telah ditambahkan
+   - Fungsi pada status page sudah bekerja
+</details>
 
 ### 16/11/2025 - 0.4.0 ( WIP )
+<details>
 
-- Perbaikan README
+   - Perbaikan README
+</details>
 
 ### 14/11/2025 - 0.4.0 ( WIP )
+<details>
 
-- README.md diupdate, menambahkan bagian fitur utama & update instalasi
+   - README.md diupdate, menambahkan bagian fitur utama & update instalasi
+</details>
 
 ### 13/11/2025 - 0.3.0 ( Release )
+<details>
 
-- Desain banner telah diganti
+   - Desain banner telah diganti
+</details>
 
 ### 12/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Halaman cart telah dibuat
-- Fitur add to cart telah ditambahkan
+   - Halaman cart telah dibuat
+   - Fitur add to cart telah ditambahkan
+</details>
 
 ### 11/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Struktur image telah diupdate
+   - Struktur image telah diupdate
+</details>
 
 ### 6/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Database telah diupdate
-- Page produk telah dibuat
-- Branch baru untuk pre-deploy telah dibuat
+   - Database telah diupdate
+   - Page produk telah dibuat
+   - Branch baru untuk pre-deploy telah dibuat
+</details>
 
 ### 5/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Beberapa animasi kecil telah ditambahkan
-- Page produk telah dibuat
+   - Beberapa animasi kecil telah ditambahkan
+   - Page produk telah dibuat
+</details>
   
 ### 4/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Page FAQ telah dibuat ulang
+   - Page FAQ telah dibuat ulang
+</details>
   
 ### 3/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Beberapa bug fix
-- Menambahkan intro
+   - Beberapa bug fix
+   - Menambahkan intro
+</details>
+</details>
+
+<details>
+   <summary>October</summary>
 
 ### 31/10/2025 - 0.3.0 ( WIP )
+<details>
 
-- Loading screen sudah responsif
+   - Loading screen sudah responsif
+</details>
 
 ### 30/10/2025 - 0.3.0 ( WIP )
+<details>
 
-- Fitur checkbox warna telah ditambahkan
-- Page FAQ sudah responsif
-- Halaman login sudah terintegrasi dengan database
-- Beberapa masalah telah diperbaiki
+   - Fitur checkbox warna telah ditambahkan
+   - Page FAQ sudah responsif
+   - Halaman login sudah terintegrasi dengan database
+   - Beberapa masalah telah diperbaiki
+</details>
 
 ### 24/10/2025 - 0.3.0 ( WIP )
+<details>
 
-- Page FAQ telah dibuat
+   - Page FAQ telah dibuat
+</details>
 
 ### 23/10/2025 - 0.3.0 ( WIP )
+<details>
 
-- Database telah terhubung dengan halaman home
-- Home telah dibagi menjadi berbagai komponen terpisah
+   - Database telah terhubung dengan halaman home
+   - Home telah dibagi menjadi berbagai komponen terpisah
+</details>
 
 ### 22/10/2025 - 0.3.0 ( WIP )
+<details>
 
-- Database terintegrasi dengan halaman home
-- Halaman home dibagi menjadi beberapa komponen
+   - Database terintegrasi dengan halaman home
+   - Halaman home dibagi menjadi beberapa komponen
+</details>
+</details>
+
+<details>
+   <summary>September</summary>
 
 ### 21/09/2025 - 0.3.0 ( WIP )
+<details>
 
-- Penghapusan Laravel dari arsitektur
-- Struktur telah direorganisir
+   - Penghapusan Laravel dari arsitektur
+   - Struktur telah direorganisir
+</details>
 
 ### 21/09/2025 - 0.3.0 ( WIP )
+<details>
 
-- Tambahan ikon pada tab browser
+   - Tambahan ikon pada tab browser
+</details>
 
 ### 21/09/2025 - 0.2.1 ( Release )
+<details>
 
-- Penambahan instruksi penggunaan secara online & mobile
-
-### 18/09/2025 - 0.2.1 ( WIP )
-
-- Beberapa masalah kecil diperbaiki
+   - Penambahan instruksi penggunaan secara online & mobile
+</details>
 
 ### 18/09/2025 - 0.2.1 ( WIP )
+<details>
 
-- Branch baru untuk belajar React.JS dibuat
-- Deploy website menggunakan Netlify
+   - Beberapa masalah kecil diperbaiki
+</details>
+
+### 18/09/2025 - 0.2.1 ( WIP )
+<details>
+
+   - Branch baru untuk belajar React.JS dibuat
+   - Deploy website menggunakan Netlify
+</details>
 
 ### 17/09/2025 - 0.2.1 ( WIP )
+<details>
 
-- Perbaiki masalah responsivity halaman home apabila zoom keluar
+   - Perbaiki masalah responsivity halaman home apabila zoom keluar
+</details>
 
 ### 17/09/2025 - 0.2.0 ( Release )
+<details>
 
-- Pembaruan instruksi instalasi
+   - Pembaruan instruksi instalasi
+</details>
 
 ### 16/09/2025 - 0.2.0 ( WIP )
+<details>
 
-- Perubahan struktur
-- Penambahan file starter
-- Penambahan drop-down pada gambar tutorial dalam README.md
-- Penambahan database
+   - Perubahan struktur
+   - Penambahan file starter
+   - Penambahan drop-down pada gambar tutorial dalam README.md
+   - Penambahan database
+</details>
 
 ### 14/09/2025 - 0.1.0 ( Release )
-
-- Perubahan nama repository dari "PWL-Kelompok-5" menjadi "XI-TKJ-3_PWL_Kelompok-5"
-- Masalah halaman login tidak responsive dengan display Android sudah diperbaiki
-- Masalah halaman home tidak responsive dengan display Android sudah diperbaiki
-- Perubahan isi dalam README.md
+<details>
+   
+   - Perubahan nama repository dari "PWL-Kelompok-5" menjadi "XI-TKJ-3_PWL_Kelompok-5"
+   - Masalah halaman login tidak responsive dengan display Android sudah diperbaiki
+   - Masalah halaman home tidak responsive dengan display Android sudah diperbaiki
+   - Perubahan isi dalam README.md
+</details>
 
 ### 13/09/2025 - 0.0.1 ( Release )
+<details>
 
-- Perubahan README.md
-- Halaman home sudah responsive
-- Halaman home mendapatkan penambahan isi
-- Background halaman login diganti
+   - Perubahan README.md
+   - Halaman home sudah responsive
+   - Halaman home mendapatkan penambahan isi
+   - Background halaman login diganti
+</details>
 
 ### 12/09/2025
+<details>
 
-- Update README.md
-- Memasukin source code home page & login page ke dalam repository
+   - Update README.md
+   - Memasukin source code home page & login page ke dalam repository
+</details>
 
 ### 11/09/2025
+<details>
 
-- Mengintegrasi CHANGELOG.md dengan README.md
+   - Mengintegrasi CHANGELOG.md dengan README.md
+</details>
 
 ### 05/09/2025
+<details>
 
-- Membuat workflow
-- Memulai pembuatan Home Page
+   - Membuat workflow
+   - Memulai pembuatan Home Page
+</details>
 
 ### 04/09/2025
+<details>
 
-- Mengubah logo
+   - Mengubah logo
+</details>
 
 ### 03/09/2025
+<details>
 
-- Update README.md
-- Tambahkan issue
-- Menambahkan logo 
+   - Update README.md
+   - Tambahkan issue
+   - Menambahkan logo 
+</details>
 
 ### 02/09/2025
+<details>
 
-- Update README.md
-- Tambahkan license
+   - Update README.md
+   - Tambahkan license
 </details>
+</details>
+</details>
+
 
 ## Link
 - [Figma - Mock-up](https://www.figma.com/design/LLrqwRu8kVeNYoYhqZ2jOe/PWL?node-id=0-1&t=mJ8mLZNfG32KhL0a-1)

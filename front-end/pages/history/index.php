@@ -8,7 +8,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>ATK SKI - History</title>
+		<title>History | ATK SKI</title>
 		<link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
 		<link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/pages/history/styles/style.css">
@@ -30,7 +30,7 @@
 <!-- Page Title -->
 
 			<div id="pageTitle">
-				<b>HISTORY</b>
+				<b>Riwayat</b>
 			</div>
 
 <!-- Content -->
@@ -51,9 +51,9 @@
 
 		<?php if (empty($orders)): ?>
 				<div class="emptyHistory">
-					<p>No order history found</p>
+					<p>Tidak ketemu riwayat</p>
 			<?php if (!empty($searchTerm)): ?>
-					<p>Try adjusting your search terms</p>
+					<p>Coba ganti kata anda dalam search</p>
 			<?php else: ?>
 					<a href="/front-end/pages/product/index.php">Start Shopping</a>
 			<?php endif; ?>

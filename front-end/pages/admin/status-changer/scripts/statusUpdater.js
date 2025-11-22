@@ -30,7 +30,6 @@ function updateOrderStatus(orderId, newStatus) {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            console.log('Status updated successfully');
         } else {
             alert('Failed to update status: ' + (data.message || 'Unknown error'));
             location.reload();

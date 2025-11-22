@@ -11,7 +11,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>ATK SKI - Products</title>
+		<title>Products | ATK SKI</title>
 		<link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
 		<link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/pages/product/styles/style.css">
@@ -34,15 +34,15 @@
 <!-- Filter -->
 
         <div id="filter" class="noInteract">
-            <p>Sort By</p>
+            <p>Pengurutan</p>
             <select id="sortFilter">
                 <option value="default">Default</option>
-                <option value="lowHigh">Lowest Price</option>
-                <option value="highLow">Highest Price</option>
+                <option value="lowHigh">Harga Terendah</option>
+                <option value="highLow">Harga Tertinggi</option>
                 <option value="az">A-Z</option>
                 <option value="za">Z-A</option>
             </select>
-            <p>Category</p>
+            <p>Kategori</p>
             <div class="filterRow">
         <?php foreach($parents as $index => $parent): ?>
                 <div class="parentRow" data-type="parent" data-parent-id="<?= $parent['id']; ?>">

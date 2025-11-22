@@ -45,8 +45,8 @@ function showNoResultsMessage(show) {
         const noResultsMessage = document.createElement('div');
         noResultsMessage.className = 'noResultsMessage';
         noResultsMessage.innerHTML = `
-            <p>No orders found for "<strong>${document.getElementById('inputFilter').value}</strong>"</p>
-            <p>Try searching with different keywords</p>
+            <p>Tidak ada orderan dengan kata "<strong>${document.getElementById('inputFilter').value}</strong>" ditemukan</p>
+            <p>Coba ganti kata anda dalam search</p>
         `;
 
         const indicator = document.getElementById('indicator');

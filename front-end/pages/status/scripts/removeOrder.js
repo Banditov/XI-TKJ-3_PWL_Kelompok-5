@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function removeOrder(orderId, orderNumber) {
-    if (confirm(`Are you sure you want to remove order #${orderNumber} from view? This action cannot be undone.`)) {
+    if (confirm(`Apakah anda yakin ingin melupakan orderan ini? Aksi ini tidak dapat dikembalikan.`)) {
         const loadingScreen = document.querySelector('.loading-screen');
         if (loadingScreen) {
             loadingScreen.style.display = 'flex';
@@ -29,7 +29,6 @@ function removeOrder(orderId, orderNumber) {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                alert('Order removed successfully!');
                 location.reload();
             } else {
                 alert('Failed to remove order: ' + (data.message || 'Unknown error'));

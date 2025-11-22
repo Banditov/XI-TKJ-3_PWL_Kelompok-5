@@ -17,7 +17,6 @@ class CartManager {
         
         bookAddButtons.forEach(button => {
             button.addEventListener('click', (e) => {
-                console.log('Book add to cart clicked');
                 const productElement = e.currentTarget.closest('.bookProduct');
                 this.addToCart(productElement);
             });
@@ -118,7 +117,7 @@ class CartManager {
         if (!colorForm) {
             selectedColors.push('None');
         } else if (selectedColors.length === 0) {
-            alert('Please select at least one color');
+            alert('Select 1 warna atau lebih');
             return;
         }
         
@@ -159,7 +158,7 @@ class CartManager {
                 
                 if (successfulAdds.length > 0) {
                     if (successfulAdds.length === selectedColors.length) {
-                        this.showNotification(`All ${successfulAdds.length} items added to cart!`, 'success');
+                        this.showNotification(`${successfulAdds.length} item telah ditambahkan ke keranjang!`, 'success');
                     } else {
                         this.showNotification(`${successfulAdds.length} of ${selectedColors.length} items added to cart`, 'success');
                     }

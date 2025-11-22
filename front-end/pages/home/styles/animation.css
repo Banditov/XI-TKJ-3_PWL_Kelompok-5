@@ -1,3 +1,4 @@
-#bannerTitle > p {
-    transition: all 0.8s ease-out;
+#bookBannerButton:hover, #bannerStationeryButton:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
 }
