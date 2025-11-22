@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>ATK SKI - Login</title>
-        <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
-        <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/style.css">
+        <title>Login | ATK SKI</title>
+        <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/animation.css">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/responsive.css">
     </head>
     <body>
@@ -17,15 +18,13 @@
 
 <!-- Content -->
 
-        <div id="loginBackground">
-            <img src="/front-end/global/resources/image/login_background.png">
+        <div id="loginBackground" class="noInteract">
+            <img src="/front-end/global/resources/image/background/login_background.png">
         </div>
 
-<!-- Content -->
-
         <div id="centerForm">
-            <div class="loginForm">
-                <b>Yuk, <a href="/front-end/pages/register-admin/index.php"><b>masuk</b></a> untuk melanjutkan!</b>
+            <div class="loginForm noInteract">
+                <b>Yuk, masuk untuk melanjutkan!</b>
                 <form method="POST" id="loginForm" action="/back-end/actions/users/login.php">
                     <div class="inputForm">
                         <input type="email" id="email" name="email" class="inputField" placeholder="Email Sekolah" required>

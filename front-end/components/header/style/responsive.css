@@ -2,111 +2,137 @@
 /* min dilakukan saat lebih */
 
 @media screen and (min-width: 5500px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 5;
     }
-}
-
-@media screen and (max-width: 5500px) {
-    #nav,
-    #header {
+    
+    #adminPopUp  {
         zoom: 4;
     }
 }
 
+@media screen and (max-width: 5500px) {
+    #nav, #header {
+        zoom: 4;
+    }
+    
+    #adminPopUp  {
+        zoom: 3;
+    }
+}
+
 @media screen and (max-width: 3500px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 2.5;
+    }
+    
+    #adminPopUp  {
+        zoom: 2;
     }
 }
 
 @media screen and (max-width: 2600px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 1.8;
+    }
+    
+    #adminPopUp  {
+        zoom: 1.5;
     }
 }
 
 @media screen and (max-width: 2300px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 1.8;
+    }
+    
+    #adminPopUp  {
+        zoom: 1.3;
     }
 }
 
 @media screen and (max-width: 2200px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 1.7;
+    }
+    
+    #adminPopUp  {
+        zoom: 1.2;
     }
 }
 
 @media screen and (max-width: 2000px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 1.4;
+    }
+    
+    #adminPopUp  {
+        zoom: 1.1;
     }
 }
 
 @media screen and (max-width: 1850px) {
-    #nav,
-    #header {
+    #nav, #header, #adminPopUp {
         zoom: 1;
     }
 }
 
 @media screen and (max-width: 1480px) {
-    header {
+    header, #adminPopUp {
         zoom: 0.9;
     }
 }
 
 @media screen and (max-width: 1230px) {
     header {
+        zoom: 0.7;
+    }
+    
+    #adminPopUp  {
         zoom: 0.8;
     }
 }
 
 @media screen and (max-width: 1170px) {
-    #nav,
-    #header {
-        zoom: 1.5;
+    #nav, #header {
+        zoom: 1;
     }
 }
 
 @media screen and (max-width: 980px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 1.4;
+    }
+    
+    #adminPopUp  {
+        zoom: 0.7;
     }
 }
 
 @media screen and (max-width: 870px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 1.2;
     }
 }
 
 @media screen and (max-width: 830px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 1.1;
     }
 }
 
 @media screen and (max-width: 740px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 1.1;
+    }
+    
+    #adminPopUp  {
+        zoom: 0.6;
     }
 }
 
 @media screen and (max-width: 700px) {
-    #nav,
-    #header {
+    #nav, #header {
         zoom: 1;
     }
 }
@@ -120,5 +146,9 @@
     #header {
         padding: 20px 40px 20px 40px;
         zoom: 0.8;
+    }
+    
+    #adminPopUp  {
+        zoom: 0.5;
     }
 }

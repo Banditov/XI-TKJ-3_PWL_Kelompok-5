@@ -1,9 +1,11 @@
 <?php
-session_start();
+    session_start();
 
-if (!isset($_SESSION['user'])) {
-    header('Location: ./front-end/pages/register-admin/index.php');
-} else {
-    header('Location: ./front-end/pages/login/index.php');
-}
+    if (isset($_SESSION['user'])) {
+        header('Location: ./front-end/pages/home/index.php');
+        exit();
+    } else {
+        header('Location: ./front-end/pages/login/index.php');
+        exit();
+    }
 ?>

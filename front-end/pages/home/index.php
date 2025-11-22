@@ -2,6 +2,7 @@
     require_once __DIR__ . '/../../../back-end/actions/products/get-home-products.php';
     require_once __DIR__ . '/../../../back-end/actions/products/get-books.php';
     require_once __DIR__ . '/../../../back-end/actions/products/get-product-colours.php';
+    require_once __DIR__ . '/../../../back-end/actions/users/session-check.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,11 +10,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>ATK SKI - Home</title>
-        <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo.ico">
-        <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/style.css">
-        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productColor.css">
+        <title>Home | ATK SKI</title>
+        <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/animation.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productColor.css">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productCard.css">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/productHover.css">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/home/styles/responsive.css">
@@ -30,16 +32,22 @@
 
 <!-- Banner -->
 
-        <div id="banner">
-            <img src="/front-end/global/resources/image/banner.png">
+        <div id="banner" class="noInteract">
+            <div class="parallaxWrapper">
+                <div class="parallaxImage">
+                    <div id="bannerTitle">
+                        <p>Welcome To<br>ATK SMK Kristen Immanuel</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
 <!-- Produk Buku -->
 
-        <div id="homeSection">
+        <div id="homeSection" class="noInteract">
             <div id="homeTitle">
-                <img src="/front-end/global/resources/image/book.png">
-                <p>Books</p>
+                <img src="/front-end/global/resources/image/icon/book.png">
+                <p>Buku</p>
             </div>
             <div class="bookProducts">
         <?php foreach($books as $index => $product): ?>
@@ -64,32 +72,32 @@
             <?php endif; ?>
                     </div>
                     <div class="addToCart">
-                        <img src="/front-end/global/resources/image/add.png">
+                        <img src="/front-end/global/resources/image/icon/add.png">
                     </div>
                 </div>
         <?php endforeach; ?>
                 <div id="bookBanner">
-                    <div id="bookBannerButton">
-                        <p>Shop Now ></p>
-                    </div>
-                    <img src="/front-end/global/resources/image/bookBanner.png">
+                    <a href="/front-end/pages/product/index.php" id="bookBannerButton">
+                        <p>Belanja Sekarang ></p>
+                    </a>
+                    <img src="/front-end/global/resources/image/banner/bookBanner.jpg">
                 </div>
             </div>
         </div>
 
 <!-- Produk Alat Tulis -->
 
-        <div id="homeSection">
+        <div id="homeSection" class="noInteract">
             <div id="homeTitle">
-                <img src="/front-end/global/resources/image/pen.png">
-                <p>Basic Writing Tools</p>
+                <img src="/front-end/global/resources/image/icon/pen.png">
+                <p>Alat Tulis</p>
             </div>
             <div id="stationerySection">
                 <div id="bannerStationery">
-                    <div id="bannerStationeryButton">
-                        <p>More ...</p>
-                    </div>
-                    <img src="/front-end/global/resources/image/bannerStationery.png">
+                    <a href="/front-end/pages/product/index.php" id="bannerStationeryButton">
+                        <p>Lebih Banyak...</p>
+                    </a>
+                    <img src="/front-end/global/resources/image/banner/bannerStationery.jpg">
                 </div>
                 <div class="stationeryProducts">
             <?php foreach($homeProducts as $index => $product): ?>
@@ -113,7 +121,7 @@
                             </div>
                 <?php endif; ?>
                             <div class="addToCart">
-                                <img src="/front-end/global/resources/image/add.png">
+                                <img src="/front-end/global/resources/image/icon/add.png">
                             </div>
                         </div>
                     </div>
@@ -128,6 +136,9 @@
 
 <!-- Scripts -->
 
+        <script src="/front-end/global/scripts/addToCart.js"></script>
+        <script src="/front-end/pages/home/scripts/bannerSlideshow.js"></script>
+        <script src="/front-end/pages/home/scripts/bannerParallax.js"></script>
         <script src="/front-end/global/scripts/colourSelect.js"></script>
         <script src="/front-end/global/scripts/loading-screen.js"></script>
     </body>

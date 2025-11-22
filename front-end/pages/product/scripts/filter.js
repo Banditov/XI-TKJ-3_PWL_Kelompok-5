@@ -57,12 +57,17 @@ async function filterProducts(categoryId = 0, type = 'child', sort = 'default') 
                         <p class="productPrice">Rp ${new Intl.NumberFormat('id-ID').format(p.price)}</p>
                         ${colorsHTML ? `<div class="colorForm"><form class="productColor">${colorsHTML}</form></div>` : ''}
                         <div class="addToCart">
-                            <img src="/front-end/global/resources/image/add.png">
+                            <img src="/front-end/global/resources/image/icon/add.png">
                         </div>
                     </div>
                 </div>`;
         }).join('');
 
+        if (window.cartManager) {
+            window.cartManager.initializeAddToCartButtons();
+            window.cartManager.initializeColorSelection();
+        }
+        
         initProductColorEvents();
 
     } catch (err) {

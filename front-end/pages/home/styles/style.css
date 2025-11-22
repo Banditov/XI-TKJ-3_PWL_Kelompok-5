@@ -16,9 +16,8 @@
     margin-right: 30px;
 }
 
-#banner > img {
-    width: 100%;
-    height: fit-content;
+#bannerTitle > p {
+    font-family: serif;
 }
 
 #bookBanner {
@@ -66,11 +65,65 @@
     border-radius: 50px;
     padding: 5px 40px 5px 40px;
     bottom: 30px;
-    right: 140px;
+    right: 100px;
     box-shadow: 0px 0px 5px 5px rgba(65, 62, 62, 0.151);
 }
 
 #stationerySection {
     display: flex;
     justify-content: space-between;
+}
+
+#banner {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.parallaxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    overflow: hidden;
+}
+
+.parallaxImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url('/front-end/global/resources/image/banner/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bannerTitle {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+#bannerTitle > p {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+#banner.visible, #bannerTitle > p {
+    opacity: 1;
+    transform: translateY(0);
 }

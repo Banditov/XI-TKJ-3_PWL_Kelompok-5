@@ -51,8 +51,34 @@ footer {
     color: #5E5E5E;
 }
 
+#pageTitle:hover {
+    cursor: default;
+}
+
 #content {
     margin: 40px 60px 0px 60px;
-    min-height: 70vh;
+    min-height: 80vh;
     width: auto;
+}
+
+.noInteract {
+    cursor: default;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1D7BC5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(217, 217, 217);
 }
