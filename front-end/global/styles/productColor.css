@@ -35,11 +35,11 @@
 
 #Pink {
     input[type=checkbox] {
-        border: 2px solid #e62b98;
+        border: 2px solid #fd6fc2;
     }
 
     input[type=checkbox]:checked::before {
-        background-color: #e62b98;
+        background-color: #fd6fc2;
     }
 }
 
@@ -110,5 +110,15 @@
 
     input[type=checkbox]:checked::before {
         background-color: #cfcfcf;
+    }
+}
+
+#Purple {
+    input[type=checkbox] {
+        border: 2px solid #d16fff;
+    }
+
+    input[type=checkbox]:checked::before {
+        background-color: #d16fff;
     }
 }
