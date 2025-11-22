@@ -51,9 +51,9 @@
 
 		<?php if (empty($orders)): ?>
 				<div class="emptyHistory">
-					<p>No order history found</p>
+					<p>Tidak ketemu riwayat</p>
 			<?php if (!empty($searchTerm)): ?>
-					<p>Try adjusting your search terms</p>
+					<p>Coba ganti kata anda dalam search</p>
 			<?php else: ?>
 					<a href="/front-end/pages/product/index.php">Start Shopping</a>
 			<?php endif; ?>

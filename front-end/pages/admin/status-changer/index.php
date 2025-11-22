@@ -29,7 +29,7 @@
 <!-- Page Title -->
 
 			<div id="pageTitle">
-				<b>ADMIN STATUS CHANGER</b>
+				<b>Admin - Status Changer</b>
 			</div>
 
 <!-- Content -->

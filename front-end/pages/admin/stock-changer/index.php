@@ -29,7 +29,7 @@
 <!-- Page Title -->
 
 			<div id="pageTitle">
-				<b>ADMIN STOCK CHANGER</b>
+				<b>Admin - Stock Changer</b>
 			</div>
 
 <!-- Content -->
