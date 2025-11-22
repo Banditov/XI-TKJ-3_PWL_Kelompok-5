@@ -525,6 +525,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 - Menambahkan beberapa animasi saat hover
 - Fungsi pengganti warna pada card produk telah diperbarui agar lebih intuitif
 - Responsivitas page login/register telah diperbarui
+- Kebanyakan teks telah ditranslasikan ke bahasa Indonesia
 
 ### 21/11/2025 - 1.0.0 ( WIP )
 
