@@ -7,10 +7,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>ATK SKI - ADMIN REGISTER</title>
+        <title>ADMIN REGISTER | ATK SKI</title>
         <link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
-        <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/style.css">
         <link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/animation.css">
         <link rel="stylesheet" type="text/css" href="/front-end/pages/login/styles/responsive.css">
     </head>
     <body>
@@ -21,11 +22,12 @@
 
 <!-- Content -->
 
-        <div id="loginBackground">
+        <div id="loginBackground" class="noInteract">
             <img src="/front-end/global/resources/image/background/login_background.png">
         </div>
+
         <div id="centerForm">
-            <div class="loginForm">
+            <div class="loginForm noInteract">
                 <b>ADMIN REGISTER</b>
                 <form method="POST" id="loginForm" action="/back-end/actions/users/register.php">
                     <div class="inputForm">

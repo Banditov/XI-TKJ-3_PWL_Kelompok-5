@@ -8,7 +8,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>ATK SKI - ADMIN STATUS CHANGER</title>
+		<title>ADMIN STATUS CHANGER | ATK SKI</title>
 		<link rel="icon" type="image/x-icon" href="/front-end/global/resources/image/logo/logo.ico">
 		<link rel="stylesheet" type="text/css" href="/front-end/pages/admin/status-changer/styles/style.css">
 		<link rel="stylesheet" type="text/css" href="/front-end/global/styles/globalStyle.css">
