@@ -66,7 +66,7 @@ function updateQuantity(cartItemId, action) {
 }
 
 function removeFromCart(cartItemId) {
-    if (!confirm('Are you sure you want to remove this item from cart?')) {
+    if (!confirm('Apakah anda ingin menghapus item ini?')) {
         return;
     }
     

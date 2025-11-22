@@ -32,20 +32,20 @@
             <a href="/front-end/pages/home/index.php">
                 <div class="navTab">
                     <img src="/front-end/global/resources/image/icon/home.png">
-                    <p>HOME</p>
+                    <p>Home</p>
                 </div>
             </a>
             <a href="/front-end/pages/product/index.php">
                 <div class="navTab">
                     <img src="/front-end/global/resources/image/icon/category.png">
-                    <p>SHOP BY <b>CATEGORY</b></p>
+                    <p>Belanja</p>
                 </div>
             </a>
         </div>
         <a href="/front-end/pages/history/index.php">
             <div class="navTab">
                 <img src="/front-end/global/resources/image/icon/history.png">
-                <p>HISTORY</p>
+                <p>Riwayat</p>
             </div>
         </a>
     </div>
@@ -57,7 +57,7 @@
             <a href="/front-end/pages/admin/status-changer/index.php">Status Changer</a>
             <a href="/front-end/pages/admin/stock-changer/index.php">Stock Changer</a>
             <a href="/front-end/pages/admin/register/index.php">Register</a>
-            <p id="close">Close</p>
+            <p id="close">Tutup</p>
         </div>
     </div>
 <?php endif; ?>

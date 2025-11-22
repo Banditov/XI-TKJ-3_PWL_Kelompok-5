@@ -49,7 +49,7 @@
 
 			<?php if (empty($products)): ?>
 				<div class="emptyTable">
-					<p>No products found</p>
+					<p>Tidak ada Produk</p>
 				</div>
 			<?php else: ?>
 				<?php foreach ($products as $product): ?>

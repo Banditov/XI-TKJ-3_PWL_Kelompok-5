@@ -30,7 +30,7 @@
 <!-- Page Title -->
 
 			<div id="pageTitle">
-				<b>HISTORY</b>
+				<b>Riwayat</b>
 			</div>
 
 <!-- Content -->

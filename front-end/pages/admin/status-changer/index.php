@@ -53,7 +53,7 @@
 
 			<?php if (empty($orders)): ?>
 				<div class="emptyTable">
-					<p>No order found</p>
+					<p>Tidak ada Orderan</p>
 				</div>
 			<?php else: ?>
 				<?php foreach ($orders as $order): ?>

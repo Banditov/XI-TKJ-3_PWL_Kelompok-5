@@ -36,7 +36,7 @@
 <!-- Search -->
 
 			<div id="search">
-				<input type="text" id="searchInput" name="search" placeholder="Search...">
+				<input type="text" id="searchInput" name="search" placeholder="Cari...">
 			</div>
 
 <!-- Content -->

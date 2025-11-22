@@ -44,10 +44,10 @@
                     </div>
                     <div class="inputForm" id="adminCheck">
                         <input type="checkbox" id="admin" name="admin" class="inputCheck">
-                        <label for="admin" class="inputCheck">Is Admin?</label>
+                        <label for="admin" class="inputCheck">Admin?</label>
                     </div>
-                    <button type="submit" name="register" class="submitButton">Create</button>
-                    <a class="submitButton" onclick="history.back()">Exit</a>
+                    <button type="submit" name="register" class="submitButton">Buat</button>
+                    <a class="submitButton" onclick="history.back()">Keluar</a>
                 </form>
             </div>
         </div>

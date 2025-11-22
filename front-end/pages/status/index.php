@@ -30,7 +30,7 @@
 <!-- Page Title -->
 
 			<div id="pageTitle" class="noInteract">
-				<b>STATUS</b>
+				<b>Status</b>
 			</div>
 
 <!-- Content -->
@@ -38,8 +38,8 @@
 			<div id="container">
 				<?php if (empty($orders)): ?>
 					<div class="emptyState">
-						<p>No Orders Found</p>
-						<p>You haven't placed any orders yet.</p>
+						<p>Tidak ada Orderan</p>
+						<p>Anda belum memesan apa pun.</p>
 					</div>
 				<?php else: ?>
 					<?php foreach ($orders as $order): ?>
@@ -60,7 +60,7 @@
 							</div>
 							<?php if ($order['act'] == 'Not Ready'): ?>
 								<div class="rowBottom">
-									<button class="cancelBtn" data-order-id="<?php echo $order['id']; ?>" data-order-number="<?php echo $order['order_number']; ?>">Cancel</button>
+									<button class="cancelBtn" data-order-id="<?php echo $order['id']; ?>" data-order-number="<?php echo $order['order_number']; ?>">Batalkan Pesanan</button>
 								</div>
 							<?php endif; ?>
 						</div>

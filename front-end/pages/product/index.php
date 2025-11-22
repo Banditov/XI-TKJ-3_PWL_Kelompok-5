@@ -34,15 +34,15 @@
 <!-- Filter -->
 
         <div id="filter" class="noInteract">
-            <p>Sort By</p>
+            <p>Pengurutan</p>
             <select id="sortFilter">
                 <option value="default">Default</option>
-                <option value="lowHigh">Lowest Price</option>
-                <option value="highLow">Highest Price</option>
+                <option value="lowHigh">Harga Terendah</option>
+                <option value="highLow">Harga Tertinggi</option>
                 <option value="az">A-Z</option>
                 <option value="za">Z-A</option>
             </select>
-            <p>Category</p>
+            <p>Kategori</p>
             <div class="filterRow">
         <?php foreach($parents as $index => $parent): ?>
                 <div class="parentRow" data-type="parent" data-parent-id="<?= $parent['id']; ?>">
