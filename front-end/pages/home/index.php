@@ -47,7 +47,7 @@
         <div id="homeSection" class="noInteract">
             <div id="homeTitle">
                 <img src="/front-end/global/resources/image/icon/book.png">
-                <p>Books</p>
+                <p>Buku</p>
             </div>
             <div class="bookProducts">
         <?php foreach($books as $index => $product): ?>
@@ -78,7 +78,7 @@
         <?php endforeach; ?>
                 <div id="bookBanner">
                     <a href="/front-end/pages/product/index.php" id="bookBannerButton">
-                        <p>Shop Now ></p>
+                        <p>Belanja Sekarang ></p>
                     </a>
                     <img src="/front-end/global/resources/image/banner/bookBanner.jpg">
                 </div>
@@ -90,12 +90,12 @@
         <div id="homeSection" class="noInteract">
             <div id="homeTitle">
                 <img src="/front-end/global/resources/image/icon/pen.png">
-                <p>Basic Writing Tools</p>
+                <p>Alat Tulis</p>
             </div>
             <div id="stationerySection">
                 <div id="bannerStationery">
                     <a href="/front-end/pages/product/index.php" id="bannerStationeryButton">
-                        <p>More...</p>
+                        <p>Lebih Banyak...</p>
                     </a>
                     <img src="/front-end/global/resources/image/banner/bannerStationery.jpg">
                 </div>

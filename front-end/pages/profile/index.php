@@ -36,14 +36,14 @@
 <!-- Content -->
 
 			<div id="infoContainer">
-				<p id="title">Information</p>
+				<p id="title">Informasi</p>
 				<div id="row">
 					<div class="column">
-						<p class="columnTitle">Name</p>
+						<p class="columnTitle">Nama</p>
 						<p><?= $user['name']; ?></p>
 					</div>
 					<div class="column sideLine">
-						<p class="columnTitle">Class</p>
+						<p class="columnTitle">Kelas</p>
 						<p><?= $user['class']; ?></p>
 					</div>
 					<div class="column sideLine">
