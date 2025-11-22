@@ -21,9 +21,6 @@
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#kontributor">
       <img src="https://img.shields.io/badge/Contributor-3-yellow">
    </a><br>
-   <a href="https://app.netlify.com/projects/atkski/deploys">
-      <img src="https://api.netlify.com/api/v1/badges/11368017-fe23-41df-b99b-f94ff06ccccc/deploy-status">
-   </a>
 </div>
 
 
@@ -50,7 +47,10 @@
 
 <!-- Instalasi Baru -->
 <details>
-   <summary>Versi Beta & Release</summary>
+   <summary>Versi Beta & Release</summary> <br>
+
+<details>
+   <summary>Lokal</summary>
 
 ### Step 1
 <details>
@@ -175,6 +175,15 @@
          <img src=".github/images/tutorial/B2-3.png">
       </details>
    <h3 align="center">Selesai!</h3>
+</details>
+</details> <br>
+
+<details>
+   <summary>Online</summary>
+<a href="https://atkski.yzz.me">Tekan aku!</a><br>
+Note tambahan:<br>
+Website ini memiliki beberapa masalah dengan stylenya (css) yang tidak terlihat pada versi lokal. Selain itu, website ini berfungsi seperti lokal. :)
+
 </details>
 </details>
 
@@ -499,6 +508,7 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 
 <b>! -- Proyek Terpisah -- !</b> <br>
+Hosting Provider telah diganti dari `Netlify` jadi `free-hosting.org` <br>
 ![React.JS](https://img.shields.io/badge/React.JS-087EA4?logo=react&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
@@ -530,6 +540,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
    - Fungsi pengganti warna pada card produk telah diperbarui agar lebih intuitif
    - Responsivitas page login/register telah diperbarui
    - Kebanyakan teks telah ditranslasikan ke bahasa Indonesia
+   - Proyek ini telah dihost pada `free-hosting.org`
 </details>
 
 ### 21/11/2025 - 1.0.0 ( WIP )
