@@ -56,7 +56,7 @@ function closePopup() {
         checkOutPopUp.style.opacity = '0';
         setTimeout(() => {
             checkOutPopUp.style.display = 'none';
-            window.location.href = '/front-end/pages/history/index.php';
+            window.location.href = '/front-end/pages/status/index.php';
         }, 300);
     }
 }
