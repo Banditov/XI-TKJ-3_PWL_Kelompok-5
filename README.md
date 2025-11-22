@@ -518,181 +518,263 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 <details>
    <summary>Click to Expand</summary>
 
+<details>
+   <summary>November</summary>
+   
 ### 22/11/2025 - 1.0.0 ( Release )
+<details>
 
-- Database diperbarui dengan produk tambahan
-- Ikon notifikasi akan memberikan tanda apabila ada orderan yang sudah siap
-- Menambahkan beberapa animasi saat hover
-- Fungsi pengganti warna pada card produk telah diperbarui agar lebih intuitif
-- Responsivitas page login/register telah diperbarui
-- Kebanyakan teks telah ditranslasikan ke bahasa Indonesia
+   - Database diperbarui dengan produk tambahan
+   - Ikon notifikasi akan memberikan tanda apabila ada orderan yang sudah siap
+   - Menambahkan beberapa animasi saat hover
+   - Fungsi pengganti warna pada card produk telah diperbarui agar lebih intuitif
+   - Responsivitas page login/register telah diperbarui
+   - Kebanyakan teks telah ditranslasikan ke bahasa Indonesia
+</details>
 
 ### 21/11/2025 - 1.0.0 ( WIP )
+<details>
 
-- Penambahan bagian fitur utama, cara login dan entitas pada README
-- Beberapa aksi telah ditambahkan sebuah konfirmasi
-- Beberapa masalah dan inkonsistensi kode telah diperbaiki
-- Page-page untuk admin telah dibuat.
+   - Penambahan bagian fitur utama, cara login dan entitas pada README
+   - Beberapa aksi telah ditambahkan sebuah konfirmasi
+   - Beberapa masalah dan inkonsistensi kode telah diperbaiki
+   - Page-page untuk admin telah dibuat.
+</details>
 
 ### 20/11/2025 - 1.0.0 ( WIP )
+<details>
 
-- Page profile telah dibuat
+   - Page profile telah dibuat
+</details>
 
 ### 19/11/2025 - 0.4.1 ( Release )
+<details>
 
-- Database telah diupdate
+   - Database telah diupdate
+</details>
   
 ### 18/11/2025 - 0.4.0 ( Release )
+<details>
 
-- Halaman history telah dibuat
-- Fungsi ordering telah ditambahkan
-- Fungsi pada status page sudah bekerja
+   - Halaman history telah dibuat
+   - Fungsi ordering telah ditambahkan
+   - Fungsi pada status page sudah bekerja
+</details>
 
 ### 16/11/2025 - 0.4.0 ( WIP )
+<details>
 
-- Perbaikan README
+   - Perbaikan README
+</details>
 
 ### 14/11/2025 - 0.4.0 ( WIP )
+<details>
 
-- README.md diupdate, menambahkan bagian fitur utama & update instalasi
+   - README.md diupdate, menambahkan bagian fitur utama & update instalasi
+</details>
 
 ### 13/11/2025 - 0.3.0 ( Release )
+<details>
 
-- Desain banner telah diganti
+   - Desain banner telah diganti
+</details>
 
 ### 12/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Halaman cart telah dibuat
-- Fitur add to cart telah ditambahkan
+   - Halaman cart telah dibuat
+   - Fitur add to cart telah ditambahkan
+</details>
 
 ### 11/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Struktur image telah diupdate
+   - Struktur image telah diupdate
+</details>
 
 ### 6/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Database telah diupdate
-- Page produk telah dibuat
-- Branch baru untuk pre-deploy telah dibuat
+   - Database telah diupdate
+   - Page produk telah dibuat
+   - Branch baru untuk pre-deploy telah dibuat
+</details>
 
 ### 5/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Beberapa animasi kecil telah ditambahkan
-- Page produk telah dibuat
+   - Beberapa animasi kecil telah ditambahkan
+   - Page produk telah dibuat
+</details>
   
 ### 4/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Page FAQ telah dibuat ulang
+   - Page FAQ telah dibuat ulang
+</details>
   
 ### 3/11/2025 - 0.3.0 ( WIP )
+<details>
 
-- Beberapa bug fix
-- Menambahkan intro
+   - Beberapa bug fix
+   - Menambahkan intro
+</details>
+</details>
+
+<details>
+   <summary>October</summary>
 
 ### 31/10/2025 - 0.3.0 ( WIP )
+<details>
 
-- Loading screen sudah responsif
+   - Loading screen sudah responsif
+</details>
 
 ### 30/10/2025 - 0.3.0 ( WIP )
+<details>
 
-- Fitur checkbox warna telah ditambahkan
-- Page FAQ sudah responsif
-- Halaman login sudah terintegrasi dengan database
-- Beberapa masalah telah diperbaiki
+   - Fitur checkbox warna telah ditambahkan
+   - Page FAQ sudah responsif
+   - Halaman login sudah terintegrasi dengan database
+   - Beberapa masalah telah diperbaiki
+</details>
 
 ### 24/10/2025 - 0.3.0 ( WIP )
+<details>
 
-- Page FAQ telah dibuat
+   - Page FAQ telah dibuat
+</details>
 
 ### 23/10/2025 - 0.3.0 ( WIP )
+<details>
 
-- Database telah terhubung dengan halaman home
-- Home telah dibagi menjadi berbagai komponen terpisah
+   - Database telah terhubung dengan halaman home
+   - Home telah dibagi menjadi berbagai komponen terpisah
+</details>
 
 ### 22/10/2025 - 0.3.0 ( WIP )
+<details>
 
-- Database terintegrasi dengan halaman home
-- Halaman home dibagi menjadi beberapa komponen
+   - Database terintegrasi dengan halaman home
+   - Halaman home dibagi menjadi beberapa komponen
+</details>
+</details>
+
+<details>
+   <summary>September</summary>
 
 ### 21/09/2025 - 0.3.0 ( WIP )
+<details>
 
-- Penghapusan Laravel dari arsitektur
-- Struktur telah direorganisir
+   - Penghapusan Laravel dari arsitektur
+   - Struktur telah direorganisir
+</details>
 
 ### 21/09/2025 - 0.3.0 ( WIP )
+<details>
 
-- Tambahan ikon pada tab browser
+   - Tambahan ikon pada tab browser
+</details>
 
 ### 21/09/2025 - 0.2.1 ( Release )
+<details>
 
-- Penambahan instruksi penggunaan secara online & mobile
-
-### 18/09/2025 - 0.2.1 ( WIP )
-
-- Beberapa masalah kecil diperbaiki
+   - Penambahan instruksi penggunaan secara online & mobile
+</details>
 
 ### 18/09/2025 - 0.2.1 ( WIP )
+<details>
 
-- Branch baru untuk belajar React.JS dibuat
-- Deploy website menggunakan Netlify
+   - Beberapa masalah kecil diperbaiki
+</details>
+
+### 18/09/2025 - 0.2.1 ( WIP )
+<details>
+
+   - Branch baru untuk belajar React.JS dibuat
+   - Deploy website menggunakan Netlify
+</details>
 
 ### 17/09/2025 - 0.2.1 ( WIP )
+<details>
 
-- Perbaiki masalah responsivity halaman home apabila zoom keluar
+   - Perbaiki masalah responsivity halaman home apabila zoom keluar
+</details>
 
 ### 17/09/2025 - 0.2.0 ( Release )
+<details>
 
-- Pembaruan instruksi instalasi
+   - Pembaruan instruksi instalasi
+</details>
 
 ### 16/09/2025 - 0.2.0 ( WIP )
+<details>
 
-- Perubahan struktur
-- Penambahan file starter
-- Penambahan drop-down pada gambar tutorial dalam README.md
-- Penambahan database
+   - Perubahan struktur
+   - Penambahan file starter
+   - Penambahan drop-down pada gambar tutorial dalam README.md
+   - Penambahan database
+</details>
 
 ### 14/09/2025 - 0.1.0 ( Release )
-
-- Perubahan nama repository dari "PWL-Kelompok-5" menjadi "XI-TKJ-3_PWL_Kelompok-5"
-- Masalah halaman login tidak responsive dengan display Android sudah diperbaiki
-- Masalah halaman home tidak responsive dengan display Android sudah diperbaiki
-- Perubahan isi dalam README.md
+<details>
+   
+   - Perubahan nama repository dari "PWL-Kelompok-5" menjadi "XI-TKJ-3_PWL_Kelompok-5"
+   - Masalah halaman login tidak responsive dengan display Android sudah diperbaiki
+   - Masalah halaman home tidak responsive dengan display Android sudah diperbaiki
+   - Perubahan isi dalam README.md
+</details>
 
 ### 13/09/2025 - 0.0.1 ( Release )
+<details>
 
-- Perubahan README.md
-- Halaman home sudah responsive
-- Halaman home mendapatkan penambahan isi
-- Background halaman login diganti
+   - Perubahan README.md
+   - Halaman home sudah responsive
+   - Halaman home mendapatkan penambahan isi
+   - Background halaman login diganti
+</details>
 
 ### 12/09/2025
+<details>
 
-- Update README.md
-- Memasukin source code home page & login page ke dalam repository
+   - Update README.md
+   - Memasukin source code home page & login page ke dalam repository
+</details>
 
 ### 11/09/2025
+<details>
 
-- Mengintegrasi CHANGELOG.md dengan README.md
+   - Mengintegrasi CHANGELOG.md dengan README.md
+</details>
 
 ### 05/09/2025
+<details>
 
-- Membuat workflow
-- Memulai pembuatan Home Page
+   - Membuat workflow
+   - Memulai pembuatan Home Page
+</details>
 
 ### 04/09/2025
+<details>
 
-- Mengubah logo
+   - Mengubah logo
+</details>
 
 ### 03/09/2025
+<details>
 
-- Update README.md
-- Tambahkan issue
-- Menambahkan logo 
+   - Update README.md
+   - Tambahkan issue
+   - Menambahkan logo 
+</details>
 
 ### 02/09/2025
+<details>
 
-- Update README.md
-- Tambahkan license
+   - Update README.md
+   - Tambahkan license
+</details>
+</details>
 </details>
 
 
