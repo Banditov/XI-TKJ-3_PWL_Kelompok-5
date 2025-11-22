@@ -67,11 +67,19 @@
     #checkOutContainer {
         zoom: 0.8;
     }
+
+    .emptyCart {
+        min-height: 70vh;
+    }
 }
 
 @media screen and (max-width: 1400px) {
     #content {
         zoom: 0.6;
+    }
+
+    .emptyCart {
+        min-height: 85vh;
     }
 }
 
@@ -83,6 +91,10 @@
     #checkOutContainer {
         zoom: 0.7;
     }
+
+    .emptyCart {
+        min-height: 115vh;
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -90,11 +102,19 @@
         zoom: 0.8;
         width: 20%;
     }
+
+    .emptyCart {
+        min-height: 90vh;
+    }
 }
 
 @media screen and (max-width: 950px) {
     #content {
         zoom: 0.45;
+    }
+
+    .emptyCart {
+        min-height: 110vh;
     }
 }
 
@@ -119,5 +139,9 @@
     #checkOutContainer {
         zoom: 0.6;
         width: 30%;
+    }
+
+    .emptyCart {
+        min-height: 120vh;
     }
 }

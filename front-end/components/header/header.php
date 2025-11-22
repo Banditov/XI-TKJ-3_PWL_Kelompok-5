@@ -17,7 +17,7 @@
                 </a>
             </div>
             <a href="/front-end/pages/status/index.php">
-                <img src="/front-end/global/resources/image/icon/notification.png" class="headerIcon">
+                <img src="/front-end/global/resources/image/icon/notification.png" class="headerIcon" id="notificationIcon">
             </a>
             <a href="/front-end/pages/profile/index.php">
                 <img src="/front-end/global/resources/image/icon/account.png" class="headerIcon">
@@ -62,5 +62,6 @@
     </div>
 <?php endif; ?>
 
+<script src="/front-end/components/header/scripts/notification.js"></script>
 <script src="/front-end/components/header/scripts/adminPopUp.js"></script>
 <script src="/front-end/components/header/scripts/cartTotal.js"></script>
