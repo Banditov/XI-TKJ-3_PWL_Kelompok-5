@@ -7,7 +7,7 @@
 
 <div align="center">
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/GitHub Version-r1.0.1-yellow">
+      <img src="https://img.shields.io/badge/GitHub Version-r1.0.1-red">
    </a>
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
       <img src="https://img.shields.io/badge/Latest Release-r1.0.0-green">
@@ -19,7 +19,7 @@
       <img src="https://img.shields.io/badge/License-Unlicense-blue.svg">
    </a>
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#kontributor">
-      <img src="https://img.shields.io/badge/Contributor-3-orange">
+      <img src="https://img.shields.io/badge/Contributor-3-yellow">
    </a><br>
    <a href="https://app.netlify.com/projects/atkski/deploys">
       <img src="https://api.netlify.com/api/v1/badges/11368017-fe23-41df-b99b-f94ff06ccccc/deploy-status">
