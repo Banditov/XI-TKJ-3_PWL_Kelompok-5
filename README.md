@@ -10,7 +10,7 @@
       <img src="https://img.shields.io/badge/GitHub Version-r1.0.1-red">
    </a>
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#changelog">
-      <img src="https://img.shields.io/badge/Latest Release-b1.0.0-green">
+      <img src="https://img.shields.io/badge/Latest Release-r1.0.0-green">
    </a>
    <a href="https://app.netlify.com/projects/atkski/deploys">
       <img src="https://img.shields.io/badge/Netlify-0.2.1-00C7B7?style=flat&logo=Netlify&logoColor=white">
@@ -26,6 +26,7 @@
    </a>
 </div>
 
+
 ## Table of Contents
 <details>
    <summary>Click to Expand</summary>
@@ -34,6 +35,7 @@
 - [Penggunaan](#penggunaan)
 - [Fitur Utama](#fitur-utama)
 - [Entitas](#entitas)
+- [Cara Login](#cara-login)
 - [Arsitektur](#arsitektur)
 - [Kontributor](#kontributor)
 - [Lisensi](#lisensi)
@@ -310,8 +312,10 @@ Website lewat link ini mungkin tidak up-to-date dengan versi rilis dalam GitHub 
 </details>
 </details>
 
+
 ## Penggunaan
 Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara lebih praktis. Guru, siswa, maupun pihak sekolah dapat melihat daftar barang yang tersedia, lengkap dengan informasi harga dan kategori. Dengan adanya fitur keranjang, pengguna bisa memilih beberapa barang sekaligus sebelum melakukan pemesanan. Website ini membantu sekolah mengatur kebutuhan ATK secara lebih cepat, transparan, dan terorganisir tanpa harus melakukan pembelian manual.
+
 
 ## Fitur Utama
 <details>
@@ -367,6 +371,7 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
    </details>
   
 </details>
+
 
 ## Entitas
 <details>
@@ -464,6 +469,7 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
    </details>
 </details>
 
+
 ## Cara Login
 <details>
    <summary>Cara login</summary>
@@ -477,6 +483,7 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
   Untuk menggunakan akun admin, login menggunakan email `admin@ski.sch.id` atau `vinska@ski.sch.id`. Password dari akun `admin@ski.sch.id` adalah `admin123`.
 
 </details>
+
 
 ## Arsitektur
 <b>-- Front-end Development --</b> <br>
@@ -496,6 +503,7 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 
+
 ## Kontributor
 <img src="https://avatars.githubusercontent.com/u/199484083" width="20"> [Christopher V.C - "Banditov"](https://github.com/Banditov), sebagai ketua & back-end developer.<br>
 <img src="https://avatars.githubusercontent.com/u/226641704" width="20"> [Nicholas J.G - "nikoe-ee"](https://github.com/nikoe-ee), sebagai front-end developer.<br>
@@ -509,6 +517,15 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 ## Changelog
 <details>
    <summary>Click to Expand</summary>
+
+### 22/11/2025 - 1.0.0 ( Release )
+
+- Database diperbarui dengan produk tambahan
+- Ikon notifikasi akan memberikan tanda apabila ada orderan yang sudah siap
+- Menambahkan beberapa animasi saat hover
+- Fungsi pengganti warna pada card produk telah diperbarui agar lebih intuitif
+- Responsivitas page login/register telah diperbarui
+- Kebanyakan teks telah ditranslasikan ke bahasa Indonesia
 
 ### 21/11/2025 - 1.0.0 ( WIP )
 
@@ -677,6 +694,7 @@ Distributed under the Unlicense License. See [`LICENSE.txt`](./LICENSE.txt) for 
 - Update README.md
 - Tambahkan license
 </details>
+
 
 ## Link
 - [Figma - Mock-up](https://www.figma.com/design/LLrqwRu8kVeNYoYhqZ2jOe/PWL?node-id=0-1&t=mJ8mLZNfG32KhL0a-1)
