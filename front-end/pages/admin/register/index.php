@@ -28,7 +28,7 @@
 
         <div id="centerForm">
             <div class="loginForm noInteract">
-                <b>ADMIN REGISTER</b>
+                <b>Admin - Register</b>
                 <form method="POST" id="loginForm" action="/back-end/actions/users/register.php">
                     <div class="inputForm">
                         <input type="text" id="name" name="name" class="inputField" placeholder="Username" required>
