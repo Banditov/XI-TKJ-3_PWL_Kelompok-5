@@ -4,11 +4,6 @@
 
     header('Content-Type: application/json');
 
-    if (!isset($_SESSION['accounts']) && !isset($_SESSION['user'])) {
-        echo json_encode(['success' => false, 'message' => 'Please log in first.']);
-        exit;
-    }
-
     if (isset($_SESSION['accounts'])) {
         $user_id = $_SESSION['accounts']['id'];
     } else if (isset($_SESSION['user'])) {
@@ -23,19 +18,9 @@
     $color = isset($input['color']) ? $input['color'] : 'None';
     $quantity = isset($input['quantity']) ? intval($input['quantity']) : 1;
 
-    if (!$product_id || $product_id <= 0) {
-        echo json_encode(['success' => false, 'message' => 'Invalid product ID.']);
-        exit;
-    }
-
-    if ($quantity <= 0) {
-        echo json_encode(['success' => false, 'message' => 'Invalid quantity.']);
-        exit;
-    }
-
     try {
         $pdo = Database::getPDO();
-        
+
         $productQuery = "SELECT id, stock, product_name, price FROM products WHERE product_id = ? AND color = ?";
         $productStmt = $pdo->prepare($productQuery);
         $productStmt->execute([$product_id, $color]);
@@ -101,7 +86,7 @@
                 'action' => 'added'
             ]);
         }
-        
+
     } catch (PDOException $e) {
         error_log("Database error in add-to-cart: " . $e->getMessage());
         echo json_encode(['success' => false, 'message' => 'Database error occurred. Please try again.']);

@@ -84,9 +84,11 @@
 		</div>
 
 <!-- Footer -->
+
 		<?php include '../../../components/footer/footer.php'; ?> 
 
 <!-- Scripts -->
+
 		<script src="/front-end/pages/admin/status-changer/scripts/filter.js"></script>
 		<script src="/front-end/pages/admin/status-changer/scripts/statusUpdater.js"></script>
 		<script src="/front-end/global/scripts/loading-screen.js"></script>

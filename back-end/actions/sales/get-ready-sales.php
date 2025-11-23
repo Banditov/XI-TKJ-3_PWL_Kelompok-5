@@ -12,11 +12,6 @@
         $user_id = $_SESSION['user']['id'];
     }
 
-    if (!$user_id) {
-        echo json_encode(['success' => false, 'message' => 'User not authenticated']);
-        exit;
-    }
-
     try {
         $stmt = $pdo->prepare("
             SELECT COUNT(*) as ready_count 
@@ -25,13 +20,13 @@
         ");
         $stmt->execute([$user_id]);
         $result = $stmt->fetch();
-        
+
         echo json_encode([
             'success' => true,
             'has_ready_orders' => ($result['ready_count'] > 0),
             'ready_count' => (int)$result['ready_count']
         ]);
-        
+
     } catch (PDOException $e) {
         error_log("Check ready orders error: " . $e->getMessage());
         echo json_encode(['success' => false, 'message' => 'Database error']);

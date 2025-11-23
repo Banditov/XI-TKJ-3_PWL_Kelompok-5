@@ -20,19 +20,19 @@
                 a.class as customer_class
             FROM orders o
             LEFT JOIN accounts a ON o.customer_id = a.id
-            WHERE o.isnt_shown = 0
+            WHERE o.status NOT IN 'Cancelled'
         ";
-        
+
         $params = [];
-        
+
         if (!empty($searchTerm)) {
             $query .= " AND (o.order_number LIKE ? OR a.name LIKE ? OR o.order_date LIKE ?)";
             $searchParam = "%$searchTerm%";
             $params = [$searchParam, $searchParam, $searchParam];
         }
-        
+
         $query .= " ORDER BY o.order_date DESC, o.id DESC";
-        
+
         $stmt = $pdo->prepare($query);
         $stmt->execute($params);
         $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);

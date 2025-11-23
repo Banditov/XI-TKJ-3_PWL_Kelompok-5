@@ -16,7 +16,7 @@
 
 	try {
 		$pdo = Database::getPDO();
-		
+
 		$query = "
 			SELECT 
 				ci.id as cart_item_id,
@@ -33,17 +33,17 @@
 			WHERE ci.account_id = ?
 			ORDER BY ci.id DESC
 		";
-		
+
 		$stmt = $pdo->prepare($query);
 		$stmt->execute([$user_id]);
 		$cartItems = $stmt->fetchAll();
-		
+
 		foreach ($cartItems as $item) {
 			$itemTotal = $item['price'] * $item['quantity'];
 			$totalAmount += $itemTotal;
 			$totalItems += $item['quantity'];
 		}
-		
+
 	} catch (Exception $e) {
 		error_log("Cart page error: " . $e->getMessage());
 		$error = "Unable to load cart items. Please try again.";

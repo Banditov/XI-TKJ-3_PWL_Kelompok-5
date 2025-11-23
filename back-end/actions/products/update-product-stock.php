@@ -3,20 +3,9 @@
 
     header('Content-Type: application/json');
 
-    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-        http_response_code(405);
-        echo json_encode(['success' => false, 'message' => 'Method not allowed']);
-        exit;
-    }
-
     $data = json_decode(file_get_contents('php://input'), true);
     $product_id = $data['product_id'] ?? null;
     $change_amount = $data['change_amount'] ?? null;
-
-    if (!$product_id || $change_amount === null) {
-        echo json_encode(['success' => false, 'message' => 'Product ID and change amount are required']);
-        exit;
-    }
 
     try {
         $stmt = $pdo->prepare("SELECT stock FROM products WHERE id = ?");
