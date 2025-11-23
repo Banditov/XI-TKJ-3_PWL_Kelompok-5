@@ -23,7 +23,7 @@
       <img src="https://img.shields.io/badge/Netlify-a0.2.1-00C7B7?style=flat&logo=Netlify&logoColor=white">
    </a>
    <a href="https://atkski.yzz.me">
-      <img src=".github/images/logo/free-hostingorg.svg">
+      <img src=".github/images/logo/sta_freehostingorg.svg">
    </a><br>
 </div>
 
@@ -512,10 +512,9 @@ Website ATK SKI digunakan sebagai sarana pembelian alat tulis dan buku secara le
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
 
 <b>! -- Proyek Terpisah -- !</b> <br>
-Hosting Provider telah diganti dari `Netlify` jadi `free-hosting.org` <br>
 ![React.JS](https://img.shields.io/badge/React.JS-087EA4?logo=react&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
+![Free-Hosting.org](.github/images/logo/ars_freehostingorg.svg)
 
 
 ## Kontributor
