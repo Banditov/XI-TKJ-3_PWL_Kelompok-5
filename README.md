@@ -72,7 +72,7 @@
          <summary>Step 1A-2</summary>
          <img src=".github/images/tutorial/A1A-2.png">
       </details>
-3. Pindahkan folder "XI-TKJ-3_PWL_Kelompok-5" ke directory "C:\laragon\www\".
+3. Pindahkan folder yang telah diekstrak ke directory "C:\laragon\www\". Folder yang dipindahkan seharusnya dapat langsung melihat isi dari websitenya, apabila dalam folder yang dipindahkan terdapat sebuah folder lagi, keluarkan semua isi dari websitenya keluar dari foldernya.
       <details>
          <summary>Step 1A-3</summary>
          <img src=".github/images/tutorial/B1A-3.png">
@@ -124,7 +124,7 @@
          <summary>Step 1B-3</summary>
          <img src=".github/images/tutorial/A1B-3.png">
       </details>
-4. Pindahkan folder "XI-TKJ-3_PWL_Kelompok-5" ke directory "C:\laragon\www\".
+4. Pindahkan folder yang telah diekstrak ke directory "C:\laragon\www\". Folder yang dipindahkan seharusnya dapat langsung melihat isi dari websitenya, apabila dalam folder yang dipindahkan terdapat sebuah folder lagi, keluarkan semua isi dari websitenya keluar dari foldernya.
       <details>
          <summary>Step 1B-4</summary>
          <img src=".github/images/tutorial/B1B-4.png">
@@ -168,7 +168,7 @@
          <summary>Step 2-1</summary>
          <img src=".github/images/tutorial/B2-1.png">
       </details>
-2. Ketikkan "cd XI-TKJ-3_PWL_Kelompok-5".
+2. Ketikkan "cd (Nama folder yang diekstrak tadi)". Apabila lupa, ketikkan "ls" dan cari nama folder yang sesuai.
       <details>
          <summary>Step 2-2</summary>
          <img src=".github/images/tutorial/B2-2.png">
