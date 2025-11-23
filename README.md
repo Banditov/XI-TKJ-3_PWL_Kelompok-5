@@ -18,7 +18,7 @@
    <a href="https://github.com/Banditov/XI-TKJ-3_PWL_Kelompok-5?tab=readme-ov-file#kontributor">
       <img src="https://img.shields.io/badge/Contributor-3-yellow">
    </a><br><br>
-   <small>Deploys</small><br>
+   <p>Deploys</p>
    <a href="https://app.netlify.com/projects/atkski/deploys">
       <img src="https://img.shields.io/badge/Netlify-a0.2.1-00C7B7?style=flat&logo=Netlify&logoColor=white">
    </a>
