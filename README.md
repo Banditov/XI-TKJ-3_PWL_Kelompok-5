@@ -23,7 +23,7 @@
       <img src="https://img.shields.io/badge/Netlify-a0.2.1-00C7B7?style=flat&logo=Netlify&logoColor=white">
    </a>
    <a href="https://atkski.yzz.me">
-      <img src=".github/images/logo/freehostingorg.svg">
+      <img src=".github/images/logo/free-hostingorg.svg">
    </a><br>
 </div>
 
