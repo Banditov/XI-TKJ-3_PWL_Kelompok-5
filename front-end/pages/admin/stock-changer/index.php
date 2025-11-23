@@ -83,9 +83,11 @@
 		</div>
 
 <!-- Footer -->
+
 		<?php include '../../../components/footer/footer.php'; ?> 
 
 <!-- Scripts -->
+
 		<script src="/front-end/pages/admin/stock-changer/scripts/filter.js"></script>
 		<script src="/front-end/pages/admin/stock-changer/scripts/stockUpdater.js"></script>
 		<script src="/front-end/global/scripts/loading-screen.js"></script>

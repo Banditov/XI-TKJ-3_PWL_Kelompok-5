@@ -4,19 +4,8 @@
 
     header('Content-Type: application/json');
 
-    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-        http_response_code(405);
-        echo json_encode(['success' => false, 'message' => 'Method not allowed']);
-        exit;
-    }
-
     $data = json_decode(file_get_contents('php://input'), true);
     $order_id = $data['order_id'] ?? null;
-
-    if (!$order_id) {
-        echo json_encode(['success' => false, 'message' => 'Order ID is required']);
-        exit;
-    }
 
     try {
         $stmt = $pdo->prepare("

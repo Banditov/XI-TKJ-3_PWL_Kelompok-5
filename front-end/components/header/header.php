@@ -54,6 +54,7 @@
 <?php if (isset($_SESSION['user']) && $_SESSION['user']['is_admin'] == 1): ?>
     <div id="adminPopUp" class="noInteract">
         <div id="adminContainer">
+            <a href="/front-end/pages/admin/order-viewer/index.php">Order Viewer</a>
             <a href="/front-end/pages/admin/status-changer/index.php">Status Changer</a>
             <a href="/front-end/pages/admin/stock-changer/index.php">Stock Changer</a>
             <a href="/front-end/pages/admin/register/index.php">Register</a>

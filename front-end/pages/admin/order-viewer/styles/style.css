@@ -1,0 +1,96 @@
+#inputFilter {
+    border: 1px solid #ACACAC;
+    margin-top: 40px;
+    width: 400px;
+    height: 30px;
+}
+
+#inputFilter::placeholder {
+    padding-left: 10px;
+}
+
+#indicator, .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #5E5E5E;
+}
+
+#leftIndicator, #rightIndicator, .leftRow, .rightRow {
+    display: flex;
+}
+
+#leftIndicator, .leftRow{
+    gap: 40px;
+}
+
+.emptyTable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 2px dashed #dee2e6;
+    height: 50vh;
+}
+
+.emptyTable > p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.emptyTable > a {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.noResultsMessage {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 2px dashed #dee2e6;
+}
+
+.noResultsMessage p {
+    margin-bottom: 10px;
+}
+
+.orderNumber {
+    width: 200px;
+}
+
+.customer {
+    width: 400px;
+    text-align: center;
+}
+
+.date {
+    width: 200px;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 40px;
+}
