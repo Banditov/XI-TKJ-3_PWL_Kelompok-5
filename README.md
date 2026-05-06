@@ -315,7 +315,7 @@ Website ini memiliki beberapa masalah dengan stylenya (css) yang tidak terlihat 
 </details>
 <br>
 <details>
-   <summary>Online (Tidak perlu install)</summary>
+   <summary>Online (Sudah tidak bekerja)</summary>
 <a href="https://atkski.netlify.app">Tekan aku!</a><br>
 Note tambahan:<br>
 Website lewat link ini mungkin tidak up-to-date dengan versi rilis dalam GitHub (Dapat cek badge versi Netlify pada bagian atas) dan juga ada kemungkinan website ini tidak online.
